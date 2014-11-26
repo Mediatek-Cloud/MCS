@@ -1,0 +1,798 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>retrieveDataPoint | MediaTek Cloud Sandbox API</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../api_references/commanddevice.html" />
+    
+    
+    <link rel="prev" href="../api_references/uploaddatapoint.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="2.1.2" data-basepath=".." data-revision="1416995844068">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="tutorial/README.html">
+            
+                
+                    <a href="../tutorial/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Tutorial
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="tutorial/getting_started">
+            
+                
+                    <a href="../tutorial/getting_started">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="api_references/README.html">
+            
+                
+                    <a href="../api_references/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         API References
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="api_references/data_read_write.html">
+            
+                
+                    <a href="../api_references/data_read_write.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Data Read Write
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1.1" data-path="api_references/uploaddatapoint.html">
+            
+                
+                    <a href="../api_references/uploaddatapoint.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                         uploadDataPoint
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="2.1.2" data-path="api_references/retrievedatapoint.html">
+            
+                
+                    <a href="../api_references/retrievedatapoint.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                         retrieveDataPoint
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.1.3" data-path="api_references/commanddevice.html">
+            
+                
+                    <a href="../api_references/commanddevice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.</b>
+                        
+                         commandDevice
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.1.4" data-path="api_references/retrievelastdatapoint">
+            
+                
+                    <a href="../api_references/retrievelastdatapoint">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.4.</b>
+                        
+                         retrieveLastDataPoint
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="api_references/device_management.html">
+            
+                
+                    <a href="../api_references/device_management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Device Management
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.2.1" data-path="api_references/retrievedeviceinfo.html">
+            
+                
+                    <a href="../api_references/retrievedeviceinfo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                         retrieveDeviceInfo
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2.2" data-path="api_references/registerdevice.html">
+            
+                
+                    <a href="../api_references/registerdevice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                         registerDevice
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2.3" data-path="api_references/deactivatedevice.html">
+            
+                
+                    <a href="../api_references/deactivatedevice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                         deactivateDevice
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2.4" data-path="api_references/retrieveproductfirmware.html">
+            
+                
+                    <a href="../api_references/retrieveproductfirmware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                         retrieveProductFirmware
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2.5" data-path="api_references/uploadproductfirmware.html">
+            
+                
+                    <a href="../api_references/uploadproductfirmware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.5.</b>
+                        
+                         uploadProductFirmware
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="faq/README">
+            
+                
+                    <a href="../faq/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         FAQ
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >MediaTek Cloud Sandbox API</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_1067">
+                    
+                        <h1 id="retrievedeviceinfo">retrieveDeviceInfo</h1>
+<h3 id="description">Description</h3>
+<p>Use <strong>HTTPs GET</strong> to retrieve devices</p>
+<h3 id="request-url">Request URL</h3>
+<pre><code>https://api.mediatek.com/mcs/v2/devices/:device_id
+</code></pre><h3 id="action">Action</h3>
+<p>HTTPs GET</p>
+<h3 id="parameters">Parameters</h3>
+<h4 id="header">Header</h4>
+<p>Authorization: Bearer &#39;{token}&#39;</p>
+<h3 id="response">Response</h3>
+<h4 id="response-code">Response Code</h4>
+<p>200</p>
+<h4 id="response-header">Response Header</h4>
+<p>Content-Type:<code>application/json</code></p>
+<h4 id="response-body">Response Body</h4>
+<p><strong><em>Data Format: JSON</em></strong></p>
+<p>The response body will construct in JSON format with the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>Device ID</td>
+</tr>
+<tr>
+<td>deviceKey</td>
+<td>String</td>
+<td>Device Key</td>
+</tr>
+<tr>
+<td>product</td>
+<td>Object</td>
+<td>Product Info</td>
+</tr>
+<tr>
+<td>fw</td>
+<td>Object</td>
+<td>Firmware Info</td>
+</tr>
+<tr>
+<td>trustIpRange</td>
+<td>String Array</td>
+<td>Trusted IP range from where the device is allowed to conntect to MCS</td>
+</tr>
+<tr>
+<td>lastIp</td>
+<td>String</td>
+<td>Last IP the device seen from</td>
+</tr>
+<tr>
+<td>deviceImageURL</td>
+<td>String</td>
+<td>Device image URL</td>
+</tr>
+<tr>
+<td>isHeartbeating</td>
+<td>Bool</td>
+<td>Is the device currently online</td>
+</tr>
+<tr>
+<td>isVerified</td>
+<td>Bool</td>
+<td>Has the device registration been verified</td>
+</tr>
+<tr>
+<td>isActive</td>
+<td>Bool</td>
+<td>Is the device active</td>
+</tr>
+<tr>
+<td>isTest</td>
+<td>Bool</td>
+<td>Is the device a test device</td>
+</tr>
+<tr>
+<td>activatedAt</td>
+<td>Number</td>
+<td>Timestamp of the device activation</td>
+</tr>
+<tr>
+<td>deactivatedAt</td>
+<td>Number</td>
+<td>Timestamp of the device deactivation ( Default = null if the device is active and has not been deactivated )</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>String Array</td>
+<td>Tags of the device</td>
+</tr>
+<tr>
+<td>privilege</td>
+<td>String</td>
+<td>User&#39;s privilege on the device</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Detailed Object Fields</strong></p>
+<p><strong>product</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prodId</td>
+<td>String</td>
+<td>Product ID</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Product Name</td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td>Product Description</td>
+</tr>
+<tr>
+<td>displayConfigs</td>
+<td>Object Array</td>
+<td>A JSON format object indicatig how each data channel will be displayed</td>
+</tr>
+<tr>
+<td>chip</td>
+<td>String</td>
+<td>Product Chip</td>
+</tr>
+</tbody>
+</table>
+<p><strong>fw</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fwId</td>
+<td>String</td>
+<td>Firmware ID</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Frimware Name</td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td>Firmware Description</td>
+</tr>
+</tbody>
+</table>
+<p><strong>displayConfig</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>displayType</td>
+<td>Number</td>
+<td>How to display</td>
+</tr>
+<tr>
+<td>displayOrder</td>
+<td>Number</td>
+<td>The order of displaying the component</td>
+</tr>
+<tr>
+<td>dataChnIds</td>
+<td>Number Array</td>
+<td>ID of data channel that is being configured to display on the console</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example: </strong></p>
+<p>Request URL</p>
+<pre><code>https://api.mediatek.com/mcs/v2/devices/d1234567890
+
+https://api.mediatek.com/mcs/v2/devices/d1234567890,d1234567891
+</code></pre><p>Response Body</p>
+<pre><code>{
+   &quot;devices&quot;:[
+      {
+         &quot;deviceId&quot;:&quot;d1234567890&quot;,
+         &quot;deviceKey&quot;:&quot;1234567890d&quot;,
+         &quot;product&quot;:{
+            &quot;prodId&quot;:&quot;a1234567890&quot;,
+            &quot;name&quot;:&quot;MediaTek Smart Plug&quot;,
+            &quot;description&quot;:&quot;Monitors Power Usage in kitchen&quot;,
+            &quot;displayConfigs&quot;:[
+               {
+                  &quot;displayType&quot;:2,
+                  &quot;displayOrder&quot;:1,
+                  &quot;dataChnIds&quot;:[
+                     100004,
+                     100006
+                  ]
+               },
+               {
+                  &quot;displayType&quot;:1,
+                  &quot;displayOrder&quot;:2,
+                  &quot;dataChnIds&quot;:[
+                     100009
+                  ]
+               }
+            ],
+            &quot;chip&quot;:&quot;MT7688&quot;
+         },
+         &quot;fw&quot;:{
+            &quot;fwId&quot;:&quot;f1234567890&quot;,
+            &quot;name&quot;:&quot;Appliance Firmware 2.0&quot;,
+            &quot;description&quot;:&quot;&quot;
+         },
+         &quot;trustIpRange&quot;:[
+            &quot;*.*.*.*&quot;
+         ],
+         &quot;lastIp&quot;:&quot;140.112.106.1&quot;,
+         &quot;deviceImageURL&quot;:&quot;http://img.mediatek.com/img003.jpg&quot;,
+         &quot;isHeartbeating&quot;:true,
+         &quot;isVerified&quot;:true,
+         &quot;isActive&quot;:true,
+         &quot;isTest&quot;:false,
+         &quot;activatedAt&quot;:946684800,
+         &quot;deactivatedAt&quot;:0,
+         &quot;tags&quot;:[
+            &quot;Test&quot;,
+            &quot;Mediatek&quot;
+         ],
+         &quot;privilege&quot;:&quot;Owner&quot;
+      },
+      {
+         &quot;deviceId&quot;:&quot;d1234567891&quot;,
+         &quot;deviceKey&quot;:&quot;1987654321d&quot;,
+         &quot;product&quot;:{
+            &quot;prodId&quot;:&quot;a1234567890&quot;,
+            &quot;name&quot;:&quot;MediaTek Smart Plug&quot;,
+            &quot;description&quot;:&quot;Monitors Power Usage in kitchen&quot;,
+            &quot;displayConfigs&quot;:[
+               {
+                  &quot;displayType&quot;:2,
+                  &quot;displayOrder&quot;:1,
+                  &quot;dataChnIds&quot;:[
+                     100004,
+                     100006
+                  ]
+               },
+               {
+                  &quot;displayType&quot;:1,
+                  &quot;displayOrder&quot;:2,
+                  &quot;dataChnIds&quot;:[
+                     100009
+                  ]
+               }
+            ],
+            &quot;chip&quot;:&quot;MT7688&quot;
+         },
+         &quot;fw&quot;:{
+            &quot;fwId&quot;:&quot;f1234567890&quot;,
+            &quot;name&quot;:&quot;Appliance Firmware 2.0&quot;,
+            &quot;description&quot;:&quot;&quot;
+         },
+         &quot;trustIpRange&quot;:[
+            &quot;*.*.*.*&quot;
+         ],
+         &quot;lastIp&quot;:&quot;140.112.106.2&quot;,
+         &quot;deviceImageURL&quot;:&quot;http://img.mediatek.com/img003.jpg&quot;,
+         &quot;isHeartbeating&quot;:false,
+         &quot;isVerified&quot;:true,
+         &quot;isActive&quot;:true,
+         &quot;isTest&quot;:false,
+         &quot;activatedAt&quot;:946684800,
+         &quot;deactivatedAt&quot;:0,
+         &quot;tags&quot;:[
+            &quot;MCS&quot;
+         ],
+         &quot;privilege&quot;:&quot;Viewer&quot;
+      }
+   ]
+}
+</code></pre><h3 id="error-response">Error Response</h3>
+<p>When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>Integer</td>
+<td>Error Code</td>
+</tr>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>url to API Error detail page</td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td>Error Description</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<pre><code>{
+  &quot;results&quot;: {
+    &quot;code&quot;: 1002,
+    &quot;url&quot;: &quot;http://mcs.mediatek.com/api_errorcode?code=1002&quot;,
+    &quot;description&quot;: &quot;You do not have access right to this API&quot;
+  }
+}
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../api_references/uploaddatapoint.html" class="navigation navigation-prev " aria-label="Previous page: uploadDataPoint"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../api_references/commanddevice.html" class="navigation navigation-next " aria-label="Next page: commandDevice"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
