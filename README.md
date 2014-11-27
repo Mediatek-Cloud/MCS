@@ -1,14 +1,30 @@
-# MediaTek Cloud Sandbox API
+# MediaTek Cloud Sandbox Introduction
 
 * * *
 
-MediaTek Cloud Sandbox is an external Cloud Services to support LinkIt ONE development IoT devices to:
-- Push DataPoints from device to Cloud - eg. geo-location, temperature, humidity, switch-state...etc.
-- Pull DataPoints from Cloud to device - eg. simple switching, remote control..etc.
-- Manage for device and sensor profiles
-- Quick view on the DataPoint value over time chart for trends
+MediaTek Cloud Sandbox is Cloud Services offers data and device management services commonly needed in wearable and IoT device development:
 
-MediaTek Cloud Sandbox exposes its services as RESTful API. LinkIt ONE and other devices capable of making RESTful API call can interact with MediaTek Cloud Sandbox
+- Develop Wearable and IoT product profile
+- Push and Pull DataPoints between device and Cloud - eg. geo-location, temperature, humidity, switch-state...etc.
+- DataPoints visiualization and notification
+- Device life cycle management
+- Mobile Application for management and remote control
+- Firmware updates and granular security control
+
+MediaTek Cloud Sandbox provides management console, public services APIs, MCS Mobile Controller App and developer resources to support developers in fast prototyping their product and focusing on their solution rather than dragging by readying infrastructure.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/api-reference/master/graphics/SA-Comp.JPG)
+
+
+
+
+MediaTek Cloud Sandbox is currently under closed-beta
+
+
+
+
+
+exposes its services as RESTful API. LinkIt ONE and other devices capable of making RESTful API call can interact with MediaTek Cloud Sandbox
 
 MediaTek Cloud Sandbox defines Product, Device, Sensor and DataPoint Model, all models created under the ownership of a single user (as a representation to a unique apiKey). Take a weather staion device as an example, the model hierarchy can be designed as below:
 
