@@ -12,5 +12,7 @@ Step 4. Check your mail box for account verification
 
 Step 5. Wola, you are done!
 
+Step 6.mjjj
+
 
 
