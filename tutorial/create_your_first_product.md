@@ -20,7 +20,7 @@ To both send and receive the data, use the hybrid data chennel.
 Each data channel can carry 7 types of datapoint to send back information like temperature and switch status. The 7 types are GPS, Integer, Float, String, Hex, Category, and Switch.
 You may use them to meet your requirement.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product structure.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
 
 
 [How to create a product step by step]
