@@ -1,18 +1,12 @@
 # Getting Started
 
-[Create account]
 
-Step 1. Open the browser and link to mcs.mediatek.com/login
+Here are the four steps to connect MediaTek Cloud Sandbox to your development and product lifecycle:
 
-Step 2. Click
-
-Step 3. Fill-in your information
-
-Step 4. Check your mail box for account verification
-
-Step 5. Wola, you are done!
-
-Step 6.mjjj
+1. Develop Product
+2. Create Test Device
+3. Release Product for deployment
+4. Managing deployed devices
 
 
 
