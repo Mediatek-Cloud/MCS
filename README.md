@@ -3,7 +3,7 @@
 * * *
 
 Mediatek Cloud Sandbox allows the user to build application and service collecting real time data from device and store in time series form, and the user can get those information and control the device via a remote control mobile phone.
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/concept.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/overview.JPG)
 
 MediaTek Cloud Sandbox is Cloud Services offer data and device management services commonly needed in wearable and IoT device development:
 
