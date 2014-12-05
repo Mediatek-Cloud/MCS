@@ -1,4 +1,4 @@
-get# Create your first device
+# Create your first device
 
 [How to create your first test device]
 
