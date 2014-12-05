@@ -70,8 +70,8 @@ During the process of you development, you are able to create a Test Device from
 
 ### Product Release
 
-After a product is developed and tested, the developer can release the product for deployment.
-[Describe how the final product can be shift from development state to release state and upon release of the product, user is able to create devaices out of this released product in Mangement workbench]
+After a final product is developed and be tested using the test devices, the developer can release the product for deployment which transfer the product from the development state to the release state. After release, the end user is able to create devices out of this released product in the **Management** workbench.
+
 
 ## Management Phase
 
