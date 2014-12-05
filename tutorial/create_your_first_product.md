@@ -10,11 +10,6 @@ A product may use three pre-defined data channels:
 2. Data channel as controller
 3. Hybrid data channel
 
-To send back the datapoint back to the cloud one way only, use the data channel as disaply.
-
-To send comment to the cloud only, use the data channel as controller.
-
-To both send and receive the data, use the hybrid data chennel.
 
 
 Each data channel can carry 7 types of datapoint to send back information like temperature and switch status. The 7 types are GPS, Integer, Float, String, Hex, Category, and Switch.
@@ -40,7 +35,5 @@ Step 6. Select the component type.
 Step 7. Enter the component name and relevant information.
 
 Step 8. Click Add button. And now you can start create your test device for the product!
-
-
 
 
