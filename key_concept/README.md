@@ -32,6 +32,8 @@ During the process of you development, you are able to create a Test Device from
 
 ### Product Release
 
+[Describe how the final product can be shift from development state to release state and upon release of the product, user is able to create devaices out of this released product in Mangement workbench]
+
 
 ## Management Phase
 
@@ -43,43 +45,13 @@ After the release of the Product, you are able to create devices at the **Manage
 ### Batch Create without Key
 [describe how it works]
 
-What you can see in ### Management
- workbench
+### Device Registration
 
+[describe Devices can be registered and de-registered using the following two APIs:
+regsiterDevices
+deregisterDevices
+]
 
+## My Devices
 
-
-Product
-
-with in the Product the developer can define the following:
-
-Data Channel
-
-Data Channel Mechanism
-
-
-
-
-
-
-
-
-Management Phase
-
-Product
-
-Data Channel
-
-
-
-
-
-
-
-
-
-
-
-
-Devices
-
+[Describes My Devices Page, this is the end-user's page for devices they own or have right for access, within this page the end user can see the exact Data Channel configurations as defined in Product  last datapoints pushed for the Data Channel as well as historical chart for time-series based data. For Data Channel defined as GPS Data Channel the geolocation will be represented in a map, for]
