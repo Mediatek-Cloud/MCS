@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Key Concept](key_concept/README.md)
 * [Tutorial](tutorial/README.md)
    * [Getting Started](tutorial/getting_started.md)
    * [Create your first product](tutorial/create_your_first_product.md)
