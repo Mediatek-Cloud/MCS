@@ -17,13 +17,25 @@ We have further elaberate this one-way and two-way communications into three typ
 #### Data Channel Type
 
 
-**Display** - Use this data channel when the data is only generated from a specific component of a connected physical device, such as a temperature sensor constantly generating temperature data and push into the cloud over time.
+**Display**
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_display.JPG)
+
+Use this data channel when the data is only generated from a specific component of a connected physical device, such as a temperature sensor constantly generating temperature data and push into the cloud over time.
 
 
-**Controller** - Use this data channel type when the data flow is initiated from the cloud and transfer into the connected physical device example such as command sending to device.
+**Controller**
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_controller.JPG)
+
+Use this data channel type when the data flow is initiated from the cloud and transfer into the connected physical device example such as command sending to device.
 
 
-**Hybrid** - Use this data channel is a fast setup for one Display plus one Controller data channel in one setup. The templates under the Hybrid controller integrates both channel and make it a logical and common use cases.
+**Hybrid**
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_hybrid.JPG)
+
+Use this data channel is a fast setup for one Display plus one Controller data channel in one setup. The templates under the Hybrid controller integrates both channel and make it a logical and common use cases.
 
 [describe data types of channel - ON/OFF, Category, int, float, string, HEX, gps]
 
@@ -75,10 +87,12 @@ After a final product is developed and be tested using the test devices, the dev
 
 ## Management Phase
 
-After the release of the Product, you are able to create devices at the **Management** workbench
+After the release of the Product, you can create devices from the released product, considered as you have completed and tested you prototype phased into mass production of the product. The management phase is the management of the mass produced devices. Starting from creating each individual devices a placeholder for data interactions. The first step to so create a placeholder for each device for their initial "registration" step. The management of the devices from develper's perspective is under the Management workbench.
 
 ### Batch Create with Key
-[describe how it works]
+
+
+
 
 ### Batch Create without Key
 [describe how it works]
