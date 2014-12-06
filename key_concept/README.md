@@ -14,6 +14,9 @@ The data channel a logical placeholder in the cloud for data generated either co
 
 We have further elaberate this one-way and two-way communications into three types of data channel that mimics for common use cases:
 
+#### Data Channel Type
+
+
 **Display** - Use this data channel when the data is only generated from a specific component of a connected physical device, such as a temperature sensor constantly generating temperature data and push into the cloud over time.
 
 
@@ -27,6 +30,8 @@ We have further elaberate this one-way and two-way communications into three typ
 Data channel is established to place holding data.
 There are 7 pre-defined data types:
 
+####Data Type
+
 **ON/OFF** - this data type support a status switch allows the user to activate or deactivate a device. eg, turn on or turn off light.
 
 **Category** - this data type carries user defined category. eg, weekday and month.
@@ -39,23 +44,19 @@ There are 7 pre-defined data types:
 
 **HEX** - This data type carries hexadecimal value using character A-F and 0-9. It it useful for some electronical device development.
 
-**GPS** - this data type carries the GPS location information inclusing longitude and latitude.
+**GPS** - this data type carries the GPS location information inclusing longitude, latitude and elevation.
 
 
 ### Notification
 
-[explain how notification works]
+In the developement stage, the developer can use notification to set alert for specific data channel data value. The developer can set a notification to remind the user when a data channel is sending back a value that is greater than or lower than a pre-defined specific value.
 
-In the developement stage, the developer can use notification to set alert for specific data channel. The developer can set a notification to remind the user when a data channel is sending back a value that is greater than or lower than a pre-defined specific value.
+The notification can not only be used for sensor push back value which is out of our limitation but also when other privileged user is giving command to change the status of device. The developer can set the related subscriber and the owner to get the notification.
 
-
-The notification can not only be used for sensor push bcak value which is out of our limitation but also when other privileged user is giving command to change the status of device. The developer can set the related subscriber and the owner to get the notification.
-
+The current means of notification is email.
 
 
 ### Firmware
-
-[explain how firmware works]
 
 [explain firmware can be updated after the product is released]
 
