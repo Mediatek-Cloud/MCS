@@ -10,23 +10,22 @@ A **Product** is like a blueprint of your final device you would imagine the end
 
 ### Data Channel
 
-[describe channel mechansim]
+The data channel a logical placeholder in the cloud for data generated either coming from a specific component of a physical device, or a command coming from the cloud intended to push into a specific component of the connected physical device. Simply put, data channel is designed for one-way or two-way communications between the cloud and the connected physical device.
 
-The data chennel is where the data is transfer between the sensor and the cloud and the cloud and the mobile.
+We have further elaberate this one-way and two-way communications into three types of data channel that mimics for common use cases:
 
-[describe types of channel - Controller, display]
+**Display** - Use this data channel when the data is only generated from a specific component of a connected physical device, such as a temperature sensor constantly generating temperature data and push into the cloud over time.
 
-There are three types of data channel:
 
-**Controller** - Use this data channel type when the data is transfer from the management console or the remote control mobile to the sensor.
+**Controller** - Use this data channel type when the data flow is initiated from the cloud and transfer into the connected physical device example such as command sending to device.
 
-**Display** - Use this data channel when the data is only transfer from the sensor to the cloud.
 
-**Hybrid** - Use this data channel when you need both display and control mechanisms which allows two way data transaction.
+**Hybrid** - Use this data channel is a fast setup for one Display plus one Controller data channel in one setup. The templates under the Hybrid controller integrates both channel and make it a logical and common use cases.
 
 [describe data types of channel - ON/OFF, Category, int, float, string, HEX, gps]
 
-There are 7 type of data types of channel:
+Data channel is established to place holding data.
+There are 7 pre-defined data types:
 
 **ON/OFF** - this data type support a status switch allows the user to activate or deactivate a device. eg, turn on or turn off light.
 
