@@ -13,7 +13,7 @@
    * [Data Read Write](api_references/data_read_write.md)
        * [uploadDataPoint](api_references/uploaddatapoint.md)
        * [retrieveDataPoint](api_references/retrievedatapoint.md)
-       * [commandDevice](api_references/commanddevice.md)
+       * [retrieveLastDataPoint](api_references\retrievelastdatapoint)
    * [Device Management](api_references/device_management.md)
        * [retrieveDeviceInfo](api_references/retrievedeviceinfo.md)
        * [registerDevice](api_references/registerdevice.md)

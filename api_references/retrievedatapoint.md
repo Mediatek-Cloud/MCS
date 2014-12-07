@@ -1,14 +1,22 @@
-# retrieveDeviceInfo
+# retrieveDataPoint
 
 ### Description
 
-Use **HTTPs GET** to retrieve devices
+Use **HTTPs GET** to retrieve data point values of a device
+
+**Maximum number of returned data points for each data channel: 1000**
 
 ### Request URL
 
 ```
-https://api.mediatek.com/mcs/v2/devices/:device_id
+https://api.mediatek.com/mcs/v2/devices/:device_id/datachannels/:datachannel_id/datapoints.{json/csv}?start=:start_time&end=:end_time&size=:size
 
+```
+
+or
+
+```
+https://api.mediatek.com/mcs/v2/devices/:device_id/datapoints.{json/csv}?start=:start_time&end=:end_time&size=:size
 ```
 
 ### Action
@@ -18,7 +26,49 @@ HTTPs GET
 
 #### Header
 
-Authorization: Bearer '{token}'
+Device Key
+```
+Device-Key: `device_key_here`
+```
+
+#### Return format
+The return format can be in either JSON or CSV format
+
+JSON:
+
+when the request for resource ends with *datapoints.json*#
+
+
+CSV:
+
+when the reqeust for resouce ends with *datapoints.csv*
+
+
+#### Querystring
+Following fields should be constructed and appended to the end of the URL:
+
+
+| Field Name | Type | Required |Description|
+| --- | --- | --- | --- |
+| start_time | Number | Optional | Start Timestamp of the query period |
+| end_time | Number | Optional | End Timestamp of the query period |
+| size | Number | Optional | number of the data points to be returned ( Default = 1 ) |
+
+**Note:**
+
+1.
+Returns last *n (n=size)* data points when both *start_time* and *end_time* are not provided
+
+2.
+The parameters *start_time* and *end_time* have higher priority than *size*, i.e., when all three parameters are input, the parameter *size* will be ignored.
+
+3.
+Timestamp are received and returned in ISO 8601 format, with 3 decimal fraction of a second:
+
+```
+YYYY-MM-DDTHH:MM:SS.nnnZ
+```
+
 
 
 ### Response
@@ -27,175 +77,120 @@ Authorization: Bearer '{token}'
 200
 
 #### Response Header
-
+For JSON response:
+```
 Content-Type:`application/json`
+```
+For CSV response:
+```
+Content-Type: `application/text`
+```
+
 #### Response Body
 
 ***Data Format: JSON***
 
 The response body will construct in JSON format with the following fields:
 
-| Field Name | Type |Description|
-| --- | --- | --- |
-| deviceId | String | Device ID |
-| deviceKey | String | Device Key |
-| product | Object | Product Info |
-| fw | Object | Firmware Info |
-| trustIpRange | String Array | Trusted IP range from where the device is allowed to conntect to MCS |
-| lastIp | String | Last IP the device seen from |
-| deviceImageURL | String | Device image URL |
-| isHeartbeating | Bool | Is the device currently online |
-| isVerified | Bool | Has the device registration been verified |
-| isActive | Bool | Is the device active |
-| isTest | Bool | Is the device a test device |
-| activatedAt | Number | Timestamp of the device activation |
-| deactivatedAt | Number | Timestamp of the device deactivation ( Default = null if the device is active and has not been deactivated ) |
-| tags | String Array | Tags of the device |
-| privilege | String | User's privilege on the device |
+| Field Name | Type | Description|
+| --- | --- | --- | --- |
+| dataChannels | Object Array | Device Channels that contain the result data points |
 
 **Detailed Object Fields**
 
-**product**
+**dataChannel**
 
-| Field Name | Type |Description|
-| --- | --- | --- |
-| prodId | String | Product ID |
-| name | String | Product Name |
-| description | String | Product Description |
-| displayConfigs | Object Array | A JSON format object indicatig how each data channel will be displayed |
-| chip | String | Product Chip |
+| Field Name | Type | Description|
+| --- | --- | --- | --- |
+| dataChnId | Number | Data Channel ID |
+| isOverflow | Bool | Is the number of queried data points more than maximum number |
+| dataPoints | Object Array | Data Points |
 
-**fw**
+**dataPoint**
 
-| Field Name | Type |Description|
-| --- | --- | --- |
-| fwId | String | Firmware ID |
-| name | String | Frimware Name |
-| description | String | Firmware Description |
+| Field Name | Type | Description|
+| --- | --- | --- | --- |
+| createdAt | Number | Unix timestamp of the data point |
+| value | String | Data Point Value |
 
-**displayConfig**
-
-| Field Name | Type |Description|
-| --- | --- | --- |
-| displayType | Number  | How to display |
-| displayOrder | Number | The order of displaying the component |
-| dataChnIds | Number Array | ID of data channel that is being configured to display on the console |
-
-
-**Example: **
+**Example:**
 
 Request URL
 ```
-https://api.mediatek.com/mcs/v2/devices/d1234567890
+https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoints.json?start=2014-12-07T10:10:10.000Z&end=2014-12-07T10:20:10.000Z
 
-https://api.mediatek.com/mcs/v2/devices/d1234567890,d1234567891
 ```
-
 
 Response Body
 
 ```
 {
-   "devices":[
+   "dataChnId": 10001,
+   "isOverflow":false,
+   "dataPoints":[
+            {
+               "createdAt": "2014-12-07T10:11:11.000Z",
+               "value":"100"
+            },
+            {
+               "createdAt": "2014-12-07T10:10:11.000Z",
+               "value":"99"
+            }
+         ]
+}
+```
+
+
+Request URL
+
+```
+https://api.mediatek.com/mcs/v2/devices/a1234567890/datapoints.json
+```
+
+Response Body
+
+```
+{
+   "dataChannels":[
       {
-         "deviceId":"d1234567890",
-         "deviceKey":"1234567890d",
-         "product":{
-            "prodId":"a1234567890",
-            "name":"MediaTek Smart Plug",
-            "description":"Monitors Power Usage in kitchen",
-            "displayConfigs":[
-               {
-                  "displayType":2,
-                  "displayOrder":1,
-                  "dataChnIds":[
-                     100004,
-                     100006
-                  ]
-               },
-               {
-                  "displayType":1,
-                  "displayOrder":2,
-                  "dataChnIds":[
-                     100009
-                  ]
-               }
-            ],
-            "chip":"MT7688"
-         },
-         "fw":{
-            "fwId":"f1234567890",
-            "name":"Appliance Firmware 2.0",
-            "description":""
-         },
-         "trustIpRange":[
-            "*.*.*.*"
-         ],
-         "lastIp":"140.112.106.1",
-         "deviceImageURL":"http://img.mediatek.com/img003.jpg",
-         "isHeartbeating":true,
-         "isVerified":true,
-         "isActive":true,
-         "isTest":false,
-         "activatedAt":946684800,
-         "deactivatedAt":0,
-         "tags":[
-            "Test",
-            "Mediatek"
-         ],
-         "privilege":"Owner"
+         "dataChnlId":10001,
+         "isOverflow":false,
+         "dataPoints":[
+            {
+               "createdAt": "2014-12-07T10:11:11.000Z",
+               "value":"100"
+            },
+            {
+               "createdAt": "2014-12-07T10:10:11.000Z",
+               "value":"99"
+            }
+         ]
       },
       {
-         "deviceId":"d1234567891",
-         "deviceKey":"1987654321d",
-         "product":{
-            "prodId":"a1234567890",
-            "name":"MediaTek Smart Plug",
-            "description":"Monitors Power Usage in kitchen",
-            "displayConfigs":[
-               {
-                  "displayType":2,
-                  "displayOrder":1,
-                  "dataChnIds":[
-                     100004,
-                     100006
-                  ]
-               },
-               {
-                  "displayType":1,
-                  "displayOrder":2,
-                  "dataChnIds":[
-                     100009
-                  ]
+         "dataChnId":10002,
+         "isOverflow":false,
+         "dataPoints":[
+            {
+               "createdAt": "2014-12-07T10:11:11.000Z",
+               "value":{
+                   "latitude":"112",
+                   "lontitude":"23.3",
+                   "altitude":"50"
                }
-            ],
-            "chip":"MT7688"
-         },
-         "fw":{
-            "fwId":"f1234567890",
-            "name":"Appliance Firmware 2.0",
-            "description":""
-         },
-         "trustIpRange":[
-            "*.*.*.*"
-         ],
-         "lastIp":"140.112.106.2",
-         "deviceImageURL":"http://img.mediatek.com/img003.jpg",
-         "isHeartbeating":false,
-         "isVerified":true,
-         "isActive":true,
-         "isTest":false,
-         "activatedAt":946684800,
-         "deactivatedAt":0,
-         "tags":[
-            "MCS"
-         ],
-         "privilege":"Viewer"
+            },
+            {
+               "createdAt": "2014-12-07T10:10:11.000Z",
+               "value":{
+                   "latitude":"112",
+                   "lontitude":"23.3",
+                   "altitude":"50"
+               }
+            }
+         ]
       }
    ]
 }
 ```
-
 ### Error Response
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
@@ -217,8 +212,4 @@ When error is incurred, the response code will be non-200 and the response body 
   }
 }
 ```
-
-
-
-
 
