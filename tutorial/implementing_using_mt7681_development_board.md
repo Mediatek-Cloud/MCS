@@ -3,8 +3,7 @@
 Here is a simple guide to quickly setup your MT7681 development board to quickly connect to MediaTek Cloud Sandbox
 
 ##Scenario
-[to be filled in here]
-The scenario for this setup is to allow your Linkit one to connect to MCS and be able to push its internal GPS location to MCS, at the succession of this setup you will be able to see GPS data pushed from the development board to MCS and be able to see the geo map display on the MCS console.
+The scenario for this setup is to allow your MT7681 development board to connect to MCS and be able to accept remote control command from MCS console.
 
 
 ##Setup requirement:
@@ -17,7 +16,7 @@ To complete this test setup, you will need:
 There is no additional electrical component required to connect to the development board.
 
 
-####Step 1. Create Product with GPS data channel
+####Step 1. Create Product with Switch data channel
 [steps to be filled in]
 
 ####Step 2. Create Test Device
@@ -32,7 +31,7 @@ There is no additional electrical component required to connect to the developme
 ####Step 5. Turn on the board and see it in action!
 [steps to be filled in]
 
-Arduino full source code:
+Full C source code:
 
 ```
 [to be filled in here]
