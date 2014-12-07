@@ -10,10 +10,14 @@ MCS has made all its RESTful API access point as below:
 https://api.mediatek.com/v2
 ```
 
-
 ###Parameters
 
+Parameters follows right after the access point used to identify a specific resource as part of the URL construct:
 
+```
+https://api.mediatek.com/v2/devices/{device_id}/retrieveDataPoints
+
+```
 
 ###Client Errors
 
