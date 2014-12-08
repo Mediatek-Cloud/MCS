@@ -1,6 +1,6 @@
 # Manage your device
 
-
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ManageDevice.JPG)
 
 [From Developer's view point]
 

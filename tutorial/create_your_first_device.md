@@ -1,8 +1,8 @@
 # Create your first device
 
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateTestDevice.JPG)
+
 [How to create your first test device]
-
-
 
 After you create your first product, you can create test device by click the Create test device button in the Product detail page.
 
