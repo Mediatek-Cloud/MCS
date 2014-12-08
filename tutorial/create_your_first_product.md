@@ -27,7 +27,7 @@ For more Data Channel and Data Type information and concept, please refer to the
 
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
+
 
 
 

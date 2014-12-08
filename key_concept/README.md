@@ -4,6 +4,7 @@ There are key components that make up a thing in MediaTek Cloud Sandbox. The key
 
 ## Development Phase
 
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
 
 At Development Phase, a developer is able to create a **Product**.
 A **Product** is like a blueprint of your final device you would imagine the end user will end up using. Within the product you are able to define the following:
