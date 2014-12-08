@@ -13,7 +13,7 @@ Step 2. Click Create Test Device button.
 
 ## How to get Device ID
 
-
+[to be added..]
 
 After creating the test device, the developer can monitor and control the device to make sure its functionality before release the product.
 

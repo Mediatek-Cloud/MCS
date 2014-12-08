@@ -26,21 +26,6 @@ Step 8. Click Add button. And now you can start create your test device for the 
 For more Data Channel and Data Type information and concept, please refer to the Key concept section for more detail.
 
 
-----------------------
-
-[Product Structure]
-
-To create your first product, let's take a look on the product structure here.
-A product may use three pre-defined data channels:
-
-1. Data channel as display
-2. Data channel as controller
-3. Hybrid data channel
-
-
-
-Each data channel can carry 7 types of datapoint to send back information like temperature and switch status. The 7 types are GPS, Integer, Float, String, Hex, Category, and Switch.
-You may use them to meet your requirement.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
 
