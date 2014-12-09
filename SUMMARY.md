@@ -13,7 +13,7 @@
    * [Data Read Write](api_references/data_read_write.md)
        * [uploadDataPoint](api_references/uploaddatapoint.md)
        * [retrieveDataPoint](api_references/retrievedatapoint.md)
-       * [retrieveLastDataPoint](api_references\retrievelastdatapoint)
+       * [retrieveLastDataPoint](api_references/retrievelastdatapoint)
    * [Device Management](api_references/device_management.md)
        * [retrieveDeviceInfo](api_references/retrievedeviceinfo.md)
        * [registerDevice](api_references/registerdevice.md)
@@ -21,4 +21,5 @@
        * [retrieveProductFirmware](api_references/retrieveproductfirmware.md)
        * [uploadProductFirmware](api_references/uploadproductfirmware.md)
 * [FAQ](faq/README.md)
+* [Landing Page](5_landing_page/README.md)
 
