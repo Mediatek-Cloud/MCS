@@ -32,6 +32,7 @@ MCS 2.0 is now online! We have several new features as the following:
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductLifeCycle.JPG)
 
 
+
 •	MT7681 support
 
     The new available MT 7681support allows you to have HTTP and AES integration with other

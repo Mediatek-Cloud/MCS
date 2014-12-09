@@ -21,5 +21,4 @@
        * [retrieveProductFirmware](api_references/retrieveproductfirmware.md)
        * [uploadProductFirmware](api_references/uploadproductfirmware.md)
 * [FAQ](faq/README.md)
-* [Landing Page](5_landing_page/README.md)
 
