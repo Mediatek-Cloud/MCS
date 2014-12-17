@@ -9,17 +9,17 @@ Step 1. Click Development on the left hand side navigator.
 
 Step 2. Click Create button on the right to create a new product.
 
-Step 3. Enter the Product name, version, and chip type and Click Create button.
+Step 3. Enter the Product name, version, and select chip type, industry and Click Create button.
 
 Step 4. Your Product is created. Add Data Channel now.
 
 Step 5. Click Add in the product just created.
 
-Step 6. Select the Data Channel type.
+Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Click Add button.
 
-Step 7. Enter the Data Channel name, select Data type and other relevant information.
+Step 7. Enter the Data Channel name, Id, description and select Data type.
 
-Step 8. Click Add button. And now you can start create your test device for the product!
+Step 8. Click Save button. And now you can start create your test device for the product!
 
 
 

@@ -58,6 +58,11 @@ There are 7 pre-defined data types:
 
 **GPS** - this data type carries the GPS location information inclusing longitude, latitude and elevation.
 
+**GPIO** - this data type supports MT7681 development to carry digital signal. eg, CPU signal.
+
+**PWM** - this data type supports MT7681 development to carry digital signal. eg, pulsing signal.
+
+
 
 ### Notification
 
