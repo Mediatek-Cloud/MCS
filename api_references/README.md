@@ -62,7 +62,7 @@ The Mediatek Cloud Sandbox (MCS) provides the following types of API:
 
 ###Authentication
 
-All request sent to the API need to be authenticated. A bearer token for Authentication key in the HTTP header is required. If not provided, the server will respond with a 401 Unauthorized message.
+All request sent to the API need to be authenticated. A Bearer token for `Authentication` key in the HTTP header is required. If not provided, the server will respond with an  Unauthorized message.
 
 ###API Keys
 

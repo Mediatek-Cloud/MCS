@@ -14,7 +14,9 @@ Step 3. You will get a message of creating test device successfully.
 
 Step 4. Go to **My Device** to check your test device.
 
+
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/TestDevice.JPG)
+
 
 ## How to get Device ID
 
@@ -30,7 +32,9 @@ Step 2. Click Detail to get into any device you created.
 
 Step 3. You will find the Device Id in the Devices detail page.
 
+
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/DeviceId.JPG)
+
 
 [Verification step via API Sandbox]
 
