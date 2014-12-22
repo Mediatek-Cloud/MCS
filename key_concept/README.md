@@ -11,7 +11,7 @@ A **Product** is like a blueprint of your final device you would imagine the end
 
 ### Data Channel
 
-The data channel a logical placeholder in the cloud for data generated either coming from a specific component of a physical device, or a command coming from the cloud intended to push into a specific component of the connected physical device. Simply put, data channel is designed for one-way or two-way communications between the cloud and the connected physical device.
+The data channel is a logical placeholder in the cloud for data generated either coming from a specific component of a physical device, or a command coming from the cloud intended to push into a specific component of the connected physical device. Simply put, data channel is designed for one-way or two-way communications between the cloud and the connected physical device.
 
 We have further elaberate this one-way and two-way communications into three types of data channel that mimics for common use cases:
 
@@ -57,6 +57,11 @@ There are 7 pre-defined data types:
 **HEX** - This data type carries hexadecimal value using character A-F and 0-9. It it useful for some electronical device development.
 
 **GPS** - this data type carries the GPS location information inclusing longitude, latitude and elevation.
+
+**GPIO** - this data type supports MT7681 development to carry digital signal. eg, CPU signal.
+
+**PWM** - this data type supports MT7681 development to carry digital signal. eg, pulsing signal.
+
 
 
 ### Notification
