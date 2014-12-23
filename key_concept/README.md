@@ -10,12 +10,12 @@ This section describes the key components that make up a Wearables or IoT device
 
 During the Development Phase you create **Products**, which may contain:
 - **Data Channels**, each of a particular **Data Type**
-- **Notifications** (? As notifications aren’t a data channel item does that mean you can have complex multi-channel notification logic, e.g. if temperature is over 20C and the lights are still on?).
-- **User privileges**
+- **Notifications** for changes in the data received from or sent to a device
+- **User privileges** to enable team members or collaborators to view or edit products and device details
 - **Firmware** versions that can be pushed to devices
 - **Manufacturer Information** that can be used to define additional information about a product
 
-Once you have defined the necessary product information, you can then add devices as you need throughout the development phase.
+Once you have defined the necessary Product information, you can then add devices as you need throughout the development phase.
 ### Product
 A **Product** is the blueprint of the final device you’ll ship to users.
 
@@ -37,21 +37,21 @@ These data channels are implemented in the sandbox as the following types:
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_display.JPG)
 
-This data channel type is for data generated from a component of a device that has no related commands, such as data from a temperature sensor pushed to the sandbox and stored as a sequence over time.
+This data channel type is for data generated from a component of a device that has no related commands. For example data from a temperature sensor pushed to the sandbox and stored as a sequence over time.
 
 
 **Controller**
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_controller.JPG)
 
-This data channel type is for data generated in the sandbox and sent to the device to control the setting of a logical or physical component in the device, such as a switch to turn a light on or off.
+This data channel type is for data generated in the sandbox and sent to the device to control the setting of a logical or physical component in the device. For example, a switch to turn a light on or off.
 
 
 **Hybrid**
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_hybrid.JPG)
 
-This data channel enables a Display and Controller data channel to be combined where there is a logical relationship between the two, for example as between the data from a temperature sensor and the control settings for an air conditioning unit.
+This data channel enables a Display and Controller data channel to be combined where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 
 
 ####Data Types
@@ -60,7 +60,7 @@ Each Data Channel can hold one of seven types of data:
 
 - **ON/OFF** — this data type represents a switch and enables the user to activate or deactivate a component of the device, such as turning a light on or off.
 
-- **Category** — this data type represents a defined category, such as weekday or month. (?Predefined or arbitrary, of the developers choosing?)
+- **Category** — this data type represents an arbitrary category. You are free to define the category and its content as you wish. For example, you could store weekday, month, fan settings (off, slow, medium and fast) and alike.
 
 - **int** — this data type represents an arbitrary integer, such as the number of steps a user has taken.
 
@@ -68,31 +68,33 @@ Each Data Channel can hold one of seven types of data:
 
 - **string** — this data type represents a string, such as a message issued by the device.
 
-- **HEX** — this data type represents a hexadecimal value, such as the color used in an LED display (example to be confirmed).
+- **HEX** — this data type represents a hexadecimal value, such as the color used in an LED display.
 
-- **GPS** — this data type represents a geo-location identified by longitude, latitude and elevation in (what format is used?).
+- **GPS** — this data type represents a geo-location identified by longitude, latitude, elevation and related attributes.
 
-- **GPIO** — this data type represents a digital signal for a specific GPIO pin, such as HIGH on Pin 4. (While introduced for MT7681, presumably this data type could also be used to store values for the GPIO pins on 2502 or any other chipset?)
+- **GPIO** — this data type represents a digital signal for a specific GPIO pin, such as HIGH on Pin 4.
 
-- **PWM** — this data type represents a PWM signal delivered to a specific GPIO pin, such as ? on Pin 3 (As above, while introduced for MT7681 could this be used for data related to PWM on the 2502?)
+- **PWM** — this data type represents a PWM signal delivered to a specific GPIO pin, such as level 15 on Pin 3.
 
-(Are data formats arbitrary, for example, could the developer chose to store GPS longitude or latitude as a decimal or degree/minute/second value — that is I’m not seeing any specific data format definitions beyond the API defining each datapoint as timestamp + arbitrary number of data items.)
 
 ### Notifications
 
-In the development stage you can set certain data channels so they issue email notifications. (? Presumably this isn’t available for string data type for example – so we should list the data channels supported) Notifications can be set to trigger when:
-- data received on a channel is above or below a specified value (? Are notification sent each time the value received is above or below the set value or only on the first occurrence of the data going over or under the limit? Can you set multiple notifications per data channel, e.g. one for when the temperature goes over 20C and another when it goes under 0C?)
-- each time the data value is changed on a Controller data channel. (? Meaning that, for example, if the notification is on a temperature setting channel, a notification is sent each time the set temperature is changed?)
+Notification will enable you to create criteria that trigger an email or cloud based notification to the Product own, you, and a list of other MCS users.
+Beta note: This feature is under development and presently enables you to set triggers on a specific channel and get an email notification, with ability to add additional user to the notified list. Triggers are available for:
 
-You define who will receive a notification by providing email addresses for a subscriber and owner. (What is the practical difference between subscriber and owner? Is the owner the developer who own the MCS account?)
+- data received on a channel being above or below a specific value, which will issue a defined number of notifications while the data remains above or below the trigger value
+
+- each time the data value is changed on a Controller data channel.
+
 
 ### User privileges
-??
+This feature will enable you to give other MCS users various privileges to access the Product, such as the ability to view the Product settings, create a device and alike.
+Beta note: This feature hasn’t been implemented yet.
 
 ### Firmware
 
 After the product is released you can upload firmware updates to the sandbox. The sandbox will then detect all compatible devices and offer their users the option to update the devices’ firmware over the air.
-(? So you cannot update firmware during the development stage? In which case move under ‘Production Phase’)
+
 
 ### Manufacturing Info
 
@@ -104,11 +106,10 @@ During development, you’re able to create test devices from the Product detail
 
 ## Management Phase
 
-Once the development of your product is complete and you wish to start pre-commercial testing, you can release your product. Once released, you can create release devices for the product, considered as you have completed and tested you prototype phased into mass production of the product. The management phase is the management of the mass produced devices. Starting from creating each individual devices a placeholder for data interactions. The first step to so create a placeholder for each device for their initial "registration" step. The management of the devices from developer's perspective is under the Management workbench.
+Once the development of your product is complete and you wish to start pre-commercial testing, you can migrate your product to the Management Phase. Once released, you can create release devices for the product, considered as you have completed and tested you prototype phased into mass production of the product. The management phase is the management of the mass produced devices. Starting from creating each individual devices a placeholder for data interactions. The first step to so create a placeholder for each device for their initial "registration" step. The management of the devices from developer's perspective is under the Management workbench.
 ### Product Release
 
 After a final product is developed and be tested using the test devices, the developer can release the product for deployment which transfer the product from the development state to the release state. After release, the end user is able to create devices out of this released product in the **Management** workbench.
-(What happens to the devices defined in the development stage?)
 
 
 ### Batch Create with Key
@@ -134,7 +135,7 @@ After a device is created, it can be registered or de-registered in the manageme
 
 The end user can use the **My Devices** to manage the devices they own or have the access. In this page, the end user can see the exact Data Channel configurations as defined in the product. Although the end user cannot change the Data Channel configuration, the end user can do other settings base on preference. The end user can view the time-series based data in a historical visualization chart and GPS geolocation data in a map.
 
-Apart from viewing the data channel information, the user can set notification alet, set user privileges and get the firmware update directly here in My Devices page.
+Apart from viewing the data channel information, the user can set notification alert, set user privileges and get the firmware update directly here in My Devices page.
 
 Also, the end user can get manufacturer information and report any error in My device page as well.
 
