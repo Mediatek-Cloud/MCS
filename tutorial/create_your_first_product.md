@@ -20,7 +20,6 @@ Step 3. Enter the Product name, version, and select chip type, industry and Clic
 Step 4. Click Detail button of the product just created.
 
 
-
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
 
 
@@ -31,6 +30,7 @@ Step 5. Click Add in the product just created.
 
 
 Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Click Add button.
+
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/DataChannel.JPG)
 
 
