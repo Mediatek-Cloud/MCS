@@ -17,6 +17,8 @@ Step 2. Click Create button on the right to create a new product.
 Step 3. Enter the Product name, version, and select chip type, industry and Click Create button. Your Product is created.
 
 
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProductPage.JPG)
+
 Step 4. Click Detail button of the product just created.
 
 
@@ -36,7 +38,10 @@ Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Cl
 
 Step 7. Enter the Data Channel name, Id, description and select Data type.
 
+
 Step 8. Click Save button. And now you can start create your test device for the product!
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/AddDataChannelPage.JPG)
 
 
 
