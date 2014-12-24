@@ -16,8 +16,6 @@ Step 4. Go to **My Device** to check your test device.
 
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/TestDevice.JPG)
-
 
 
 ## How to get Device ID
@@ -36,7 +34,6 @@ Step 3. You will find the Device Id in the Devices detail page.
 
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/DeviceId.JPG)
 
 
 

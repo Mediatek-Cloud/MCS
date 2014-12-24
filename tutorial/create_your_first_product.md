@@ -9,6 +9,8 @@ Step 1. Click Development on the left hand side navigator.
 
 Step 2. Click Create button on the right to create a new product.
 
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProduct.JPG)
+
 Step 3. Enter the Product name, version, and select chip type, industry and Click Create button.
 
 Step 4. Your Product is created. Add Data Channel now.
