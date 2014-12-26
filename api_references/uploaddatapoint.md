@@ -21,12 +21,16 @@ HTTPs POST
 
 Device Key
 ```
+<<<<<<< HEAD
 deviceKey: `device_key_here`
+=======
+deviceKey: device_key_here
+>>>>>>> 1982e2ab8092481d991dd4975cb6f14dc4d37916
 ```
 
 For Comma Separated Value (CSV) format:
 ```
-Content-Type:`application/text`
+Content-Type: text/csv
 ```
 For JSON format:
 ```
