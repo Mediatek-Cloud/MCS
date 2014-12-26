@@ -21,12 +21,12 @@ HTTPs POST
 
 Device Key
 ```
-Device-Key: `device_key_here`
+deviceKey: device_key_here
 ```
 
 For Comma Separated Value (CSV) format:
 ```
-Content-Type:`application/text`
+Content-Type: text/csv
 ```
 For JSON format:
 ```

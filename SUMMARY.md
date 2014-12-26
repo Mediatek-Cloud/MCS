@@ -20,5 +20,6 @@
        * [deregsiter a device](api_references/deactivatedevice.md)
        * [retrieve Product Firmware](api_references/retrieveproductfirmware.md)
        * [upload Product Firmware](api_references/uploadproductfirmware.md)
+   * [7681 Data Format](api_references/7681_data_d.md)
 * [FAQ](faq/README.md)
 
