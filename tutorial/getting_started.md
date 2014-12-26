@@ -7,6 +7,7 @@ Here are the four steps to connect MediaTek Cloud Sandbox to your development an
 2. Create Test Device
 3. Release Product for deployment
 4. Managing deployed devices
+5. Manage your Profile
 
 
 
