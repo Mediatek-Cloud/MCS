@@ -7,6 +7,7 @@
    * [Create your first product](tutorial/create_your_first_product.md)
    * [Create your test device](tutorial/create_your_first_device.md)
    * [Manage your device](tutorial/manage_your_device.md)
+   * [Manage your profile](tutorial/manage_your_profile.md)
    * [Implementing using Linkit One (Aster 2502) Development Board](tutorial/implementing_using_linkit_one.md)
    * [Implementing using MT7681 Development Board](tutorial/implementing_using_mt7681_development_board.md)
 * [API References](api_references/README.md)
