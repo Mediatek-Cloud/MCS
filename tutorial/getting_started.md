@@ -9,7 +9,6 @@ Here are the four steps to connect MediaTek Cloud Sandbox to your development an
 4. Managing deployed devices
 
 
-//是否改成三個 來對應左邊? create test device和release是否要分開講or合併
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/getting-started-flow.JPG)
 

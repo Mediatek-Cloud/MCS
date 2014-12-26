@@ -18,7 +18,7 @@ Step 4. Check with or without serial number generator box and click OK.
 Step 5. You will find a dialog saying the product is released successfully. You can find it in the Management page.
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ReleaseProduct.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ReleaseProduct.jpg)
 
 
 ## How to batch create devices
