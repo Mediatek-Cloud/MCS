@@ -3,7 +3,8 @@
 Here is a simple guide to quickly setup your Linkit One development board (Aster 2502) to quickly connect to MediaTek Cloud Sandbox
 
 ##Scenario
-The scenario for this setup is to allow your Linkit one to connect to MCS and be able to push its internal GPS location to MCS, at the succession of this setup you will be able to see GPS data pushed from the development board to MCS and be able to see the geo map display on the MCS console.
+The scenario for this setup is to create a test device on MCS representiong your Linkit one board, and to upload Arduino code allowing this board to push datapoint representing the state of LED light at D13 to MCS using RESTful API, while MCS is able to remote control the state of this LED light using TCP Socket.
+
 
 
 ##Setup requirement:
