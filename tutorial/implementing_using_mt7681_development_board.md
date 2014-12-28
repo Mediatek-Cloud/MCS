@@ -27,10 +27,10 @@ Step 2. Click Create button on the right to create a new product.
 
 
 
-Step 3. Enter the Product name, version, and select '7681' in the chip type dropdown box, industry and Click Create button. Your Product is created.
+Step 3. Enter the Product name, Product version, and select your industry. Select 'MT7681' in the Chip dropdown box and click Save button. Now your Product is created.
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProductPage.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/7681CreateProduct.jpg)
 
 
 Step 4. Click Detail button of the product just created.
@@ -45,7 +45,7 @@ Step 5. Click Add in the product just created.
 
 
 
-Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Click Add button.
+Step 6. Select "Controller" in Data Channel type by clicking the "Add" button in the Controller box.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/DataChannel.JPG)
 
