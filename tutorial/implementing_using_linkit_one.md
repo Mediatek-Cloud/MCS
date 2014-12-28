@@ -17,15 +17,23 @@ To complete this test setup, you will need:
 There is no additional electrical component required to connect to the development board.
 
 
-####Step 1. Create Product with Switch-Type data channel
+####Step 1. Create a new Product with Switch-Type data channel
+
+a. After login, select "Development" at the navigation bar, click "Create" to create a new product
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProduct.JPG)
 
+b. Fill in the detail information as per screen to give a basic profile of this product:
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/02-Create-Product.JPG)
+
+c.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/03-Product-list.JPG)
 
 
 ####Step 2. Create Test Device
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Linkit-one-tutorial/02-CreateProduct.JPG)
 
 
 ####Step 3. Obtain Device ID, Device Key, Data Channel ID
