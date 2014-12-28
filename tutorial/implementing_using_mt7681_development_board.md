@@ -108,7 +108,10 @@ You should be able to see something like this on your terminal:
 The flashing of product info has completed. Next we will show you how to setup the wifi on 7681 with smart connection.
 
 ####Step 4. Smart Connection
-[steps to be filled in]
+Step 4.1 Open the MCS mobile app and login with your account with an appropriate product for 7681. Please make sure that you have completed step 3.
+
+Step 4.2 After logged in, click on the golden circle with a black plus sign on the bottom right corner.
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
 
 ####Step 5. Turn on the board and see it in action!
 [steps to be filled in]
