@@ -17,11 +17,15 @@ To complete this test setup, you will need:
 There is no additional electrical component required to connect to the development board.
 
 
-####Step 1. Create Product with GPS data channel
-[steps to be filled in]
+####Step 1. Create Product with Switch-Type data channel
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProduct.JPG)
+
+
 
 ####Step 2. Create Test Device
-[steps to be filled in]
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Linkit-one-tutorial/CreateProduct.JPG)
+
 
 ####Step 3. Obtain Device ID, Device Key, Data Channel ID
 [steps to be filled in]
