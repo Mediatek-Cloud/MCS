@@ -154,9 +154,40 @@ You will be brought back to the device list after the device has been activated.
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList2.png)
 
 ####Step 5B. Create a test device on the web console
-Step 5B.1
+Step 5B.1 In the MCS web console, click the "Development" in the navigation bar to the left and then click the "Details" button on the product which you'd like to activate
 
-Full C source code:
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice1.jpg)
 
+
+Step 5B.2 Click "Create Test Device" button to the top right.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice2.jpg)
+
+Step 5B.3 A pop-up will show after your test device has been successfully created. Click "OK" to dismiss the pop-up.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice3.jpg)
+
+Step 5B.4 Go to "My Devices" by clicking on the navigation bar to the left and click on the "Details" button on the device which has just been created. It should have the same name as the product.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice4.jpg)
+
+Step 5B.5 In the middle of the page you could find the deviceId and deviceKey of the created test device.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice5.jpg)
+
+Step 5B.6 Now we have to manually flash the id & key on 7681. Open the terminal that is connected to 7681 and enter the following command:
 ```
-[to be filled in here]
+AT#FLASH -s0x180e9 -c[deviceId]
+```
+Then enter the following command to flash the deviceKey:
+```
+AT#FLASH -s0x180f1 -c[deviceKey]
+```
+Then enter the following commands to set the status to be activated:
+```
+AT#FLASH -s0x18121 –v1
+AT#FLASH -s0x18122 –v0
+```
+Your device should now automatically connected to MCS.
+
+
