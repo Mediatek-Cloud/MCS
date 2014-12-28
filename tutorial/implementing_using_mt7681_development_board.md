@@ -65,10 +65,19 @@ Step 1.11 The last data channel type that 7681 supports is UART. To add an UART 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/addUART.jpg)
 
 
-Step 1.12 Congratulations! Now you have created all the Data Channels that 7681 supports. Please continue to Step 2 to obtain your product info from MCS.
+Congratulations! Now you have created all the Data Channels that 7681 supports. Please continue to Step 2 to obtain your product info from MCS.
 
 ####Step 2. Obtain product info
-[steps to be filled in]
+Step 2.1 Click "Development" in the navigation bar to the left and click the "Details" button under the product you'd like to use.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
+
+
+Step 2.2 You can obtain the Product Id and Product Key under the description of your product.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/obtainProductInfo.jpg)
+
+Product ID and product key is essential for activating your 7681 devices. Please proceed to Step 3 
 
 ####Step 3. Obtain Device ID, Device Key, Data Channel ID
 [steps to be filled in]
