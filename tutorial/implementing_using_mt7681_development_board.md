@@ -30,7 +30,7 @@ Step 1.3 Enter the Product name, Product version, and select your industry. Sele
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/7681CreateProduct.jpg)
 
 
-Step 1.4 Now we're going to add some controllers. Click "Detail" button of the product we just created.
+Step 1.4 Now we're going to add some controllers for your 7681 device. Click "Detail" button of the product we just created.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
 
@@ -46,7 +46,7 @@ Step 1.6 Select "Controller" in Data Channel type by clicking the "Add" button i
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/7681DataChannelType.jpg)
 
 
-Step 1.7 Enter the Data Channel name, Id, description and select Data type. In the case of 7681, the Data Channel Id is predefined. Enter "GPIO_01" in the Data Channel Id field and select "ON/OFF" in the Data Channel Type. Click the "Save" button to create the Data Channel.
+Step 1.7 Enter the Data Channel name, Id, description and select Data type. In the case of 7681, the Data Channel Id is predefined. Enter "GPIO_01" in the Data Channel Id field and select "GPIO" in the Data Channel Type. Click the "Save" button to create the Data Channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/addGPIO.jpg)
 
@@ -65,7 +65,7 @@ Step 1.11 The last data channel type that 7681 supports is UART. To add an UART 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/addUART.jpg)
 
 
-Congratulations! Now you have created all the Data Channels that 7681 supports. Please continue to Step 2 to obtain your product info from MCS.
+Congratulations! Now you have created all the Data Channel types that 7681 supports. Please continue to Step 2 to obtain your product info from MCS.
 
 ####Step 2. Obtain product info
 Step 2.1 Click "Development" in the navigation bar to the left and click the "Details" button under the product you'd like to use.
@@ -77,12 +77,37 @@ Step 2.2 You can obtain the Product Id and Product Key under the description of 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/obtainProductInfo.jpg)
 
-Product ID and product key is essential for activating your 7681 devices. Please proceed to Step 3 
+Product ID and product key is essential for activating your 7681 devices. Please proceed to Step 3 to flash the product info on 7681.
 
-####Step 3. Obtain Device ID, Device Key, Data Channel ID
-[steps to be filled in]
+####Step 3. Flashing product info on 7681
+Step 3.1 Connect the 7681 development board to a PC and open the Terminal. Enter the following command to flash the product id on 7681:
+```
+AT#FLASH -s0x18101 -c[productId]
+```
+For example, the product Id is ABCDEFG12345 then you should enter AT#FLASH -s0x18101 -cABCDEFG12345
 
-####Step 4. Code the development board
+You should be able to see something like this on your terminal:
+```
+[WTask]45072
+[0x18101]=ABCDEFG12345
+[WTask]50073
+```
+
+Step 3.2 At the terminal, enter the following command to flash the product key on 7681:
+```
+AT#FLASH -s0x18111 -c[prodyctKey]
+```
+For example, the product key is HIJKLMN6789 then you should enter AT#FLASH -s0x18111 -cHIJKLMN6789
+
+You should be able to see something like this on your terminal:
+```
+[WTask]250419
+[0x18111]=HIJKLMN6789
+[WTask]255420
+```
+The flashing of product info has completed. Next we will show you how to setup the wifi on 7681 with smart connection.
+
+####Step 4. Smart Connection
 [steps to be filled in]
 
 ####Step 5. Turn on the board and see it in action!
