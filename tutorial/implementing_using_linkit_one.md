@@ -24,7 +24,8 @@ There is no additional electrical component required to connect to the developme
 
 
 ####Step 2. Create Test Device
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Linkit-one-tutorial/CreateProduct.JPG)
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Linkit-one-tutorial/02-CreateProduct.JPG)
 
 
 ####Step 3. Obtain Device ID, Device Key, Data Channel ID
