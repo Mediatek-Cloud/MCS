@@ -80,7 +80,7 @@ Step 2.2 You can obtain the Product Id and Product Key under the description of 
 Product ID and product key is essential for activating your 7681 devices. Please proceed to Step 3 to flash the product info on 7681.
 
 ####Step 3. Flashing product info on 7681
-Step 3.1 Connect the 7681 development board to a PC and open the Terminal. Enter the following command to flash the product id on 7681:
+Step 3.1 Connect the 7681 development board to a PC and open the Terminal. Please refernce to the MT7681 development guide for a detailed guide. In the terminal console, enter the following command to flash the product id on 7681:
 ```
 AT#FLASH -s0x18101 -c[productId]
 ```
@@ -105,16 +105,56 @@ You should be able to see something like this on your terminal:
 [0x18111]=HIJKLMN6789
 [WTask]255420
 ```
-The flashing of product info has completed. Next we will show you how to setup the wifi on 7681 with smart connection.
+The flashing of product info has completed. You must reboot 7681 to make the new product info effective:
+```
+AT#Reboot
+```
+Next we will show you how to setup the wifi on 7681 with smart connection.
 
 ####Step 4. Smart Connection
 Step 4.1 Open the MCS mobile app and login with your account with an appropriate product for 7681. Please make sure that you have completed step 3.
 
-Step 4.2 After logged in, click on the golden circle with a black plus sign on the bottom right corner.
+Step 4.2 After logged in, click on the orange circle with a white plus sign on the bottom right corner.
+
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
 
-####Step 5. Turn on the board and see it in action!
-[steps to be filled in]
+Step 4.3 Click the "Smart Connection" button at the bottom of the screen
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice.png)
+
+Step 4.4 Enter the ssid and password of the wifi AP and click "Start". The ssid should be automatically filled with the wifi which the smart phone is connected to.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/smartConnection.png)
+
+Step 4.5 Wait for a few seconds and check if there're any devices appear on the list. If smart connection is success, you should be able to see it on the list. Now you can choose to activate the device by MCS mobile app (Step 5A) or to create a test device via the web console (Step 5B).
+
+
+####Step 5A. Activate an MT7681 device by MCS mobile app
+
+Step 5A.1 Open the MCS mobile app and logged in. After logged in, click on the orange circle with a white plus sign on the bottom right corner
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
+
+
+Step 5A.2 If your device has successfully got the smart connection, it should be shown on the list. Click on the plus sign to the right of the device you'd like to activate
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice2.png)
+
+Step 5A.3 You can edit the Product ID, Serial Number and the Hardware ID in the pop-up window. In most cases you can just use the default value. The default value of Product ID should be the one you flashed on 7681. Click "Save" to go to the next step.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice3.png)
+
+Step 5A.4 Enter the device name and description and click "Save".
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/editDevice.png)
+
+
+You will be brought back to the device list after the device has been activated. Your device should be now shown on the list.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList2.png)
+
+####Step 5B. Create a test device on the web console
+Step 5B.1
 
 Full C source code:
 
