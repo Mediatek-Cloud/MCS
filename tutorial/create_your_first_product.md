@@ -20,6 +20,9 @@ Step 3. Enter the Product name, version, and select chip type, industry and Clic
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProductPage.JPG)
 
 
+After your product is created, you will get to see the product Id and product key. Those information are essentially important when your product goes into the mass production stage, your product's devices will need the product Id and product key to be registered correctly.
+
+
 Step 4. Click Detail button of the product just created.
 
 

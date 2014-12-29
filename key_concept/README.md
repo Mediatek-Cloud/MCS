@@ -17,7 +17,8 @@ During the Development Phase you create **Products**, which may contain:
 
 Once you have defined the necessary Product information, you can then add devices as you need throughout the development phase.
 ### Product
-A **Product** is the blueprint of the final device you’ll ship to users.
+
+A **Product** is the blueprint of the final device you’ll ship to users. Each product will have a unique product Id and product Ke. For the product maker, the product Id and product key are the differentiator for your product from the other product. When your product goes into mass production, your product's devices will use those information to be registered.
 
 ### Data Channel
 
@@ -139,3 +140,4 @@ Apart from viewing the data channel information, the user can set notification a
 
 Also, the end user can get manufacturer information and report any error in My device page as well.
 
+Each device will have a unique set of device Id and device key, those will be needed when calling our API to access this device.

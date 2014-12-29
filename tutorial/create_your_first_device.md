@@ -18,7 +18,7 @@ Step 4. Go to **My Device** to check your test device.
 
 
 
-## How to get Device ID
+## How to get Device ID and Key
 
 
 
@@ -30,13 +30,13 @@ Step 1. Click **My Device** on the left navigator.
 
 Step 2. Click Detail to get into any device you created.
 
-Step 3. You will find the Device Id in the Devices detail page.
+Step 3. You will find the Device Id and Key in the Devices detail page.
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/DeviceId.jpg)
 
 
 
-[Verification step via API Sandbox]
+You will get the DeviceId and DeviceKey in the device detail page, those will be needed when calling our API to access this device. Click on the Copy button to copy the entire string to your copy board.
 
 
