@@ -30,6 +30,7 @@ The request body should be constructed in JSON format with the following fields:
 | isTest | Bool | Yes | Is the device a test device |
 | description | String | No | Device Description |
 | serial | String | No | Denpends on the product registration criteria defined by developers. Not needed if isTest is true |
+| deviceImageURL | String | No | URL of the device image |
 
 
 
@@ -52,7 +53,7 @@ The response body will construct in JSON format with the following fields:
 | --- | --- | --- |
 | deviceId | String | Device ID |
 | deviceKey | String | Device Key |
-
+| chipName | String | Chip Name |
 
 **Example: **
 
@@ -65,19 +66,13 @@ Request Body
 
 ```
 {
-   "devices":[
-      {
-         "prodId":"a1234567890",
-         "name":"My 1st device",
-         "isTest":true
-      },
-      {
+
          "prodId":"b1234567890",
          "name":"My 2nd device",
          "isTest":false,
-         "serial":"mtk-01234"
-      }
-   ]
+         "serial":"mtk-01234",
+         "deviceImageURL":"/device/mydevice.jpg"
+
 }
 ```
 
@@ -85,16 +80,11 @@ Response Body
 
 ```
 {
-   "credentials":[
-      {
-         "deviceId":"c1234567890",
-         "deivceKey":"0987654321c"
-      },
-      {
+
          "deviceId":"d1234567890",
-         "deviceKey":"0987654321d"
-      }
-   ]
+         "deviceKey":"0987654321d",
+         "chipName":"MT7681"
+
 }
 ```
 
@@ -119,8 +109,3 @@ When error is incurred, the response code will be non-200 and the response body 
   }
 }
 ```
-
-
-
-
-

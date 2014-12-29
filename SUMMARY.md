@@ -14,7 +14,6 @@
    * [DataPoints](api_references/data_read_write.md)
        * [upload DataPoint](api_references/uploaddatapoint.md)
        * [retrieve DataPoint](api_references/retrievedatapoint.md)
-       * [retrieve LastDataPoint](api_references/retrievelastdatapoint.md)
    * [Device Management](api_references/device_management.md)
        * [retrieve device Information](api_references/retrievedeviceinfo.md)
        * [register a device](api_references/registerdevice.md)

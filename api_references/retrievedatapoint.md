@@ -4,20 +4,64 @@
 
 Use **HTTPs GET** to retrieve data point values of a device
 
-**Maximum number of returned data points for each data channel: 1000**
 
 ### Request URL
 
+To retrieve the data points for specific data channel:
+
 ```
-https://api.mediatek.com/mcs/v2/devices/:device_id/datachannels/:datachannel_id/datapoints.{json/csv}?start=:start_time&end=:end_time&size=:size
+https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
 
 ```
 
-or
+Or to retrieve all data channels' data points in a device:
 
 ```
-https://api.mediatek.com/mcs/v2/devices/:device_id/datapoints.{json/csv}?start=:start_time&end=:end_time&size=:size
+https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
 ```
+
+The API will by default assume the json format, if you want to use the csv, please add`.csv` after the datapoints.
+
+The API enables you to retrieve four kinds of data:
+
+* To get the last data point:
+
+
+
+    `https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints`
+
+    or
+
+    `https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints`
+
+* To get the data points within a time frame:
+
+
+    Use the `?start=:startTime&end=:endTime` at the end.
+
+
+* To limit the number of data points that you will get (eg, if you enter the limit=5, you will get the first 5 data points.):
+
+
+    Use the `?limit=:limit&offset=:offset`at the end.
+
+
+* To retrieve the data points from a specific point(eg, if you enter offset=5, you will not get the first 5 datapoints and start with 6th one):
+
+
+    Use the `?offset=:offset` at the end.
+
+
+
+You can choose to combine those conditions.
+
+
+
+
+
+
+**Maximum number of returned data points for each data channel: 1000**
+
 
 ### Action
 HTTPs GET
@@ -28,7 +72,7 @@ HTTPs GET
 
 Device Key
 ```
-Device-Key: `device_key_here`
+deviceKey: `device_key_here`
 ```
 
 #### Return format
@@ -36,7 +80,7 @@ The return format can be in either JSON or CSV format
 
 JSON:
 
-when the request for resource ends with *datapoints.json*#
+when the request for resource ends with *datapoints*
 
 
 CSV:
@@ -52,7 +96,8 @@ Following fields should be constructed and appended to the end of the URL:
 | --- | --- | --- | --- |
 | start_time | Number | Optional | Start Timestamp of the query period |
 | end_time | Number | Optional | End Timestamp of the query period |
-| size | Number | Optional | number of the data points to be returned ( Default = 1 ) |
+| limit | Number | Optional | number of the data points to be returned ( Default = 1 ) |
+| offset | Number | Optional | offset of the data points being retrieved |
 
 **Note:**
 
@@ -61,13 +106,6 @@ Returns last *n (n=size)* data points when both *start_time* and *end_time* are 
 
 2.
 The parameters *start_time* and *end_time* have higher priority than *size*, i.e., when all three parameters are input, the parameter *size* will be ignored.
-
-3.
-Timestamp are received and returned in ISO 8601 format, with 3 decimal fraction of a second:
-
-```
-YYYY-MM-DDTHH:MM:SS.nnnZ
-```
 
 
 
@@ -83,7 +121,7 @@ Content-Type:`application/json`
 ```
 For CSV response:
 ```
-Content-Type: `application/text`
+Content-Type: `text/csv`
 ```
 
 #### Response Body
@@ -103,21 +141,24 @@ The response body will construct in JSON format with the following fields:
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
 | dataChnId | Number | Data Channel ID |
-| isOverflow | Bool | Is the number of queried data points more than maximum number |
+| isOverflow | Bool | Is the number of queried data points more than maximum number|
 | dataPoints | Object Array | Data Points |
+
 
 **dataPoint**
 
 | Field Name | Type | Description|
 | --- | --- | --- | --- |
-| createdAt | Number | Unix timestamp of the data point |
-| value | String | Data Point Value |
+| createdAt | Number | Unix timestamp of the data point|
+| values | Object | Data Point Value |
+
+Please note, the unix time is in milliseconds, for human readable time conversion, please refer to http://www.epochconverter.com/
 
 **Example:**
 
 Request URL
 ```
-https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoints.json?start=2014-12-07T10:10:10.000Z&end=2014-12-07T10:20:10.000Z
+https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoints?start=946684800&end=946784800
 
 ```
 
@@ -129,12 +170,16 @@ Response Body
    "isOverflow":false,
    "dataPoints":[
             {
-               "createdAt": "2014-12-07T10:11:11.000Z",
-               "value":"100"
+               "createdAt": 946684800,
+               "values":{
+                    "value":"100"
+                    }
             },
             {
-               "createdAt": "2014-12-07T10:10:11.000Z",
-               "value":"99"
+               "createdAt": 946684800,
+               "values":{
+                    "value":"90"
+                    }
             }
          ]
 }
@@ -144,7 +189,7 @@ Response Body
 Request URL
 
 ```
-https://api.mediatek.com/mcs/v2/devices/a1234567890/datapoints.json
+https://api.mediatek.com/mcs/v2/devices/a1234567890/datapoints
 ```
 
 Response Body
@@ -157,12 +202,16 @@ Response Body
          "isOverflow":false,
          "dataPoints":[
             {
-               "createdAt": "2014-12-07T10:11:11.000Z",
-               "value":"100"
+               "createdAt": 946684800,
+               "values":{
+                    "value":"100"
+                    }
             },
             {
-               "createdAt": "2014-12-07T10:10:11.000Z",
-               "value":"99"
+               "createdAt": 946684810,
+               "values":{
+                    "value":"90"
+                    }
             }
          ]
       },
@@ -171,18 +220,18 @@ Response Body
          "isOverflow":false,
          "dataPoints":[
             {
-               "createdAt": "2014-12-07T10:11:11.000Z",
-               "value":{
+               "createdAt": 946684800,
+               "values":{
                    "latitude":"112",
-                   "lontitude":"23.3",
+                   "longtitude":"23.3",
                    "altitude":"50"
                }
             },
             {
-               "createdAt": "2014-12-07T10:10:11.000Z",
-               "value":{
+               "createdAt": 946684810,
+               "values":{
                    "latitude":"112",
-                   "lontitude":"23.3",
+                   "longtitude":"23.3",
                    "altitude":"50"
                }
             }
