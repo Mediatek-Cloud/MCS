@@ -2,7 +2,7 @@
 
 **What kind of device can be connected to MSC platform?**
 
-Almost anyt device that has an internet connection can be connected to MCS, whether it be connected via WiFi, 3G, or Bluetooth.
+Almost any device that has an internet connection can be connected to MCS, whether it be connected via WiFi, 3G, or Bluetooth.
 
 **What can I develop with MCS?**
 
