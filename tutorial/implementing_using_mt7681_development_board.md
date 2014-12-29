@@ -80,9 +80,9 @@ Step 2.2 You can obtain the Product Id and Product Key under the description of 
 Product ID and product key is essential for activating your 7681 devices. Please proceed to Step 3 to flash the product info on 7681.
 
 ####Step 3. Flashing product info on 7681
-Step 3.1 Connect the 7681 development board to a PC and open the Terminal. Please refernce to the MT7681 development guide for a detailed guide. In the terminal console, enter the following command to flash the product id on 7681:
+Step 3.1 Connect the 7681 development board to a PC and open the terminal. If you have not setup Please refernce to the MT7681 development guide for a detailed guide. In the terminal console, enter the following command to flash the product id on 7681:
 ```
-AT#FLASH -s0x18101 -c[productId]
+AT#FLASH -s0x18133 -c[productId]
 ```
 For example, the product Id is ABCDEFG12345 then you should enter AT#FLASH -s0x18101 -cABCDEFG12345
 
@@ -95,7 +95,7 @@ You should be able to see something like this on your terminal:
 
 Step 3.2 At the terminal, enter the following command to flash the product key on 7681:
 ```
-AT#FLASH -s0x18111 -c[prodyctKey]
+AT#FLASH -s0x18143 -c[prodyctKey]
 ```
 For example, the product key is HIJKLMN6789 then you should enter AT#FLASH -s0x18111 -cHIJKLMN6789
 
@@ -185,9 +185,10 @@ AT#FLASH -s0x180f1 -c[deviceKey]
 ```
 Then enter the following commands to set the status to be activated:
 ```
-AT#FLASH -s0x18121 –v1
-AT#FLASH -s0x18122 –v0
+AT#FLASH -s0x18101 –v1
+AT#FLASH -s0x18102 –v0
 ```
 Your device should now automatically connected to MCS.
 
+####Step 6 Control your devices
 
