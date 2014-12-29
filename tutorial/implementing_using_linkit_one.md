@@ -5,8 +5,7 @@ Here is a simple guide to quickly setup your Linkit One development board (Aster
 ##Scenario
 The scenario for this setup is to create a test device on MCS representiong your Linkit one board, and to upload Arduino code allowing this board to push datapoint representing the state of LED light at D13 to MCS using RESTful API, while MCS is able to remote control the state of this LED light using TCP Socket.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/00_scenario.JPG)
-
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/00_scenario.JPG)
 
 
 ##Setup requirement:
@@ -94,19 +93,26 @@ Here is the summary of the neccessary information we have obtained in interactin
 Please note, the deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
 
 ####Step 4. Code the development board
-a. Understand the flow
+The program flow logics are as follows:
 
-b.
+a. Calls RESTful API:
+GET api.mediatek.com/mcs/v2/devices/{deviceId}/connections.csv
+To obtain the response value for Socket Server IP and Port
+
+b. Initiate TCP connection to the socket server
+
+c. Uploads D13 (LED) status to MCS by RESTful API once every 10 seconds:
+POST api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints.csv
+
+d. listens for switching commands issued by MCS via TCP connection
+
+e. refreshes heartbeat for TCP connection every 90 seconds
+
+For the full source code please click here
 
 ####Step 5. Turn on the board and see it in action!
-[steps to be filled in]
 
-Arduino full source code:
 
-```
-[to be filled in here]
-
-```
 
 
 
