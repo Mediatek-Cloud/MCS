@@ -8,7 +8,6 @@ The scenario for this setup is to create a test device on MCS representiong your
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/00_scenario.JPG)
 
 
-
 ##Setup requirement:
 
 To complete this test setup, you will need:
