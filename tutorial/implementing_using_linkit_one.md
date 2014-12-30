@@ -108,7 +108,7 @@ d. listens for switching commands issued by MCS via TCP connection
 
 e. refreshes heartbeat for TCP connection every 90 seconds
 
-Sample Arduino C source code please click [here](http://ddd)
+Sample Arduino C source code please click [here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/linkit_sample_ino.ino)
 
 Please note:
 This source code requires HttpClient that can be download
