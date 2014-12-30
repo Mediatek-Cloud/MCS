@@ -63,16 +63,16 @@ Step 1.7 Enter the Data Channel name, Id, description and select Data type. In t
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addGPIO.jpg)
 
 
-Step 1.8 To add more GPIO controllers, repeat Step 5 to 7 and change the Data Channel Id to GPIO_0x where x can be any integer between 1 and 5
+Step 1.8 To add more GPIO controllers, repeat Step 5 to 7 and change the Data Channel Id to GPIO_0x where x can be any integer between 0 and 4
 
 Step 1.9 Now let's add some PWM controllers. Repeat Step 5 and 6 to open the Add Data Channel popup. Enter "PWM_01" in the Data Channel Id and select PWM in the Data Channel Type. Click the "Save" button to create the Data Channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addPWM.jpg)
 
 
-Step 1.10 The first PWM Data Channel has been created. To add more PWM controllers, repeat Step 9 and change the Data Channel Id to PWM_0x where x ranges from 1 to 5.
+Step 1.10 The first PWM Data Channel has been created. To add more PWM controllers, repeat Step 9 and change the Data Channel Id to PWM_0x where x ranges from 0 to 4.
 
-Step 1.11 The last data channel type that 7681 supports is UART. To add an UART data channel, open the Add Data Channel popup as described in Step 4 and 5 then enter "UART" in the Data Channel Id and select String or Hex in the Data Channel type depends on your needs. Click the "Save" button to create the Data Channel.
+Step 1.11 Another data channel type that 7681 supports is UART. To add an UART data channel, open the Add Data Channel popup as described in Step 4 and 5 then enter "UART" in the Data Channel Id and select String or Hex in the Data Channel type depends on your needs. Click the "Save" button to create the Data Channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addUART.jpg)
 
