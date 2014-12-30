@@ -1,20 +1,35 @@
 # Implementing using MT7681 Development Board
 
-This is a simple guide to setup your MT7681 development board to connect to MediaTek Cloud Sandbox.
+This is a guide to setup your MT7681 development board connect to MediaTek Cloud Sandbox.
 
 ##Scenario
-The scenario for this setup is to allow your MT7681 development board to connect to MCS and be able to accept remote control command from MCS console.
+The scenario for this setup is to allow your MT7681 development board to connect to MCS and be able to receive remote control commands from MCS console.
 
 
 ##Setup requirement:
 
 To complete this test setup, you will need:
 
-1. Battery Pack to power up the micro-USB of the development board
-2. A Wifi access point made available to the development board
+1. USB power source connect to the development board
+2. A Wifi connection made available to the development board
+3. MCS mobile app. It is currently available for Android. Please scan the following QR code to download the apk:
 
-There is no additional electrical component required to connect to the development board.
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apkQrCode.png)
 
+There is no other additional electrical components required to connect to the development board.
+
+##MT7681 controllers list and their corresponding MCS data channnel IDs
+MT7681 consists of 5 GPIO controllers which could also be used as PWM and 1 UART controller. Below is a list of the controllers and their corresponding data channel IDs to use on MCS.
+
+|  | GPIO | PWM | UART |
+| -- | -- | -- | -- |
+| 00 | GPIO_00 | PWM_00 | UART |
+| 01 | GPIO_01 | PWM_01 |
+| 02 | GPIO_02 | PWM_02 |
+| 03 | GPIO_03 | PWM_03 |
+| 04 | GPIO_04 | PWM_04 |
+
+##Step-by-step
 
 ####Step 1. Create a 7681 Product with GPIO, PWM and UART data channels
 
@@ -30,7 +45,7 @@ Step 1.3 Enter the Product name, Product version, and select your industry. Sele
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/7681CreateProduct.jpg)
 
 
-Step 1.4 Now we're going to add some controllers for your 7681 device. Click "Detail" button of the product we just created.
+Step 1.4 Now we're going to add GPIO controllers to your 7681 device. Click "Detail" button of the product we just created.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
 
@@ -41,7 +56,8 @@ Step 1.5 Click the "Add" button.
 
 
 
-Step 1.6 Select "Controller" in Data Channel type by clicking the "Add" button in the Controller box.
+
+Step 1.6 Select "Controller" in Add Data Channel page by clicking the "Add" button under the Controller data channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/7681DataChannelType.jpg)
 
@@ -51,24 +67,25 @@ Step 1.7 Enter the Data Channel name, Id, description and select Data type. In t
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addGPIO.jpg)
 
 
-Step 1.8 To add more GPIO controllers, repeat Step 5 to 7 and change the Data Channel Id to GPIO_0x where x can be any integer between 1 and 5
 
-Step 1.9 Now let's add some PWM controllers. Repeat Step 5 and 6 to open the Add Data Channel popup. Enter "PWM_01" in the Data Channel Id and select PWM in the Data Channel Type. Click the "Save" button to create the Data Channel.
+Step 1.8 To add more GPIO controllers, repeat Step 5 to 7 and change the Data Channel Id to GPIO_0x where x can be any integer between 0 and 4
+
+Step 1.9 Now let's add PWM controllers. Repeat Step 5 and 6 to open the Add Data Channel popup. Enter "PWM_01" in the Data Channel Id and select PWM in the Data Channel Type. Click the "Save" button to create the Data Channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addPWM.jpg)
 
 
-Step 1.10 The first PWM Data Channel has been created. To add more PWM controllers, repeat Step 9 and change the Data Channel Id to PWM_0x where x ranges from 1 to 5.
+Step 1.10 The PWM Data Channel has also been created. To add more PWM controllers, repeat Step 9 and change the Data Channel Id to PWM_0x where x ranges from 0 to 4.
 
-Step 1.11 The last data channel type that 7681 supports is UART. To add an UART data channel, open the Add Data Channel popup as described in Step 4 and 5 then enter "UART" in the Data Channel Id and select String or Hex in the Data Channel type depends on your needs. Click the "Save" button to create the Data Channel.
+Step 1.11 Another data channel type that 7681 supports is UART. To add an UART data channel, open the Add Data Channel popup as described in Step 4 and 5 then enter "UART" in the Data Channel Id and select String or Hex in the Data Channel type depends on your needs. Click the "Save" button to create the Data Channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addUART.jpg)
 
 
-Congratulations! Now you have created all the Data Channel types that 7681 supports. Please continue to Step 2 to obtain your product info from MCS.
+Congratulations! Now you have created all the Data Channel types that 7681 supports. Please continue to Step 2 to obtain your product Id and Key from MCS.
 
-####Step 2. Obtain product info
-Step 2.1 Click "Development" in the navigation bar to the left and click the "Details" button under the product you'd like to use.
+####Step 2. Obtain product Id and Key
+Step 2.1 Click "Development" in the navigation bar on the left and click the "Details" button under the product you'd like to use.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
 
@@ -77,10 +94,12 @@ Step 2.2 You can obtain the Product Id and Product Key under the description of 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/obtainProductInfo.jpg)
 
-Product ID and product key is essential for activating your 7681 devices. Please proceed to Step 3 to flash the product info on 7681.
+Product ID and product key is essential for activating your 7681 devices. Please proceed to Step 3 to flash the product Id and key into 7681.
 
-####Step 3. Flashing product info on 7681
-Step 3.1 Connect the 7681 development board to a PC and open the terminal. If you have not setup Please refernce to the MT7681 development guide for a detailed guide. In the terminal console, enter the following command to flash the product id on 7681:
+
+####Step 3. Flashing product Id and key into 7681
+Step 3.1 Connect the 7681 development board to a PC and open the terminal. If you have not setup this terminal,  please refer to the MT7681 development guide for detailed set up steps. In the terminal console, enter the following command to flash the product id into 7681:
+
 ```
 AT#FLASH -s0x18133 -c[productId]
 ```
@@ -105,16 +124,16 @@ You should be able to see something like this on your terminal:
 [0x18111]=HIJKLMN6789
 [WTask]255420
 ```
-The flashing of product info has completed. You must reboot 7681 to make the new product info effective:
+The flashing of product Id and key has completed. You must reboot 7681 to make the new product Id and key turn effective:
 ```
 AT#Reboot
 ```
 Next we will show you how to setup the wifi on 7681 with smart connection.
 
 ####Step 4. Smart Connection
-Step 4.1 Open the MCS mobile app and login with your account with an appropriate product for 7681. Please make sure that you have completed step 3.
+Step 4.1 Open the MCS mobile app and login with your account with a 7681 compatible product. Please make sure that you have completed step 3.
 
-Step 4.2 After logged in, click on the orange circle with a white plus sign on the bottom right corner.
+Step 4.2 After logged in, click on the add icon on the right bottom.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
 
@@ -126,21 +145,25 @@ Step 4.4 Enter the ssid and password of the wifi AP and click "Start". The ssid 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/smartConnection.png)
 
-Step 4.5 Wait for a few seconds and check if there're any devices appear on the list. If smart connection is success, you should be able to see it on the list. Now you can choose to activate the device by MCS mobile app (Step 5A) or to create a test device via the web console (Step 5B).
+Step 4.5 Wait for a few seconds and check if there're any devices appear on the list. If smart connection is successfully set, you should be able to see the device on the list.
+
+Click Cancel button to exit the add smart connection pop-up.
+
+Now you can choose to register the device by MCS mobile app (Step 5A) or to create a test device via the web console to register. (Step 5B).
 
 
 ####Step 5A. Activate an MT7681 device by MCS mobile app
 
-Step 5A.1 Open the MCS mobile app and logged in. After logged in, click on the orange circle with a white plus sign on the bottom right corner
+Step 5A.1 Open the MCS mobile app and logged in. After login, click on the add icon on the right bottom.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
 
 
-Step 5A.2 If your device has successfully got the smart connection, it should be shown on the list. Click on the plus sign to the right of the device you'd like to activate
+Step 5A.2 If your device has got the smat connection successfully, it should be shown on the list. Click on the add icon to the right of the device you'd like to register.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice2.png)
 
-Step 5A.3 You can edit the Product ID, Serial Number and the Hardware ID in the pop-up window. In most cases you can just use the default value. The default value of Product ID should be the one you flashed on 7681. Click "Save" to go to the next step.
+Step 5A.3 You can edit the Product ID, Serial Number and the Hardware ID in the pop-up window. In most cases you can just use the default value, and here, we are goint to use the default value as well. The default value of Product ID should be what you already flashed into 7681 in step 3. Click "Save" to go to the next step.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice3.png)
 
@@ -154,7 +177,7 @@ You will be brought back to the device list after the device has been activated.
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList2.png)
 
 ####Step 5B. Create a test device on the web console
-Step 5B.1 In the MCS web console, click the "Development" in the navigation bar to the left and then click the "Details" button on the product which you'd like to activate
+Step 5B.1 In the MCS web console, click the "Development" in the navigation bar on the left and then click the "Details" button under the product which you'd like to register.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice1.jpg)
 
@@ -163,19 +186,21 @@ Step 5B.2 Click "Create Test Device" button to the top right.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice2.jpg)
 
-Step 5B.3 A pop-up will show after your test device has been successfully created. Click "OK" to dismiss the pop-up.
+Step 5B.3 A pop-up will show after your test device has been successfully created. Click "OK" to exit the pop-up.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice3.jpg)
 
-Step 5B.4 Go to "My Devices" by clicking on the navigation bar to the left and click on the "Details" button on the device which has just been created. It should have the same name as the product.
+Step 5B.4 Go to "My Devices" by clicking on the navigation bar on the left and click on the "Details" button under the device which has just been created. It should have the same name as the product.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice4.jpg)
 
-Step 5B.5 In the middle of the page you could find the deviceId and deviceKey of the created test device.
+Step 5B.5 You should be able to find the deviceId and deviceKey of the test device you just created.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice5.jpg)
 
-Step 5B.6 Now we have to manually flash the id & key on 7681. Open the terminal that is connected to 7681 and enter the following command:
+
+Step 5B.6 Now we have to manually flash the id and key into 7681. Open the terminal that is connected to 7681 board and enter the following command:
+
 ```
 AT#FLASH -s0x180e9 -c[deviceId]
 ```
@@ -192,3 +217,24 @@ Your device should now automatically connected to MCS.
 
 ####Step 6 Control your devices
 
+**From the MCS web platform**
+
+Go to "My Devices" by clicking on the navigation bar on the left and click on the "Details" button under the device which has just been created and registered.
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice4.jpg)
+
+Now you can see the data channels and control their states using the MCS platform. Our control panel is straightforward for you to turn between different states by dragging the control bar.
+
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/RemoteControlWeb.jpg)
+
+
+**From Mobile App**
+
+Open MCS mobile app and log in. Click on the device you'd like to control.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apkControlDevice.png)
+
+
+You will see a list of controllers which were added in the previous steps. Try switching the GPIO controller from high to low. The LED on 7681 development board should be turned on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apiControlDevice2.png)

@@ -18,8 +18,7 @@
        * [retrieve device Information](api_references/retrievedeviceinfo.md)
        * [register a device](api_references/registerdevice.md)
        * [deregsiter a device](api_references/deactivatedevice.md)
-       * [retrieve Product Firmware](api_references/retrieveproductfirmware.md)
-       * [upload Product Firmware](api_references/uploadproductfirmware.md)
+       * [get connection](api_references/getconnection.md)
    * [7681 Data Format](api_references/7681_data_d.md)
 * [FAQ](faq/README.md)
 

@@ -80,7 +80,8 @@ Each Data Channel can hold one of seven types of data:
 
 ### Notifications
 
-Notification will enable you to create criteria that trigger an email or cloud based notification to the Product own, you, and a list of other MCS users.
+Notification function enables you to create criteria that trigger an email or cloud based notification be sent to specific users.
+
 Beta note: This feature is under development and presently enables you to set triggers on a specific channel and get an email notification, with ability to add additional user to the notified list. Triggers are available for:
 
 - data received on a channel being above or below a specific value, which will issue a defined number of notifications while the data remains above or below the trigger value
