@@ -225,9 +225,11 @@ Now you can see the data channels and control their states using the MCS platfor
 
 **From Mobile App**
 
+Open MCS mobile app and log in. Click on the device you'd like to control.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apkControlDevice.png)
 
 
+You will see a list of controllers which were added in the previous steps. Try switching the GPIO controller from low to high and back to low again. The LED on 7681 development board should be turned on now. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
 
-
-
-
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apiControlDevice2.png)
