@@ -11,7 +11,7 @@ The scenario for this setup is to allow your MT7681 development board to connect
 To complete this test setup, you will need:
 
 1. USB power source connect to the development board
-2. A Wifi access connection made available to the development board
+2. A Wifi connection made available to the development board
 
 There is no other additional electrical components required to connect to the development board.
 
@@ -140,7 +140,11 @@ Step 4.4 Enter the ssid and password of the wifi AP and click "Start". The ssid 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/smartConnection.png)
 
-Step 4.5 Wait for a few seconds and check if there're any devices appear on the list. If smart connection is successfully set, you should be able to see the device on the list. Now you can choose to register the device by MCS mobile app (Step 5A) or to create a test device via the web console to register. (Step 5B).
+Step 4.5 Wait for a few seconds and check if there're any devices appear on the list. If smart connection is successfully set, you should be able to see the device on the list.
+
+Click Cancel button to exit the add smart connection pop-up.
+
+Now you can choose to register the device by MCS mobile app (Step 5A) or to create a test device via the web console to register. (Step 5B).
 
 
 ####Step 5A. Activate an MT7681 device by MCS mobile app
@@ -207,4 +211,23 @@ AT#FLASH -s0x18102 –v0
 Your device should now automatically connected to MCS.
 
 ####Step 6 Control your devices
+
+**From the MCS web platform**
+
+Go to "My Devices" by clicking on the navigation bar on the left and click on the "Details" button under the device which has just been created and registered.
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice4.jpg)
+
+Now you can see the data channels and control their states using the MCS platform. Our control panel is straightforward for you to turn between different states by dragging the control bar.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/RemoteControlWeb.jpg)
+
+
+
+**From Mobile App**
+
+
+
+
+
+
 
