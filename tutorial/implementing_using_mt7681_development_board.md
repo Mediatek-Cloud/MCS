@@ -79,7 +79,7 @@ Step 2.2 You can obtain the Product Id and Product Key under the description of 
 
 Product ID and product key are essential for registering your 7681 devices. Please proceed to Step 3 to flash the product infomation into 7681.
 
-####Step 3. Flashing product info on 7681
+####Step 3. Flashing product Id and key into 7681
 Step 3.1 Connect the 7681 development board to a PC and open the terminal. If you have not setup this terminal,  please refer to the MT7681 development guide for detailed set up steps. In the terminal console, enter the following command to flash the product id into 7681:
 ```
 AT#FLASH -s0x18133 -c[productId]
@@ -175,7 +175,7 @@ Step 5B.5 You could find the deviceId and deviceKey of the created test device i
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice5.jpg)
 
-Step 5B.6 Now we have to manually flash the id & key into 7681. Open the terminal that is connected to 7681 and enter the following command:
+Step 5B.6 Now we have to manually flash the id and key into 7681. Open the terminal that is connected to 7681 and enter the following command:
 ```
 AT#FLASH -s0x180e9 -c[deviceId]
 ```
