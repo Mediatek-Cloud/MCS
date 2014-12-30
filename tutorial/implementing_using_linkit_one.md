@@ -101,18 +101,34 @@ To obtain the response value for Socket Server IP and Port
 
 b. Initiate TCP connection to the socket server
 
-c. Uploads D13 (LED) status to MCS by RESTful API once every 10 seconds:
+c. Uploads D13 (LED) status to MCS by RESTful API once every 5 seconds:
 POST api.mediatek.com/mcs/v2/devices/{deviceId}/datapoints.csv
 
 d. listens for switching commands issued by MCS via TCP connection
 
 e. refreshes heartbeat for TCP connection every 90 seconds
 
-For the full source code please click here
+Sample Arduino C source code please click [here](http://ddd)
+
+Please note:
+This source code requires HttpClient that can be download
+[here](https://github.com/amcewen/HttpClient/releases)
 
 ####Step 5. Turn on the board and see it in action!
 
+After the code is loaded to the board and make sure Wireless Access Point is made available to the device, with the Serial output confirming it is live and connected:
 
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/13-Test-Device.JPG)
+
+You can now goto the device page and be able to click the LED controller, as you click the LED to ON state, the LED on the development board will lid, and moments later the state of the LED data channel will indicate an ON state. As you click the LED to OFF state, the LED on the board will not lid, and moments later the state of the LED data channel will indicate an OFF state.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/14-Test-Device.JPG)
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/15-Test-Device.JPG)
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/16-Test-Device.JPG)
+
+Congratulations! You have completed this tutorial!
 
 
 
