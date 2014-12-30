@@ -219,8 +219,8 @@ Go to "My Devices" by clicking on the navigation bar on the left and click on th
 
 Now you can see the data channels and control their states using the MCS platform. Our control panel is straightforward for you to turn between different states by dragging the control bar.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/RemoteControlWeb.jpg)
 
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/RemoteControlWeb.jpg)
 
 
 **From Mobile App**
