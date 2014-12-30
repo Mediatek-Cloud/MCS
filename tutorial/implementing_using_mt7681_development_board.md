@@ -12,6 +12,9 @@ To complete this test setup, you will need:
 
 1. USB power source connect to the development board
 2. A Wifi connection made available to the development board
+3. MCS mobile app. It is currently available for Android. Please scan the following QR code to download the apk:
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apkQrCode.png)
 
 There is no other additional electrical components required to connect to the development board.
 
@@ -230,6 +233,6 @@ Open MCS mobile app and log in. Click on the device you'd like to control.
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apkControlDevice.png)
 
 
-You will see a list of controllers which were added in the previous steps. Try switching the GPIO controller from low to high and back to low again. The LED on 7681 development board should be turned on now. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
+You will see a list of controllers which were added in the previous steps. Try switching the GPIO controller from high to low. The LED on 7681 development board should be turned on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apiControlDevice2.png)
