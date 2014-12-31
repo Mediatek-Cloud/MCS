@@ -14,11 +14,6 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/da
 
 ```
 
-Or to retrieve all data channels' data points in a device:
-
-```
-https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints?start=:startTime&end=:endTime&limit=:limit&offset=:offset
-```
 
 The API will by default assume the json format, if you want to use the csv, please add`.csv` after the datapoints.
 
@@ -30,9 +25,6 @@ The API enables you to retrieve four kinds of data:
 
     `https://api.mediatek.com/mcs/v2/devices/:deviceId/datachannels/:datachannelId/datapoints`
 
-    or
-
-    `https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints`
 
 * To get the data points within a time frame:
 
