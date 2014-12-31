@@ -1,11 +1,11 @@
 # retrieveDataPoint
 
-### Description
+## Description
 
 Use **HTTPs GET** to retrieve data point values of a device
 
 
-### Request URL
+## Request URL
 
 To retrieve the data points for specific data channel:
 
@@ -55,19 +55,19 @@ You can choose to combine those conditions.
 **Maximum number of returned data points for each data channel: 1000**
 
 
-### Action
+## Action
 HTTPs GET
 
-### Parameters
+## Parameters
 
-#### Header
+### Header
 
 Device Key
 ```
 deviceKey: `device_key_here`
 ```
 
-#### Return format
+### Return format
 The return format can be in either JSON or CSV format
 
 JSON:
@@ -80,7 +80,7 @@ CSV:
 when the reqeust for resouce ends with *datapoints.csv*
 
 
-#### Querystring
+### Querystring
 Following fields should be constructed and appended to the end of the URL:
 
 
@@ -101,12 +101,12 @@ The parameters *start_time* and *end_time* have higher priority than *size*, i.e
 
 
 
-### Response
+## Response
 
-#### Response Code
+### Response Code
 200
 
-#### Response Header
+### Response Header
 For JSON response:
 ```
 Content-Type:`application/json`
@@ -116,7 +116,7 @@ For CSV response:
 Content-Type: `text/csv`
 ```
 
-#### Response Body
+### Response Body
 
 ***Data Format: JSON***
 
@@ -232,7 +232,7 @@ Response Body
    ]
 }
 ```
-### Error Response
+## Error Response
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
 

@@ -2,13 +2,13 @@
 
 Here is a simple guide to quickly setup your Linkit One development board (Aster 2502) to quickly connect to MediaTek Cloud Sandbox
 
-##Scenario
+## Scenario
 The scenario for this setup is to create a test device on MCS representiong your Linkit one board, and to upload Arduino code allowing this board to push datapoint representing the state of LED light at D13 to MCS using RESTful API, while MCS is able to remote control the state of this LED light using TCP Socket.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/00_scenario.JPG)
 
 
-##Setup requirement:
+## Setup requirement:
 
 To complete this test setup, you will need:
 
@@ -18,7 +18,7 @@ To complete this test setup, you will need:
 There is no additional electrical component required to connect to the development board.
 
 
-####Step 1. Create a new Product with Switch-Type data channel
+### Step 1. Create a new Product with Switch-Type data channel
 
 a. After login, select "Development" at the navigation bar, click "Create" to create a new product
 
@@ -60,7 +60,7 @@ g. Once completed, you should be able to see two data channel created as below:
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/09-Create-Test-Device.JPG)
 
-####Step 2. Create Test Device
+### Step 2. Create Test Device
 
 a. Click "Create Test Device" on the right upper corner of the page
 
@@ -80,7 +80,7 @@ d. Click on the "detail" button to see the device page:
 
 Please take note of the deviceId and deviceKey for calling API later in the tutorial.
 
-####Step 3. Obtain Device ID, Device Key, Data Channel ID
+### Step 3. Obtain Device ID, Device Key, Data Channel ID
 Here is the summary of the neccessary information we have obtained in interacting with this test device:
 
 | Name | Value | Remark |
@@ -92,7 +92,7 @@ Here is the summary of the neccessary information we have obtained in interactin
 
 Please note, the deviceId and deviceKey shown here will be differet to yours, please use your obtained value instead.
 
-####Step 4. Code the development board
+### Step 4. Code the development board
 The program flow logics are as follows:
 
 a. Calls RESTful API:
@@ -114,7 +114,7 @@ Please note:
 This source code requires HttpClient that can be download
 [here](https://github.com/amcewen/HttpClient/releases)
 
-####Step 5. Turn on the board and see it in action!
+### Step 5. Turn on the board and see it in action!
 
 After the code is loaded to the board and make sure Wireless Access Point is made available to the device, with the Serial output confirming it is live and connected:
 

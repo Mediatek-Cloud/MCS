@@ -1,26 +1,26 @@
 # deregisterDevice
 
-### Description
+## Description
 
 Use **HTTPs DELETE** to deregister an registered device
 
-### Request URL
+## Request URL
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId?removeData=:removeDataStatus
 
 ```
 
-### Action
+## Action
 HTTPs POST
 
-### Parameters
+## Parameters
 
-#### Header
+### Header
 
 Authorization: Bearer '{token}'
 
-#### Query String
+### Query String
 Following fields should be constructed and appended to the end of the URL:
 
 | Field Name | Type | Required |Description|
@@ -30,15 +30,15 @@ Following fields should be constructed and appended to the end of the URL:
 
 
 
-### Response
+## Response
 
-#### Response Code
+### Response Code
 200
 
-#### Response Header
+### Response Header
 
 Content-Type:`application/json`
-#### Response Body
+### Response Body
 
 ***Data Format: JSON***
 
@@ -66,7 +66,7 @@ Response Body
 }
 ```
 
-### Error Response
+## Error Response
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
 

@@ -1,37 +1,37 @@
 # retrieveDeviceInfo
 
-### Description
+## Description
 
 Use **HTTPs GET** to retrieve devices
 
-### Request URL
+## Request URL
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId
 
 ```
 
-### Action
+## Action
 HTTPs GET
 
-### Parameters
+## Parameters
 
-#### Header
+### Header
 
 Authorization: `Bearer '{token}'`
 
 Content-Type:`application/json`
 
 
-### Response
+## Response
 
-#### Response Code
+### Response Code
 200
 
-#### Response Header
+### Response Header
 
 Content-Type:`application/json`
-#### Response Body
+### Response Body
 
 ***Data Format: JSON***
 
@@ -379,7 +379,7 @@ Response Body
 }
 ```
 
-### Error Response
+## Error Response
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
 

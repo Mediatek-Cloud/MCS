@@ -1,12 +1,12 @@
 # getConnection
 
 
-### Description
+## Description
 
 Use **HTTPs GET** to  set up connections between device and command server.
 
 
-### Request URL
+## Request URL
 
 To set up connections between device and command server:
 
@@ -46,12 +46,12 @@ The command Format:
 
 ```
 
-### Action
+## Action
 HTTPs GET
 
 
-### Parameters
-#### Header
+## Parameters
+### Header
 
 
 Content-Type:`application/json` or `text/csvt`
@@ -60,7 +60,7 @@ Content-Type:`application/json` or `text/csvt`
 deviceKey: `device_key_here`
 
 
-#### Return format
+### Return format
 The return format can be in either JSON or CSV format
 
 JSON:
@@ -73,12 +73,12 @@ CSV:
 when the reqeust for resouce ends with *connections.csv*
 
 
-### Response
+## Response
 
-#### Response Code
+### Response Code
 200
 
-#### Response Header
+### Response Header
 For JSON response:
 ```
 Content-Type:`application/json`
@@ -88,7 +88,7 @@ For CSV response:
 Content-Type: `text/csvt`
 ```
 
-#### Response Body
+### Response Body
 
 ***Data Format: JSON***
 
@@ -118,7 +118,7 @@ Response Body
 ```
 
 
-### Error Response
+## Error Response
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
 

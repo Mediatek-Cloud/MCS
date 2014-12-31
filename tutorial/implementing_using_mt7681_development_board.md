@@ -2,11 +2,11 @@
 
 This is a guide to setup your MT7681 development board connect to MediaTek Cloud Sandbox.
 
-##Scenario
+## Scenario
 The scenario for this setup is to allow your MT7681 development board to connect to MCS and be able to receive remote control commands from MCS console.
 
 
-##Setup requirement:
+## Setup requirement:
 
 To complete this test setup, you will need:
 
@@ -18,7 +18,7 @@ To complete this test setup, you will need:
 
 There is no other additional electrical components required to connect to the development board.
 
-##MT7681 controllers list and their corresponding MCS data channnel IDs
+## MT7681 controllers list and their corresponding MCS data channnel IDs
 MT7681 consists of 5 GPIO controllers which could also be used as PWM and 1 UART controller. Below is a list of the controllers and their corresponding data channel IDs to use on MCS.
 
 |  | GPIO | PWM | UART |
@@ -29,9 +29,9 @@ MT7681 consists of 5 GPIO controllers which could also be used as PWM and 1 UART
 | 03 | GPIO_03 | PWM_03 |
 | 04 | GPIO_04 | PWM_04 |
 
-##Step-by-step
+## Step-by-step
 
-####Step 1. Create a 7681 Product with GPIO, PWM and UART data channels
+### Step 1. Create a 7681 Product with GPIO, PWM and UART data channels
 
 Step 1.1 Click Development on the left hand side navigator.
 
@@ -84,7 +84,7 @@ Step 1.11 Another data channel type that 7681 supports is UART. To add an UART d
 
 Congratulations! Now you have created all the Data Channel types that 7681 supports. Please continue to Step 2 to obtain your product Id and Key from MCS.
 
-####Step 2. Obtain product Id and Key
+### Step 2. Obtain product Id and Key
 Step 2.1 Click "Development" in the navigation bar on the left and click the "Details" button under the product you'd like to use.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
@@ -97,7 +97,7 @@ Step 2.2 You can obtain the Product Id and Product Key under the description of 
 Product ID and product key is essential for activating your 7681 devices. Please proceed to Step 3 to flash the product Id and key into 7681.
 
 
-####Step 3. Flashing product Id and key into 7681
+### Step 3. Flashing product Id and key into 7681
 Step 3.1 Connect the 7681 development board to a PC and open the terminal. If you have not setup this terminal,  please refer to the MT7681 development guide for detailed set up steps. In the terminal console, enter the following command to flash the product id into 7681:
 
 ```
@@ -130,7 +130,7 @@ AT#Reboot
 ```
 Next we will show you how to setup the wifi on 7681 with smart connection.
 
-####Step 4. Smart Connection
+### Step 4. Smart Connection
 Step 4.1 Open the MCS mobile app and login with your account with a 7681 compatible product. Please make sure that you have completed step 3.
 
 Step 4.2 After logged in, click on the add icon on the right bottom.
@@ -152,7 +152,7 @@ Click Cancel button to exit the add smart connection pop-up.
 Now you can choose to register the device by MCS mobile app (Step 5A) or to create a test device via the web console to register. (Step 5B).
 
 
-####Step 5A. Activate an MT7681 device by MCS mobile app
+### Step 5A. Activate an MT7681 device by MCS mobile app
 
 Step 5A.1 Open the MCS mobile app and logged in. After login, click on the add icon on the right bottom.
 
@@ -176,7 +176,7 @@ You will be brought back to the device list after the device has been activated.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList2.png)
 
-####Step 5B. Create a test device on the web console
+### Step 5B. Create a test device on the web console
 Step 5B.1 In the MCS web console, click the "Development" in the navigation bar on the left and then click the "Details" button under the product which you'd like to register.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addTestDevice1.jpg)
@@ -215,7 +215,7 @@ AT#FLASH -s0x18102 –v0
 ```
 Your device should now automatically connected to MCS.
 
-####Step 6 Control your devices
+### Step 6 Control your devices
 
 **From the MCS web platform**
 

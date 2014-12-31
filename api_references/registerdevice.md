@@ -1,26 +1,26 @@
 # registerDevice
 
-### Description
+## Description
 
 Use **HTTPs POST** to register devices with or without serial keys
 
-### Request URL
+## Request URL
 
 ```
 https://api.mediatek.com/mcs/v2/devices
 
 ```
 
-### Action
+## Action
 HTTPs POST
 
-### Parameters
+## Parameters
 
-#### Header
+### Header
 
 Authorization: Bearer '{token}'
 
-#### Body
+### Body
 The request body should be constructed in JSON format with the following fields:
 
 | Field Name | Type | Required |Description|
@@ -35,15 +35,15 @@ The request body should be constructed in JSON format with the following fields:
 
 
 
-### Response
+## Response
 
-#### Response Code
+### Response Code
 200
 
-#### Response Header
+### Response Header
 
 Content-Type:`application/json`
-#### Response Body
+### Response Body
 
 ***Data Format: JSON***
 
@@ -88,7 +88,7 @@ Response Body
 }
 ```
 
-### Error Response
+## Error Response
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
 

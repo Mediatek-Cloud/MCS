@@ -1,7 +1,5 @@
 # Key Concepts
 
-* * *
-
 This section describes the key components that make up a Wearables or IoT device project in MediaTek Cloud Sandbox. The key components are defined across two phases:
 - Development phase
 - Management phase
@@ -57,7 +55,7 @@ This data channel type is for data generated in the sandbox and sent to the devi
 This data channel enables a Display and Controller data channel to be combined where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 
 
-####Data Types
+#### Data Types
 
 Each Data Channel can hold one of seven types of data:
 

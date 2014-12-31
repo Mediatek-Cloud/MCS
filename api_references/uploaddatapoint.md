@@ -1,10 +1,10 @@
 # uploadDataPoint
 
-### Description
+## Description
 
 Use **HTTPs POST** to upload data points
 
-### Request URL
+## Request URL
 
 ```
 https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints
@@ -13,12 +13,12 @@ https://api.mediatek.com/mcs/v2/devices/:deviceId/datapoints
 
 The API will by default assume the json format, if you want to use the csv, please add`.csv` at the end of the Request URL.
 
-### Action
+## Action
 HTTPs POST
 
-### Parameters
+## Parameters
 
-#### Header
+### Header
 
 **Token**
 
@@ -46,9 +46,9 @@ Content-Type:`text/csv`
 
 
 
-#### Body
+### Body
 
-#####For CSV format:
+#### For CSV format:
 
 Syntax:
 
@@ -69,7 +69,7 @@ Line 1: Data Channel Id = 1, with a given timestamp, 26 is the value of this dat
 Line 2: Data Channel Id = 2, with no given timestamp (therefore MCS will generate, 26.34 is the value of this data point (in this case the data type pre-defined as float)
 
 
-#####For JSON format
+#### For JSON format
 
 Syntax:
 
@@ -109,15 +109,15 @@ Item 2: Data Channel Id = 2, with no given timestamp (therefore MCS will generat
 
 Please note, the unix time is in milliseconds, for human readable time conversion, please refer to http://www.epochconverter.com/
 
-### Response
+## Response
 
-#### Response Code
+### Response Code
 200
 
-#### Response Header
+### Response Header
 
 Content-Type:`application/json`
-#### Response Body
+### Response Body
 
 ***Data Format: JSON***
 
@@ -152,7 +152,7 @@ Response Body
 }
 ```
 
-### Error Response
+## Error Response
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:
 
