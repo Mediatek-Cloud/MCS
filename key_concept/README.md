@@ -1,5 +1,7 @@
 # Key Concepts
 
+* * *
+
 This section describes the key components that make up a Wearables or IoT device project in MediaTek Cloud Sandbox. The key components are defined across two phases:
 - Development phase
 - Management phase
