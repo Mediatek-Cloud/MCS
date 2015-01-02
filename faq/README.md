@@ -2,7 +2,7 @@
 
 **What kind of device can be connected to MSC platform?**
 
-Almost any device that has an internet connection can be connected to MCS, whether it be connected via WiFi, 3G, or Bluetooth.
+Almost any device that has an internet connection can be connected to MCS, as long as it can work with RESTful or TCP Sockets.
 
 **What can I develop with MCS?**
 
@@ -16,8 +16,6 @@ We provides tutorials with detail steps by steps and screen capture assists you 
 
 Controlling access rights for your products and devices is made simple in the Development or My device User privilege section provided with MCS. You can choose what kind of access level each user may have, eg, Read, Update, or Delete.
 
-
-
 **Can I change my product and device's time zone?**
 
-You can always change your product and device's time in the Profile. By clicking your name on the right upper panel, and select Profile, then you can change the time zone there.
+Currently, the time-zone is bind to your user profile timezone. Youcan change your timezone by clicking your name on the right upper pannel, and select profile where you can change your timezone there.
