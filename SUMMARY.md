@@ -8,7 +8,7 @@
    * [Create your test device](tutorial/create_your_first_device.md)
    * [Manage your device](tutorial/manage_your_device.md)
    * [Manage your profile](tutorial/manage_your_profile.md)
-   * [Implementing using LinkIt One (Aster 2502) development Board](tutorial/implementing_using_linkit_one.md)
+   * [Implementing using LinkIt ONE (Aster 2502) development Board](tutorial/implementing_using_linkit_one.md)
    * [Implementing using LinkIt Connect 7681 development board](tutorial/implementing_using_mt7681_development_board.md)
 * [API References](api_references/README.md)
    * [DataPoints](api_references/data_read_write.md)
@@ -19,6 +19,5 @@
        * [register a device](api_references/registerdevice.md)
        * [deregsiter a device](api_references/deactivatedevice.md)
        * [get connection](api_references/getconnection.md)
-   * [7681 Data Format](api_references/7681_data_d.md)
 * [FAQ](faq/README.md)
 
