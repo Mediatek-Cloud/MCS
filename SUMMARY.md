@@ -19,5 +19,6 @@
        * [register a device](api_references/registerdevice.md)
        * [deregsiter a device](api_references/deactivatedevice.md)
        * [get connection](api_references/getconnection.md)
+* [Mobile Application](6_mobile_application/README.md)
 * [FAQ](faq/README.md)
 
