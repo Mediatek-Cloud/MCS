@@ -1,17 +1,17 @@
-#include <b64.h>
+//#include <b64.h>
 #include <HttpClient.h>
 #include <LTask.h>
 #include <LWiFi.h>
 #include <LWiFiClient.h>
 #include <LDateTime.h>
-#define WIFI_AP "IT Portable Hotspot"
-#define WIFI_PASSWORD "12345678"
+#define WIFI_AP "MiFi4620LE Jetpack 1C04 Secure"
+#define WIFI_PASSWORD "a248b26c"
 #define WIFI_AUTH LWIFI_WPA  // choose from LWIFI_OPEN, LWIFI_WPA, or LWIFI_WEP.
 #define per 50
-#define per1 5
-#define DEVICEID "D6BOt9tb"
-#define DEVICEKEY "8cpKhXJZoO094MyZ"
-#define SITE_URL "api.mediatek.io"
+#define per1 3
+#define DEVICEID "DIYhnPpY"
+#define DEVICEKEY "SoAelvqRBD01H7xl"
+#define SITE_URL "api.mediatek.com"
 
 LWiFiClient c;
 unsigned int rtc;
@@ -19,22 +19,25 @@ unsigned int lrtc;
 unsigned int rtc1;
 unsigned int lrtc1;
 char port[4]="   ";
-char connection_info[20]="                   ";
-char ip[15]="              ";
+char connection_info[21]="                    ";
+char ip[14]="             ";             
 int portnum;
 int val = 0;
 String tcpdata = String(DEVICEID) + "," + String(DEVICEKEY) + ",0";
+String tcpcmd_led_on = String(DEVICEID) + "," + String(DEVICEKEY) + ",0,LED_CONTROL,on";
+String tcpcmd_led_off = String(DEVICEID) + "," + String(DEVICEKEY) + ",0,LED_CONTROL,off";
 String upload_led;
 LWiFiClient c2;
 HttpClient http(c2);
 
 void setup()
 {
+  
   LTask.begin();
   LWiFi.begin();
   Serial.begin(115200);
-  while(!Serial) delay(1000); 
-  
+  while(!Serial) delay(1000); /* comment out this line when Serial is not present, ie. run this demo without connect to PC */
+
   Serial.println("Connecting to AP");
   while (0 == LWiFi.connect(WIFI_AP, LWiFiLoginInfo(WIFI_AUTH, WIFI_PASSWORD)))
   {
@@ -72,7 +75,7 @@ void getconnectInfo(){
   int errorcount = 0;
   while (!c2.available())
   {
-    Serial.print("waiting HTTP response: ");
+    Serial.println("waiting HTTP response: ");
     Serial.println(errorcount);
     errorcount += 1;
     if (errorcount > 10) {
@@ -111,15 +114,15 @@ void getconnectInfo(){
     }
     
   }
-  Serial.print("The connection info:");
-  Serial.print(connection_info);
+  Serial.print("The connection info: ");
+  Serial.println(connection_info);
   int i;
   for(i=0;i<separater;i++)
   {  ip[i]=connection_info[i];
   }
   int j=0;
   separater++;
-  for(i=separater;i<20;i++)
+  for(i=separater;i<21 && j<5;i++)
   {  port[j]=connection_info[i];
      j++;
   }
@@ -129,8 +132,9 @@ void getconnectInfo(){
   Serial.print("Port: ");
   Serial.println(port);
   portnum = atoi (port);
+  Serial.println(portnum);
 
-}
+} //getconnectInfo
 
 void uploadstatus(){
   //calling RESTful API to upload datapoint to MCS to report LED status
@@ -148,7 +152,6 @@ void uploadstatus(){
   else
   upload_led = "LED,,off";
   int thislength = upload_led.length();
-  Serial.println(upload_led);
   HttpClient http(c2);
   c2.print("POST /mcs/v2/devices/");
   c2.print(DEVICEID);
@@ -207,6 +210,8 @@ void connectTCP(){
   //establish TCP connection with TCP Server with designate IP and Port
   c.stop();
   Serial.println("Connecting to TCP");
+  Serial.println(ip);
+  Serial.println(portnum);
   while (0 == c.connect(ip, portnum))
   {
     Serial.println("Re-Connecting to TCP");    
@@ -216,34 +221,40 @@ void connectTCP(){
   c.println(tcpdata);
   c.println();
   Serial.println("waiting TCP response:");
-}
+} //connectTCP
 
 void heartBeat(){
   Serial.println("send TCP heartBeat");
   c.println(tcpdata);
   c.println();
     
-}
+} //heartBeat
 
 void loop()
 {
   //Check for TCP socket command from MCS Server 
+  //Serial.println(tcpcmd_led_on);
+  //Serial.println(tcpcmd_led_off);
+  String tcpcmd="";
   while (c.available())
    {
       int v = c.read();
       if (v != -1)
       {
         Serial.print((char)v);
-        if ((char)v == char('Dcbx0YIE,r40nelX0cGTDff4J,0,LED_CONTROL,on')){
+        tcpcmd += (char)v;
+        if (tcpcmd.equals(tcpcmd_led_on)){
           digitalWrite(13, HIGH);
-          Serial.println(digitalRead(13));
-        }else if ((char)v == char('Dcbx0YIE,r40nelX0cGTDff4J,0,LED_CONTROL,off')){
+          Serial.print("Switch LED ON ");
+          tcpcmd="";
+        }else if(tcpcmd.equals(tcpcmd_led_off)){  
           digitalWrite(13, LOW);
-          Serial.println(digitalRead(13));
+          Serial.print("Switch LED OFF");
+          tcpcmd="";
         }
       }
    }
-  //Check for hearbeat interval 
+
   LDateTime.getRtc(&rtc);
   if ((rtc - lrtc) >= per) {
     heartBeat();
