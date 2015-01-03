@@ -20,7 +20,7 @@ unsigned int rtc1;
 unsigned int lrtc1;
 char port[4]="   ";
 char connection_info[21]="                    ";
-char ip[14]="             ";             
+char ip[15]="              ";             
 int portnum;
 int val = 0;
 String tcpdata = String(DEVICEID) + "," + String(DEVICEKEY) + ",0";
