@@ -54,7 +54,7 @@ HTTPs GET
 ### Header
 
 
-Content-Type:`application/json` or `text/csvt`
+Content-Type:`application/json` or `text/csv`
 
 
 deviceKey: `device_key_here`
