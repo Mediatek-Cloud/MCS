@@ -1,24 +1,23 @@
 # Key Concepts
 
-This section describes the key components that make up a Wearables or IoT device project in MediaTek Cloud Sandbox. The key components are defined across two phases:
-- Development phase
-- Management phase
+This section describes the key components that make up a Wearables or IoT device project in MediaTek Cloud Sandbox. The key components are defined across the whole prototype development phase.
 
 ## Development Phase
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
 
-During the Development Phase you create **Products**, which may contain:
+During the Development Phase you create **Prototype**, which may contain:
 - **Data Channels**, each of a particular **Data Type**
 - **Notifications** for changes in the data received from or sent to a device
-- **User privileges** to enable team members or collaborators to view or edit products and device details
+- **User privileges** to enable team members or collaborators to view or edit prototypes and device details
 - **Firmware** versions that can be pushed to devices
-- **Manufacturer Information** that can be used to define additional information about a product
+- **Test device** enables the management of test devices for each prototype
 
-Once you have defined the necessary Product information, you can then add devices as you need throughout the development phase.
-### Product
+Once you have defined the necessary Prototype information, you can then add devices as you need throughout the development phase.
 
-A **Product** is the blueprint of the final device you’ll ship to users. Each product will have a unique product Id and product Ke. For the product maker, the product Id and product key are the differentiator for your product from the other product. When your product goes into mass production, your product's devices will use those information to be registered.
+### Prototype
+
+A **Prototype** is the blueprint of the final device you’ll ship to users. Each product will have a unique prototype Id and prototype Key. In the future, when the prototype is ready to be released, for the maker, the prototype Id and prototype key are the differentiator for your prototype from the others. When your prototype goes into mass production, your prototypes's devices will use those information to be registered.
 
 ### Data Channel
 
@@ -82,7 +81,7 @@ Each Data Channel can hold one of seven types of data:
 
 Notification function enables you to create criteria that trigger an email or cloud based notification be sent to specific users.
 
-Beta note: This feature is under development and presently enables you to set triggers on a specific channel and get an email notification, with ability to add additional user to the notified list. Triggers are available for:
+Notification enables you to set triggers on a specific channel and get an email notification, with ability to add additional user to the notified list. Triggers are available for:
 
 - data received on a channel being above or below a specific value, which will issue a defined number of notifications while the data remains above or below the trigger value
 
@@ -90,55 +89,21 @@ Beta note: This feature is under development and presently enables you to set tr
 
 
 ### User privileges
-This feature will enable you to give other MCS users various privileges to access the Product, such as the ability to view the Product settings, create a device and alike.
-Beta note: This feature hasn’t been implemented yet.
+This feature will enable you to give other MCS users various privileges to access the Prototype, such as the ability to view the Prototype settings, create a device and alike.
+
 
 ### Firmware
 
-After the product is released you can upload firmware updates to the sandbox. The sandbox will then detect all compatible devices and offer their users the option to update the devices’ firmware over the air.
+The developer can upload and manage the firmware for specific prototype. After the prototype is released you can also upload firmware updates to the sandbox. The sandbox will then detect all compatible devices and offer their users the option to update the devices’ firmware over the air.
 
+### Test Devices ###
 
-### Manufacturing Info
-
-This product attribute enables you to further describe your product with a series of items consisting of a title and description. This information will be visible to end users in their **My Devices** page.
-
-### Devices ###
-
-During development, you’re able to create test devices from the Product details. Each device you create is given a **Device ID** and **Device Key**, which you use in the MediaTek Cloud Sandbox APIs to identify data pushed and pulled to the device. Device details, along with their ID and key, are displayed in your **Management** workbench and **My Devices** page.
-
-## Management Phase
-
-Once the development of your product is complete and you wish to start pre-commercial testing, you can migrate your product to the Management Phase. Once released, you can create release devices for the product, considered as you have completed and tested you prototype phased into mass production of the product. The management phase is the management of the mass produced devices. Starting from creating each individual devices a placeholder for data interactions. The first step to so create a placeholder for each device for their initial "registration" step. The management of the devices from developer's perspective is under the Management workbench.
-### Product Release
-
-After a final product is developed and be tested using the test devices, the developer can release the product for deployment which transfer the product from the development state to the release state. After release, the end user is able to create devices out of this released product in the **Management** workbench.
-
-
-### Batch Create with Key
-
-The serial number is a unique key assigned to each device which will be accessible while the device registration. The device will need this key to enable it to be registered. The unique key can be generated by uploading a CSV file which has one device serial number per line or by entering the serial numbers manually.
-
-
-
-### Batch Create without Key
-
-When each device does not need a unique key to be registered, you can then create the devices without key.
-
-
-
-### Device Registration
-
-After a device is created, it can be registered or de-registered in the management page. While a device is registered, it is ready to be used. The user can register or de-register the device using the registerDevices and deregisterDevices. You can find the API information in the API reference page.
-
+During development, you’re able to create test devices from the Prototype details. Each device you create is given a **Device ID** and **Device Key**, which you use in the MediaTek Cloud Sandbox APIs to identify data pushed and pulled to the device. Device details, along with their ID and key, are displayed in your **My Devices** page.
 
 
 ## My Devices
 
 
-The end user can use the **My Devices** to manage the devices they own or have the access. In this page, the end user can see the exact Data Channel configurations as defined in the product. Although the end user cannot change the Data Channel configuration, the end user can do other settings base on preference. The end user can view the time-series based data in a historical visualization chart and GPS geolocation data in a map.
+The developers can use the **My Devices** to manage the devices they own or have the access. In this page, the developers can see the exact Data Channel, user privilege, and notitification configurations as defined in the prototype. However, the developers can still modify the notification and user privilege settings for specific device on the My device detail page.
 
-Apart from viewing the data channel information, the user can set notification alert, set user privileges and get the firmware update directly here in My Devices page.
-
-Also, the end user can get manufacturer information and report any error in My device page as well.
-
-Each device will have a unique set of device Id and device key, those will be needed when calling our API to access this device.
+Each device will have a unique set of device Id and device key, those will be needed when calling our API to access this device and you the developers can find those information in both My device detail page and the Test device tab in the prototype detail page.

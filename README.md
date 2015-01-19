@@ -1,6 +1,6 @@
 # MediaTek Cloud Sandbox Introduction
 
-MediaTek Cloud Sandbox offers you the data and device management services commonly needed during the development and pre-commercial testing of Wearables and IoT devices. It frees you from having to develop your own cloud infrastructure to support product development.
+MediaTek Cloud Sandbox offers you the data and device management services commonly needed during the development and pre-commercial testing of Wearables and IoT devices. It frees you from having to develop your own cloud infrastructure to support prototype development.
 Using a RESTful API you collect data from your devices, which you can view in a powerful web-based dashboard that offers a range of display and graphing options. Then you can control your Wearables and IoT devices by issuing commands from the dashboard. In addition, a complementary smartphone app lets you review collected data and control your devices from anywhere.
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/overview.JPG)
 MediaTek Cloud Sandbox lets you:
@@ -12,7 +12,7 @@ MediaTek Cloud Sandbox lets you:
 - Receive notifications when DataPoints are collected or change
 - Manage the life cycle of devices, as you would in your live implementation
 - Manage and control remotely, using the complementary mobile app
-- Create reports about products, devices and collected data
+- Create reports about prototypes, devices and collected data
 - Perform FOTA firmware updates
 - Control access to data and devices with granular security control
 
