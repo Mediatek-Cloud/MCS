@@ -4,8 +4,8 @@
 #include <LWiFi.h>
 #include <LWiFiClient.h>
 #include <LDateTime.h>
-#define WIFI_AP "MiFi4620LE Jetpack 1C04 Secure"
-#define WIFI_PASSWORD "a248b26c"
+#define WIFI_AP "IT Portable Hotspot"
+#define WIFI_PASSWORD "12345678"
 #define WIFI_AUTH LWIFI_WPA  // choose from LWIFI_OPEN, LWIFI_WPA, or LWIFI_WEP.
 #define per 50
 #define per1 3
