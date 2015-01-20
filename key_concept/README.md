@@ -5,6 +5,7 @@ This section describes the key components that make up a Wearables or IoT device
 ## Development
 
 
+
 During the Development Phase you create **Prototype**, which may contain:
 - **Data Channels**, each of a particular **Data Type**
 - **Notifications** for changes in the data received from or sent to a device
