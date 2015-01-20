@@ -1,6 +1,6 @@
 # Key Concepts
 
-This section describes the key components that make up a Wearables or IoT device project in MediaTek Cloud Sandbox. The key components are defined across the whole prototype development phase.
+This section describes the key components that make up a Wearables or IoT device project in MediaTek Cloud Sandbox. The key components are defined across the whole prototype development process.
 
 ## ** Development**
 
@@ -82,7 +82,7 @@ Each Data Channel can hold one of seven types of data:
 
 Notification function enables you to create criteria that trigger an email or cloud based notification be sent to specific users.
 
-Notification enables you to set triggers on a specific channel and get an email notification, with ability to add additional user to the notified list. Triggers are available for:
+Notification enables you to set triggers on a specific channel and get an email and mobile app notification, with ability to add additional user to the notified list. Triggers are available for:
 
 - data received on a channel being above or below a specific value, which will issue a defined number of notifications while the data remains above or below the trigger value
 
