@@ -2,7 +2,7 @@
 
 This section describes the key components that make up a Wearables or IoT device project in MediaTek Cloud Sandbox. The key components are defined across the whole prototype development process.
 
-## ** Development**
+## Development
 
 
 During the Development Phase you create **Prototype**, which may contain:
@@ -112,7 +112,7 @@ The developer can upload and manage the firmware for specific prototype. After t
 During development, you’re able to create test devices from the Prototype details. Each device you create is given a **Device ID** and **Device Key**, which you use in the MediaTek Cloud Sandbox APIs to identify data pushed and pulled to the device. Device details, along with their ID and key, are displayed in your **My Devices** page.
 
 
-## **My Devices**
+## My Devices
 
 
 
