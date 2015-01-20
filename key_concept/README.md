@@ -14,14 +14,16 @@ During the Development Phase you create **Prototype**, which may contain:
 
 Once you have defined the necessary Prototype information, you can then add devices as you need throughout the development phase.
 
-### Prototype
+## Prototype
+
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
 
 A **Prototype** is the blueprint of the final device you’ll ship to users. Each product will have a unique prototype Id and prototype Key. In the future, when the prototype is ready to be released, for the maker, the prototype Id and prototype key are the differentiator for your prototype from the others. When your prototype goes into mass production, your prototypes's devices will use those information to be registered.
 
-### Data Channel
+## Data Channel
+
 
 
 A **Data Channel** represents:
