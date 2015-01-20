@@ -14,7 +14,8 @@ During the Development Phase you create **Prototype**, which may contain:
 
 Once you have defined the necessary Prototype information, you can then add devices as you need throughout the development phase.
 
-## Prototype
+### Prototype
+
 
 
 
@@ -22,7 +23,8 @@ Once you have defined the necessary Prototype information, you can then add devi
 
 A **Prototype** is the blueprint of the final device you’ll ship to users. Each product will have a unique prototype Id and prototype Key. In the future, when the prototype is ready to be released, for the maker, the prototype Id and prototype key are the differentiator for your prototype from the others. When your prototype goes into mass production, your prototypes's devices will use those information to be registered.
 
-## Data Channel
+### Data Channel
+
 
 
 
@@ -35,7 +37,8 @@ These data channels are implemented in the sandbox as the following types:
 - Controller
 - Hybrid
 
-## Data Channel Type
+### Data Channel Type
+
 
 
 
@@ -61,7 +64,8 @@ This data channel type is for data generated in the sandbox and sent to the devi
 This data channel enables a Display and Controller data channel to be combined where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 
 
-## Data Types
+### Data Types
+
 
 
 
@@ -86,7 +90,8 @@ Each Data Channel can hold one of seven types of data:
 - **PWM** — this data type represents a PWM signal delivered to a specific GPIO pin, such as level 15 on Pin 3.
 
 
-## Notifications
+### Notifications
+
 
 
 
@@ -99,21 +104,24 @@ Notification enables you to set triggers on a specific channel and get an email 
 - each time the data value is changed on a Controller data channel.
 
 
-## User privilege
+### User privilege
+
 
 
 
 This feature will enable you to give other MCS users various privileges to access the Prototype, such as the ability to view the Prototype settings, create a device and alike.
 
 
-## Firmware
+### Firmware
+
 
 
 
 
 The developer can upload and manage the firmware for specific prototype. After the prototype is released you can also upload firmware updates to the sandbox. The sandbox will then detect all compatible devices and offer their users the option to update the devices’ firmware over the air.
 
-## Test Devices
+### Test Devices
+
 
 
 
