@@ -35,7 +35,8 @@ These data channels are implemented in the sandbox as the following types:
 - Controller
 - Hybrid
 
-### Data Channel Type
+## Data Channel Type
+
 
 
 
@@ -60,7 +61,8 @@ This data channel type is for data generated in the sandbox and sent to the devi
 This data channel enables a Display and Controller data channel to be combined where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 
 
-### Data Types
+## Data Types
+
 
 
 Each Data Channel can hold one of seven types of data:
@@ -84,7 +86,8 @@ Each Data Channel can hold one of seven types of data:
 - **PWM** — this data type represents a PWM signal delivered to a specific GPIO pin, such as level 15 on Pin 3.
 
 
-### Notifications
+## Notifications
+
 
 
 Notification function enables you to create criteria that trigger an email or cloud based notification be sent to specific users.
@@ -96,19 +99,22 @@ Notification enables you to set triggers on a specific channel and get an email 
 - each time the data value is changed on a Controller data channel.
 
 
-### User privilege
+## User privilege
+
 
 
 This feature will enable you to give other MCS users various privileges to access the Prototype, such as the ability to view the Prototype settings, create a device and alike.
 
 
-### Firmware
+## Firmware
+
 
 
 
 The developer can upload and manage the firmware for specific prototype. After the prototype is released you can also upload firmware updates to the sandbox. The sandbox will then detect all compatible devices and offer their users the option to update the devices’ firmware over the air.
 
-### Test Devices
+## Test Devices
+
 
 
 During development, you’re able to create test devices from the Prototype details. Each device you create is given a **Device ID** and **Device Key**, which you use in the MediaTek Cloud Sandbox APIs to identify data pushed and pulled to the device. Device details, along with their ID and key, are displayed in your **My Devices** page.
