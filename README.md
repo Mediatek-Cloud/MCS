@@ -5,7 +5,7 @@ Using a RESTful API you collect data from your devices, which you can view in a 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/overview.JPG)
 MediaTek Cloud Sandbox lets you:
 
-- Define Wearables and IoT product profiles and individual devices within a profile
+- Define Wearables and IoT prototype profiles and individual devices within a profile
 - Push and Pull DataPoints between a device and the sandbox, using data types such as geo-location, temperature, humidity and more
 - Remotely control your devices using state DataPoints, such as switch-state and more
 - Visualize DataPoints graphically
