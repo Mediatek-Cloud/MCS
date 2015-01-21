@@ -1,35 +1,33 @@
-# Create your first product
+# Create your first protptype
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/FirstProduct.JPG)
 
-## How to create a product step by step
+## How to create a prototype step by step
 
 
 Step 1. Click Development on the left hand side navigator.
 
-Step 2. Click Create button on the right to create a new product.
+Step 2. Click Create button on the right to create a new prototype.
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProduct.JPG)
 
 
 
-Step 3. Enter the Product name, version, and select chip type, industry and Click Create button. Your Product is created.
+Step 3. Enter the Prototype name, version, and select chip type, industry and Click Save button. Your Prototype is created.
 
-
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProductPage.JPG)
-
-
-After your product is created, you will get to see the product Id and product key. Those information are essentially important when your product goes into the mass production stage, your product's devices will need the product Id and product key to be registered correctly.
-
-
-Step 4. Click Detail button of the product just created.
+Step 4. Click Detail button of the prototype just created.
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
 
 
-Step 5. Click Add in the product just created.
+After your prototype is created, you can start to set the data channel, notification, user privilege, and create test devices alll in the prototype page.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProductPage.JPG)
+
+
+Step 5. Click Add in the data channel tab.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/AddDataChannel.JPG)
 

@@ -4,9 +4,8 @@ Here are the four steps to connect MediaTek Cloud Sandbox to your development an
 
 1. Develop Prototype
 2. Create Test Device
-3. Release Prototype for deployment
-4. Managing deployed devices
-5. Manage your Profile
+3. Managing deployed test devices
+4. Manage your Profile
 
 
 
@@ -20,12 +19,15 @@ The developer develop a prototype by first create a prototype in the Development
 
 AFter creating a prototype, the developer can create a test device to test and control his device. There is also a mobile management console which allows the developer to visually view the simulated result for his prototype.
 
-[Release Product for deployment]
+[Managing deployed test devices]
 
-After the prototype is tested, the developer then release the prototype for deployment. A prototype may have several connected device.
+The developer can monitor all the test devices under each prototype in the Development console, the developer can also manage all the test device in the My device console which he has the access for.
 
-[Managing deployed devices]
+In the future, when the prototype is release to the end user, the end user can manage and configure the device in the My device console as well to view the data, set notification, and share the device to other users.
 
-All the device can be registered and connected to the MCS platform. The developer can monitor the devices under each prototype, and the use can manage his device base on his preference.
+[Manage your profile]
+
+You can always manage your user profile by clicking on your name on the upper right panel, and click Profile. You can change the password for your account and change the timezone by selecting your current country. All your prototypes and test devices will use the tomezone you have set here.
+
 
 
