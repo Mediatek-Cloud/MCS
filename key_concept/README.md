@@ -14,7 +14,7 @@ During the Development Phase you create **Prototype**, which may contain:
 
 Once you have defined the necessary Prototype information, you can then add devices as you need throughout the development phase.
 
-## Prototype
+### Prototype
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
