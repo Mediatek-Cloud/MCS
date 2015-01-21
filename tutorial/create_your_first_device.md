@@ -4,15 +4,15 @@
 
 ## How to create a test device step by step
 
-[Prerequisites] Create your first product
+[Prerequisites] Create your first prototype
 
-Step 1. Go to the Product Detail Page you just created.
+Step 1. Go to the Prototype Detail Page you just created.
 
 Step 2. Click Create Test Device button.
 
 Step 3. You will get a message of creating test device successfully.
 
-Step 4. Go to **My Device** to check your test device.
+Step 4. Go to **Test Device** tab to check your test device.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/TestDevice.jpg)
 
