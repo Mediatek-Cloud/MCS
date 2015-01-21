@@ -22,15 +22,13 @@ Step 4. Go to **Test Device** tab to check your test device.
 
 
 
-After creating the test device, the developer can monitor and control the device to make sure its functionality before release the product.
+After creating the test device, the developer can monitor and control the device to make sure its functionality before release the prototype in the future.
 
 You will find the Device Id by:
 
-Step 1. Click **My Device** on the left navigator.
+Step 1. Click **Test Device** tab in prototype detail page.
 
-Step 2. Click Detail to get into any device you created.
-
-Step 3. You will find the Device Id and Key in the Devices detail page.
+Step 2. You will find the Device Id and Key in the Test devices list.
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/DeviceId.jpg)
