@@ -1,4 +1,4 @@
-# MediaTek Cloud Sandbox Introduction
+# **MediaTek Cloud Sandbox Introduction**
 
 MediaTek Cloud Sandbox offers you the data and device management services commonly needed during the development and pre-commercial testing of Wearables and IoT devices. It frees you from having to develop your own cloud infrastructure to support prototype development.
 
@@ -31,7 +31,7 @@ MediaTek Cloud Sandbox is currently in closed-beta.
 
 
 
-## Prerequisites for Use
+## **Prerequisites for Use**
 To make use of MediaTek Cloud Sandbox you must:
 1. [Register as a member of MediaTek Labs] (http://labs.mediatek.com/dpRegister/create)
 2. [Sign-in to the MediaTek Cloud Sandbox] (http://mcs.mediatek.io/v2console)
