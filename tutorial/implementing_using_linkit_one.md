@@ -58,23 +58,23 @@ Please take note of the Data Channel Id, this is the unique identifier when call
 
 g. Once completed, you should be able to see two data channel created as below:
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/09-Create-Test-Device.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/09a-Create-Test-Device.JPG)
 
 ### Step 2. Create Test Device
 
 a. Click "Create Test Device" on the right upper corner of the page
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/09a-Create-Test-Device.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/09-Create-Test-Device.JPG)
 
-b. Once Test Device is created a message is prompted:
+b. Fill in the name and description of the test device:
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/10a-Create-Test-Device.JPG)
+
+c. After Test device is created, click "Go to detail" to open the created device detail page:
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/10-Create-Test-Device.JPG)
 
-c. Click "My devices" in the navigation bar on the left hand side, you should see a test device is created:
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/11-Test-Device.JPG)
-
-d. Click on the "detail" button to see the device page:
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/LinkIt-one-tutorial/12-Test-Device.JPG)
 
