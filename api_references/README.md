@@ -18,7 +18,7 @@ Parameters follows right after the access point used to identify a specific reso
 https://api.mediatek.com/v2/devices/{deviceId}/retrieveDataPoints
 
 ```
-In the example above, the deviceId was specified in the URL. For any requests, any parameters not included as part of the URL should be encoded as JSON or CSV with a `content -Type` of `application/json` or `application/csv`.
+In the example above, the deviceId was specified in the URL. For any requests, any parameters not included as part of the URL should be encoded as JSON or CSV with a `content -Type` of `application/json` or `text/csv`.
 
 ## Client Errors
 
