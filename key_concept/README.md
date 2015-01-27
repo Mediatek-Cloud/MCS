@@ -1,5 +1,3 @@
-
-
 This section describes the key components that make up a Wearables or IoT project in MediaTek Cloud Sandbox. The first task is to define a **Prototype** within in the **Development** phase.
 
 # **Development**
