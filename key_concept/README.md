@@ -1,22 +1,22 @@
-This section describes the key components that make up a Wearables or IoT project in MediaTek Cloud Sandbox. The first task is to define a **Prototype** within in the **Development** phase.
+This section describes the key components that make up a Wearables or IoT project in MediaTek Cloud Sandbox. All of your project activities take place within the **Development** pages of the MediaTek Cloud Sandbox. In addition to which, the **My Devices** page enables you to view all the devices you have created or have access to.
 
 # **Development**
 
-During the Development Phase you create **Prototype**, which may contain:
-- **Data Channels**, each of a particular **Data Type**
-- **Notifications** for changes in the data received from or sent to a device
-- **User privileges** to enable team members or collaborators to view or edit prototypes and device details
-- **Firmware** versions that can be pushed to devices
-- **Test device** enables the management of test devices for each prototype
+The Development page has features that enable you to create one or more **Prototypes** then define a number of physical devices based on that prototype. Each prototype, may contain:
+- **Data Channels**, each of a particular **Data Type**.
+- **Notifications** for changes in the data received from or sent to a device.
+- **User privileges** to enable team members or collaborators to view or edit prototypes and device details.
+- **Firmware** versions that can be pushed to devices.
+- **Test device** that represent each physical device based on the prototype.
 
-Once you have defined the necessary Prototype information, you can then add devices as you need throughout the development phase.
+Once you’ve defined a Prototype, you can add devices as you need throughout your project.
 
 ## **Prototype**
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
 
-A **Prototype** is the blueprint of the final device you’ll ship to users. Each product will have a unique prototype Id and prototype Key. In the future, when the prototype is ready to be released, for the maker, the prototype Id and prototype key are the differentiator for your prototype from the others. When your prototype goes into mass production, your prototypes's devices will use those information to be registered.
+A **Prototype** is the blueprint of the device you’re developing. Each prototype has a unique prototype Id and prototype Key.
 
 ## **Data Channel**
 
@@ -35,7 +35,7 @@ These data channels are implemented in the sandbox as the following types:
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_display.JPG)
 
-This data channel type is for data generated from a component of a device that has no related commands. For example data from a temperature sensor pushed to the sandbox and stored as a sequence over time.
+This data channel type is for data generated from a component of a device that has no related commands. For example data from a temperature sensor that is pushed to the sandbox and stored as a sequence over time.
 
 
 ###**Controller**
@@ -49,7 +49,7 @@ This data channel type is for data generated in the sandbox and sent to the devi
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_hybrid.JPG)
 
-This data channel enables a Display and Controller data channel to be combined where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
+This data channel enables a Display and Controller data channel to be combined, where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 
 
 ## **Data Types**
@@ -61,7 +61,7 @@ Each Data Channel can hold one of seven types of data:
 
 - **ON/OFF** — this data type represents a switch and enables the user to activate or deactivate a component of the device, such as turning a light on or off.
 
-- **Category** — this data type represents an arbitrary category. You are free to define the category and its content as you wish. For example, you could store weekday, month, fan settings (off, slow, medium and fast) and alike.
+- **Category** — this data type represents an arbitrary category. You’re free to define the category and its content as you wish. For example, you could store weekday, month, fan settings (off, slow, medium and fast) and alike.
 
 - **int** — this data type represents an arbitrary integer, such as the number of steps a user has taken.
 
@@ -83,31 +83,34 @@ Each Data Channel can hold one of seven types of data:
 
 
 
-Notification function enables you to create criteria that trigger an email or cloud based notification be sent to specific users.
+This function enables you to define criteria that trigger an email or cloud-based notification as well as define additional user’s the notification will be sent to — you as the prototype owner receive notifications by default.
 
-Notification enables you to set triggers on a specific channel and get an email and mobile app notification, with ability to add additional user to the notified list. Triggers are available for:
+Triggers are available for:
 
-- data received on a channel being above or below a specific value, which will issue a defined number of notifications while the data remains above or below the trigger value
+- Data received on a channel being above or below a specific value, which will issue a defined number of notifications while the data remains above or below the trigger value.
 
-- each time the data value is changed on a Controller data channel.
+- Each time the data value is changed on a Controller data channel.
 
 
-## **User privilege**
+## **User privileges**
 
-This feature will enable you to give other MCS users various privileges to access the Prototype, such as the ability to view the Prototype settings, create a device and alike.
+This feature enables you to give other MCS users various privileges to access the Prototype, such as the ability to view the Prototype settings, create a device and alike.
 
 
 ## **Firmware**
 
-The developer can upload and manage the firmware for specific prototype. After the prototype is released you can also upload firmware updates to the sandbox. The sandbox will then detect all compatible devices and offer their users the option to update the devices’ firmware over the air.
+Using this feature you can upload and manage the firmware for a specific prototype. Once devices have been created from the prototype the sandbox will detect compatible devices and offer their users the option to update the devices’ firmware over the air.
 
 ## **Test Devices**
 
-During development, you’re able to create test devices from the Prototype details. Each device you create is given a **Device ID** and **Device Key**, which you use in the MediaTek Cloud Sandbox APIs to identify data pushed and pulled to the device. Device details, along with their ID and key, are displayed in your **My Devices** page.
+This feature enables you to create test devices from the Prototype details. Each device you create is given a **Device ID** and **Device Key**, which you use in the MediaTek Cloud Sandbox APIs to identify data pushed to and pulled from the device. Device details, along with their ID and key, are displayed in your **My Devices** page.
 
 
 # **My Devices**
 
-The developers can use the **My Devices** to manage the devices they own or have the access. In this page, the developers can see the exact Data Channel, user privilege, and notitification configurations as defined in the prototype. However, the developers can still modify the notification and user privilege settings for specific device on the My device detail page.
+You use **My Devices** to manage the devices you have created or have been given access to.
 
-Each device will have a unique set of device Id and device key, those will be needed when calling our API to access this device and you the developers can find those information in both My device detail page and the Test device tab in the prototype detail page.
+In this page, you can see the data channel, user privilege, and notification configurations as defined in the device’s prototype. You can modify the notification and user privilege settings for specific devices on this page. You can also see the device Id and device key, in addition to being able to see those details in the Test device tab in a prototype’s details page.
+
+In addition to listing all the devices created for your prototypes, this page also shows any devices from other developer’s projects that you have been given access to. The features of the device that you can change will vary depending on the privileges granted to you.
+
