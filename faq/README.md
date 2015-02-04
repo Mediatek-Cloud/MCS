@@ -39,4 +39,12 @@ Please see 8. for detail.
 
 Unfortunately this feature is still under developement. When you first sign-on with MCS using Labs@mediatek, in the background we have created a new account in MCS using the email address as your account ID. Therefore, you can simply click "forgot password" and enter your email address, a forgot password reset email will send to your mailbox. You can then set a new password and come back and login by using your email and the new password. You can then be able to login to the Moble App in the same fashion.
 
+
+**9. What browser does the MCS support?**
+
+We strongly recommand you to use the Chrome to browse the MCS site.
+
+
+
+
 **Don't have the answer you are looking for? send us a [mail](mtkcloudsandbox@mediatek.com) **
