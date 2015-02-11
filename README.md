@@ -4,7 +4,7 @@ MediaTek Cloud Sandbox offers you the data and device management services common
 
 Using a RESTful API you collect data from your devices, which you can view in a powerful web-based dashboard that offers a range of display and graphing options. Then you can control your Wearables and IoT devices by issuing commands from the dashboard. In addition, a complementary smartphone app lets you review collected data and control your devices from anywhere.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/overview.JPEG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content01.JPG)
 MediaTek Cloud Sandbox lets you:
 
 - Define Wearables and IoT prototype profiles and individual devices within a profile
