@@ -9,7 +9,7 @@ Here are the four steps to connect MediaTek Cloud Sandbox to your development an
 
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/getting-started-flow.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content_img/content_img-07.jpg)
 
 [Develop Prototype]
 

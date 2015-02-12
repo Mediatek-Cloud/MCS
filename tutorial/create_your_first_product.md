@@ -1,6 +1,6 @@
 # Create your first protptype
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/FirstProduct.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content_img/content_img-08.jpg)
 
 ## How to create a prototype step by step
 

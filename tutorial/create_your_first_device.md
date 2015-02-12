@@ -1,6 +1,6 @@
 # Create your first device
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateTestDevice.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content_img/content_img-09.jpg)
 
 ## How to create a test device step by step
 

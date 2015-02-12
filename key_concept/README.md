@@ -14,7 +14,7 @@ Once you’ve defined a Prototype, you can add devices as you need throughout yo
 ## **Prototype**
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/product-structure.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content_img/content_img-03.jpg)
 
 A **Prototype** is the blueprint of the device you’re developing. Each prototype has a unique prototype Id and prototype Key.
 
@@ -33,21 +33,21 @@ These data channels are implemented in the sandbox as the following types:
 
 ###**Display**
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_display.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content_img/content_img-04.jpg)
 
 This data channel type is for data generated from a component of a device that has no related commands. For example data from a temperature sensor that is pushed to the sandbox and stored as a sequence over time.
 
 
 ###**Controller**
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_controller.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content_img/content_img-05.jpg)
 
 This data channel type is for data generated in the sandbox and sent to the device to control the setting of a logical or physical component in the device. For example, a switch to turn a light on or off.
 
 
 ###**Hybrid**
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/datachannel_type_hybrid.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content_img/content_img-06.jpg)
 
 This data channel enables a Display and Controller data channel to be combined, where there is a logical relationship between the two. For example, as between the data from a temperature sensor and the control settings for an air conditioning unit.
 

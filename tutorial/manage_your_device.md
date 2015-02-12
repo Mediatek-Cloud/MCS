@@ -1,7 +1,6 @@
 # Manage test device
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ManageDevice.JPG)
-
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/content_img/content_img-10.jpg)
 
 ## How to manage deplyed test devices
 
