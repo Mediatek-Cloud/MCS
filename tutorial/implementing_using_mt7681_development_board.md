@@ -90,12 +90,6 @@ Step 2.1 On the navigation bar, click **Development** then, under the product yo
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
 
 
-Step 2.2 You can see the Product Id and Product Key under the description of the product.
-
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/obtainProductInfo.jpg)
-
-Product ID and Product Key are essential for activating your MediaTek LinkIt Connect 7681 devices.
-
 
 ### Step 3. Flashing product Id and key to your device
 Step 3.1 Connect your LinkIt Connect 7681 development board to a PC and open a terminal application (such as PuTTY on Linux or HyperTerminal on Windows). If you’ve not setup this terminal, please refer to the MediaTek LinkIt Connect 7681 Developer’s Guide for detailed set up steps. In the terminal console, enter the following command to flash the Product Id to your board:
@@ -173,7 +167,7 @@ Step 5A.4 Enter the device name and description and tap **Save**.
 
 After the device has activated, the device list is redisplayed. Your device should now be on the list.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList2.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/4.png)
 
 ### Step 5B. Create a test device using the web console
 Step 5B.1 In the MCS web console, in the navigation bar on the left, click **Development** and then under the product (the one you created in Step 1) that you'd like to register a device for click **Details**.
@@ -218,12 +212,12 @@ Your device should now be automatically connected to MCS.
 
 Step 6A1 Open the MCS mobile app and sign in. Tap on the device you'd like to control.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apkControlDevice.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/4.png)
 
 
 Step6A.2 You’ll see a list of controllers that were added in step 1. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apiControlDevice2.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/3.png)
 
 ### Step 6B Control your device from the MCS web console
 
