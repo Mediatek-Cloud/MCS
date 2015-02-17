@@ -16,7 +16,7 @@ Step 4. You will get a message of creating test device successfully. You can go 
 
 Step 5. Or you can also check the test device in **Test Device** tab too.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/TestDevice.jpg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-06.jpg)
 
 
 
@@ -33,7 +33,7 @@ You will find the Device Id in two places:
 2. Test device detail page under My device.
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/DeviceId.jpg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-07.jpg)
 
 
 
