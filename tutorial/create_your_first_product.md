@@ -5,9 +5,9 @@
 ## How to create a prototype step by step
 
 
-Step 1. Click Development on the left hand side navigator.
+Step 1. Click Development on the top menu bar.
 
-Step 2. Click Create button on the right to create a new prototype.
+Step 2. Click Create button to create a new prototype.
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProduct.JPG)
@@ -22,7 +22,7 @@ Step 4. Click Detail button of the prototype just created.
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/ProductDetail.JPG)
 
 
-After your prototype is created, you can start to set the data channel, notification, user privilege, and create test devices alll in the prototype page.
+After your prototype is created, you can start to set the data channel, notification, user privilege, create and view test devices in the prototype detail page.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/CreateProductPage.JPG)
 
@@ -41,7 +41,7 @@ Step 6. Select the Data Channel type. eg, Controller, Display, or Hybrid. And Cl
 Step 7. Enter the Data Channel name, Id, description and select Data type.
 
 
-Step 8. Click Save button. And now you can start create your test device for the product!
+Step 8. Click Save button. And now you can start create test devices for the prototype!
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/AddDataChannelPage.JPG)

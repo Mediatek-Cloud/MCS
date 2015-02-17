@@ -4,7 +4,7 @@
 
 ## How to manage deplyed test devices
 
-After the developer created several devices in a prototype, the developer can manage the product in the Prototype detail page, and the My device console, and the end user can manage his devices in the My Device console.
+The developer can manage the test devices in the Prototype detail page, or in the device detail page under My device. In the future, whrn the device is released, the end user can view and configure his devices in the My Device console.
 
 ### From Developer's view point
 
@@ -16,15 +16,13 @@ In the Development or My device page, the developer can do several configuration
 4.	Check Firmware information and update information
 5.	Manage test device
 
-The developer can manage the test device status of each prototype all on the Management page, for example, how many devices are registered.
-
 
 ### From End User's view point
-In the future, when the prtotyp is released to the market, the end user can manage his device on My device on the left hand  side navigator as well by register the end user account on the MCS platform to access his device.
+In the future, when the prtotyp is released to the market, the end user can view and configure his device under My device by register the end user account on the MCS platform to access his devices.
 
 The user can manage his devices by:
 
 1.	View Data Channel stautus
 2.	Set Notification
 3.	Set User privileges
-4.	Check Firmware information and update information
+4.	Check Firmware information and upgrade
