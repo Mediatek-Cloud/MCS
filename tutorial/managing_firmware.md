@@ -4,7 +4,7 @@ MediaTek Clous Sandbox(MCS) enables the user to manage the firmware and provides
 
 To using the Firmware service, go to the **Firmware tab** in the Prototype detail page. You can see there is a Default Firmware indicating your current firmware and you can set it as other uploaded firmwares' prerequisite to be upraded.
 
-Click Add firmware to first upload a new firmware,
+Click **Add firmware** to first upload a new firmware,
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/firmware/fw01.JPG)
 
@@ -25,5 +25,10 @@ After selecting the devices you would like to upgrade, click the Push botton. Yo
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/firmware/fw04.JPG)
 
+The user can also upgrade the firmware of a device in the Device detail page. In the Device detail page, click on the frimware tab, and you will see the current using firmware and the firmware that the device can be upgraded to.
+
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/firmware/fw05.JPG)
+
+Click on the **Upgrade** button next to the firmware that you want the device to be upgraded.
 
 
