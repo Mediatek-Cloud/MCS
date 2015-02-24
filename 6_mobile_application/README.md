@@ -6,9 +6,9 @@ Mobile Application
 
 
 
-Please click [here](http://cdn.mediatek.com/iot.v2.0.1.dev.apk) or scan the QR code below to download the APK:
+Please click [here](http://cdn.mediatek.com/iot.v2.0.9.apk) or scan the QR code below to download the APK:
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apkQrCode.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/qrcode.png)
 
 The mobile app currently offers for Android only.
 
