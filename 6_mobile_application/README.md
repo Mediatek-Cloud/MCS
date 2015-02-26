@@ -3,14 +3,15 @@
 Mobile Application
 
 
-
-
-
 Please click [here](http://cdn.mediatek.com/iot.v2.0.9.apk) or scan the QR code below to download the APK:
+
+(If you already installed previous version, you need to un-install the previous version and install the new version again.)
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/qrcode.png)
 
 The mobile app currently offers for Android only.
+
+
 
 To install the app, you must have android v4.0 or above version, and open the above download link in your mobile browser
 
