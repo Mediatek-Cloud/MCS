@@ -24,4 +24,5 @@
        * [get connection](api_references/getconnection.md)
 * [Mobile Application](6_mobile_application/README.md)
 * [FAQ](faq/README.md)
+* [Terms of Use](terms_of_use/README.md)
 
