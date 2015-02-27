@@ -6,7 +6,7 @@ To use the Firmware service, go to the **Firmware tab** in the Prototype detail 
 
 Click **Add firmware** to first upload a new firmware,
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/firmware/fw01.jpg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/firmware/fw01.JPG)
 
 Enter the Firmware name, version, and select a firmware file to upload and click the Upload button.
 
@@ -20,7 +20,7 @@ The default option is all firmware selected or you can specify your own selectio
 
 If you do not want to further proceed to directly pushing the firmware upgrade to test devices, you can stop here by clikc on the Done button, or to click on the Next button to push the firmware to devices.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/firmware/fw03.jpg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/firmware/fw03.JPG)
 
 After selecting the devices you would like to upgrade, click the Push botton. You can also do this step by click on the first icon next to the firmware.
 

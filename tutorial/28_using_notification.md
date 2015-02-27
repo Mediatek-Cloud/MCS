@@ -13,12 +13,12 @@ MCS provides three roles:
 
 As a prototype or device owner, or an administrator, you can add other registed MCS user to access the prototype or the test device by click on the privilege tab in the Prototype or Device detail pages.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/UP/up01.jpg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/UP/up01.JPG)
 
 
 Click Add user to add other MCS registered user to access the prototype.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/UP/up02.jpg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/UP/up02.JPG)
 
 Enter the user email and select the rols as administrator or viewer, and click Save button.
 
