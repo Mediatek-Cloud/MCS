@@ -19,6 +19,8 @@ Step 5. Or you can also check the test device in **Test Device** tab too.
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-06.jpg)
 
 
+Please be noted that the data channels of the created test device are the data channels of the prototype at the created moment. The created test devices will not synchronized with the prototype data channel change. If you update the data channel in the prototype, you need to create another test device to have the update.
+
 
 ## How to get Device ID and Key
 
