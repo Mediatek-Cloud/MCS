@@ -9,8 +9,8 @@
 #define WIFI_AUTH LWIFI_WPA  // choose from LWIFI_OPEN, LWIFI_WPA, or LWIFI_WEP.
 #define per 50
 #define per1 3
-#define DEVICEID "DIYhnPpY"
-#define DEVICEKEY "SoAelvqRBD01H7xl"
+#define DEVICEID "********" // Input your deviceId
+#define DEVICEKEY "***************" // Input your deviceKey
 #define SITE_URL "api.mediatek.com"
 
 LWiFiClient c;
