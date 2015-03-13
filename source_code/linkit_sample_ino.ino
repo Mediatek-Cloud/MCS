@@ -24,8 +24,6 @@ char ip[21]="              ";
 int portnum;
 int val = 0;
 String tcpdata = String(DEVICEID) + "," + String(DEVICEKEY) + ",0";
-String tcpcmd_led_on = String(DEVICEID) + "," + String(DEVICEKEY) + ",0,LED_CONTROL,on";
-String tcpcmd_led_off = String(DEVICEID) + "," + String(DEVICEKEY) + ",0,LED_CONTROL,off";
 String upload_led;
 LWiFiClient c2;
 HttpClient http(c2);
@@ -233,8 +231,6 @@ void heartBeat(){
 void loop()
 {
   //Check for TCP socket command from MCS Server 
-  //Serial.println(tcpcmd_led_on);
-  //Serial.println(tcpcmd_led_off);
   String tcpcmd="";
   while (c.available())
    {
@@ -243,11 +239,11 @@ void loop()
       {
         Serial.print((char)v);
         tcpcmd += (char)v;
-        if (tcpcmd.equals(tcpcmd_led_on)){
+        if (tcpcmd.substring(52).equals("1")){
           digitalWrite(13, HIGH);
           Serial.print("Switch LED ON ");
           tcpcmd="";
-        }else if(tcpcmd.equals(tcpcmd_led_off)){  
+        }else if(tcpcmd.substring(52).equals("0")){  
           digitalWrite(13, LOW);
           Serial.print("Switch LED OFF");
           tcpcmd="";
