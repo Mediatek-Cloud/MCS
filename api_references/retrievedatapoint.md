@@ -154,7 +154,7 @@ https://api.mediatek.com/mcs/v2/devices/a1234567890/datachannels/10001/datapoint
 
 ```
 
-Response Body
+Response Body in json
 
 ```
 {
@@ -177,61 +177,14 @@ Response Body
 }
 ```
 
-
-Request URL
-
-```
-https://api.mediatek.com/mcs/v2/devices/a1234567890/datapoints
-```
-
-Response Body
+Response Body in csv
 
 ```
-{
-   "dataChannels":[
-      {
-         "dataChnlId":10001,
-         "isOverflow":false,
-         "dataPoints":[
-            {
-               "createdAt": 946684800,
-               "values":{
-                    "value":"100"
-                    }
-            },
-            {
-               "createdAt": 946684810,
-               "values":{
-                    "value":"90"
-                    }
-            }
-         ]
-      },
-      {
-         "dataChnId":10002,
-         "isOverflow":false,
-         "dataPoints":[
-            {
-               "createdAt": 946684800,
-               "values":{
-                   "latitude":"112",
-                   "longtitude":"23.3",
-                   "altitude":"50"
-               }
-            },
-            {
-               "createdAt": 946684810,
-               "values":{
-                   "latitude":"112",
-                   "longtitude":"23.3",
-                   "altitude":"50"
-               }
-            }
-         ]
-      }
-   ]
-}
+test_data_channel,94668480,100
 ```
+
+
+
 ## Error Response
 
 When error is incurred, the response code will be non-200 and the response body will construct in JSON format with the following fields:

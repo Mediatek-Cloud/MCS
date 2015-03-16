@@ -147,8 +147,7 @@ Response Body
 
 ```
 {
-    "createdAt":"946684800",
-    "isReceived":true
+    "results": "success"
 }
 ```
 
