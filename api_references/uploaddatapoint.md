@@ -119,16 +119,6 @@ Please note, the unix time is in milliseconds, for human readable time conversio
 Content-Type:`application/json`
 ### Response Body
 
-***Data Format: JSON***
-
-The response body will construct in JSON format with the following fields:
-
-| Field Name | Type |Description|
-| --- | --- | --- |
-| createdAt | Number | Command created timestamp |
-| isReceived | Bool | Is the data point successfully received by the device |
-
-
 **Example:**
 
 Request URL
@@ -167,7 +157,6 @@ When error is incurred, the response code will be non-200 and the response body 
 {
   "results": {
     "code": 1002,
-    "url": "http://mcs.mediatek.com/v2/api_errorcode?code=1002",
     "description": "You do not have access right to this API"
   }
 }
