@@ -35,17 +35,17 @@ The MT7681 chipset provides 5 GPIO pins that can implement PWM and 1 UART port. 
 
 Step 1.1 On the left hand navigator, click **Development**.
 
-Step 1.2 In the **Product List**, click **Create**, to create a new product.
+Step 1.2 In the **Prototype List**, click **Create**, to create a new prototype.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-01.jpg)
 
 
-Step 1.3 Enter the product name, product version, and select your industry. In the **Chip** dropdown box select **MT7681** and click **Save**. Your Product is created.
+Step 1.3 Enter the prototype name, prototype version, and select your industry. In the **Chip** dropdown box select **MT7681** and click **Save**. Your Prototype is created.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-22.jpg)
 
 
-Step 1.4 Now you're going to add GPIO controllers to your product. Below the listing of the product you created, click **Detail** .
+Step 1.4 Now you're going to add GPIO controllers to your prototype. Below the listing of the prototype you created, click **Detail** .
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-23.jpg)
 
@@ -82,85 +82,47 @@ Step 1.11 Another data channel type that MT7681 Products support is UART. To add
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-26.jpg)
 
 
-You’ve created all the controller Data Channel types that LinkIt Connect 7681 products support. Please continue to Step 2 to obtain your product Id and Key from MCS.
-
-### Step 2. Obtain product Id and key
-Step 2.1 On the navigation bar, click **Development** then, under the product you created for this tutorial, click **Details**.
-
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-02.jpg)
+You’ve created all the controller Data Channel types that LinkIt Connect 7681 products support. Please continue to Step 2 to obtain your prototype Id and Key from MCS.
 
 
+### Step 2. Connect your development board to Wi-Fi
+Step 2.1 Open the MCS mobile app, sign in with your account and select the prototype you created in step 1.. Please make sure that you’ve completed step 3.
 
-### Step 3. Flashing product Id and key to your device
-Step 3.1 Connect your LinkIt Connect 7681 development board to a PC and open a terminal application (such as PuTTY on Linux or HyperTerminal on Windows). If you’ve not setup this terminal, please refer to the MediaTek LinkIt Connect 7681 Developer’s Guide for detailed set up steps. In the terminal console, enter the following command to flash the Product Id to your board:
-
-```
-AT#FLASH -s0x18133 -c[productId]
-```
-For example, if the product Id is ABCDEFG12345 then you should enter *AT#FLASH -s0x18101 -cABCDEFG12345*.
-
-In response, you should see something like this on your terminal:
-```
-[WTask]45072
-[0x18101]=ABCDEFG12345
-[WTask]50073
-```
-
-Step 3.2 At the terminal, enter the following command to flash the Product Key to your board:
-```
-AT#FLASH -s0x18143 -c[prodyctKey]
-```
-For example, the product key is HIJKLMN6789 then you should enter AT#FLASH -s0x18111 -cHIJKLMN6789
-
-You should be able to see something like this on your terminal:
-```
-[WTask]250419
-[0x18111]=HIJKLMN6789
-[WTask]255420
-```
-The flashing of Product Id and Key has completed. You must reboot the development board to make the new details effective:
-```
-AT#Reboot
-```
-
-### Step 4. Connect your development board to Wi-Fi
-Step 4.1 Open the MCS mobile app, sign in with your account and select the product you created in step 1.. Please make sure that you’ve completed step 3.
-
-Step 4.2 After signing in, on the bottom right of the screen tap the add icon.
+Step 2.2 After signing in, on the bottom right of the screen tap the add icon.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
 
-Step 4.3 At the bottom of the screen, click **Smart Connection**. This provides an implementation of MediaTek Smart Connection, for more details see the MediaTek LinkIt Connect 7681 Developer’s Guide.
+Step 2.3 At the bottom of the screen, click **Smart Connection**. This provides an implementation of MediaTek Smart Connection, for more details see the MediaTek LinkIt Connect 7681 Developer’s Guide.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice.png)
 
-Step 4.4 Enter the SSID and password of the Wi-Fi AP and click **Start**. The SSID should be automatically populated with the Wi-Fi access points the smartphone is connected to.
+Step 2.4 Enter the SSID and password of the Wi-Fi AP and click **Start**. The SSID should be automatically populated with the Wi-Fi access points the smartphone is connected to.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/smartConnection.png)
 
-Step 4.5 Wait for a few seconds, if Smart Connection was successfully, you should see your device on the list.
+Step 2.5 Wait for a few seconds, if Smart Connection was successfully, you should see your device on the list.
 
 Tap **Cancel** to exit the add Smart Connection pop-up.
 
-Now you can choose to register the device using the MCS mobile app (Step 5A) or to create a test device using the web console to complete registration. (Step 5B).
+Now you can choose to register the device using the MCS mobile app (Step 3A) or to create a test device using the web console to complete registration. (Step 3B).
 
 
-### Step 5A. Activate a LinkIt Connect 7681 device from the MCS mobile app
+### Step 3A. Activate a LinkIt Connect 7681 device from the MCS mobile app
 
-Step 5A.1 Open the MCS mobile app and sign in. After signing in, on the bottom right of the screen, tap the add icon.
+Step 3A.1 Open the MCS mobile app and sign in. After signing in, on the bottom right of the screen, tap the add icon.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
 
 
-Step 5A.2 If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. To the right of the device you'd like to register, tap the add icon.
+Step 3A.2 If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. To the right of the device you'd like to register, tap the add icon.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice2.png)
 
-Step 5A.3 In the pop-up window default values of the Product ID, Serial Number and the Hardware ID are shown. The default value of Product ID should be the one you flashed into the MT7681 in step 3. In most cases you can just use the default values and do that for this tutorial. Tap **Save** to go to the next step.
+Step 3A.3 A list of prototypes will be shown on the screen. Tap on the prototype you'd like to create to mark it and tap **Save** to go to the next step.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice3.png)
 
-Step 5A.4 Enter the device name and description and tap **Save**.
+Step 3A.4 Enter the device name and description and tap **Save**.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/editDevice.png)
 
@@ -169,30 +131,30 @@ After the device has activated, the device list is redisplayed. Your device shou
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/4.png)
 
-### Step 5B. Create a test device using the web console
-Step 5B.1 In the MCS web console, in the navigation bar on the left, click **Development** and then under the product (the one you created in Step 1) that you'd like to register a device for click **Details**.
+### Step 3B. Create a test device using the web console
+Step 3B.1 In the MCS web console, in the navigation bar on the left, click **Development** and then under the prototype (the one you created in Step 1) that you'd like to register a device for click **Details**.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-02.jpg)
 
 
-Step 5B.2 To the top right of the page, click **Create Test Device**.
+Step 3B.2 To the top right of the page, click **Create Test Device**.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-27.jpg)
 
-Step 5B.3 A pop-up will display after your test device has been successfully created. Click **No Thanks** to exit the pop-up.
+Step 3B.3 A pop-up will display after your test device has been successfully created. Click **No Thanks** to exit the pop-up.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-18.jpg)
 
-Step 5B.4 On the navigation bar click **My Devices** then under the device that has just been created click **Details**. The device should have the same name as the product.
+Step 3B.4 On the navigation bar click **My Devices** then under the device that has just been created click **Details**. The device should have the same name as the prototype.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-29.jpg)
 
-Step 5B.5 You should be able to find the deviceId and deviceKey of the test device you just created.
+Step 3B.5 You should be able to find the deviceId and deviceKey of the test device you just created.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-28.jpg)
 
 
-Step 5B.6 Now you have to manually flash the id and key into MT7681. Open a terminal that is connected to the development board and enter the following command:
+Step 3B.6 Now you have to manually flash the id and key into MT7681. Open a terminal that is connected to the development board and enter the following command:
 
 ```
 AT#FLASH -s0x180e9 -c[deviceId]
