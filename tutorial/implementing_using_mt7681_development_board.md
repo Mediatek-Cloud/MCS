@@ -29,6 +29,7 @@ The MT7681 chipset provides 5 GPIO pins that can implement PWM and 1 UART port. 
 | 03 | GPIO_03 | PWM_03 |
 | 04 | GPIO_04 | PWM_04 |
 
+
 ## Step-by-step
 
 ### Step 1. Create a LinkIt Connect 7681 Product with GPIO, PWM and UART data channels

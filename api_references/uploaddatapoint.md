@@ -155,9 +155,9 @@ When error is incurred, the response code will be non-200 and the response body 
 
 ```
 {
-  "results": {
-    "code": 1002,
-    "description": "You do not have access right to this API"
-  }
+    "results": "None of the data points is valid.",
+    "descriptions": [
+        "The type of uploaded data point for data channel test01 is not matched to Switch"
+    ]
 }
 ```

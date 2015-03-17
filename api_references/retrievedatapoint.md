@@ -158,22 +158,21 @@ Response Body in json
 
 ```
 {
-   "dataChnId": 10001,
-   "isOverflow":false,
-   "dataPoints":[
-            {
-               "createdAt": 946684800,
-               "values":{
-                    "value":"100"
+    "deviceId": "DXLQwmnN",
+    "dataChannels": [
+        {
+            "dataChnId": "test01",
+            "isOverflow": false,
+            "dataPoints": [
+                {
+                    "recordedAt": 1426457820600,
+                    "values": {
+                        "value": "HI"
                     }
-            },
-            {
-               "createdAt": 946684800,
-               "values":{
-                    "value":"90"
-                    }
-            }
-         ]
+                }
+            ]
+        }
+    ]
 }
 ```
 
@@ -199,11 +198,7 @@ When error is incurred, the response code will be non-200 and the response body 
 
 ```
 {
-  "results": {
-    "code": 1002,
-    "url": "http://mcs.mediatek.com/api_errorcode?code=1002",
-    "description": "You do not have access right to this API"
-  }
+    "results": "you dont have permission!"
 }
 ```
 
