@@ -1,6 +1,6 @@
 # Using Notification
 
-The user can set the notification for a data channel when its value pass the limit of the defined range. The user will get email notification and the GCM notification using the mobile application. Please be noted that MCS currently only support notification for integer and float data channel type.
+The user can set the notification for a data channel when its value pass the limit of the defined range. The user will get email notification and the GCM notification using the mobile application.Please be noted that MCS currently only support notification for integer and float data channel type.
 
 
 On the Prototype detail page, click on the **Notification** tab.

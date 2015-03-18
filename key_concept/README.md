@@ -3,6 +3,8 @@ This section describes the key components that make up a Wearables or IoT projec
 # **Development**
 
 The Development page has features that enable you to create one or more **Prototypes** then define a number of physical devices based on that prototype. Each prototype, may contain:
+
+
 - **Data Channels**, each of a particular **Data Type**.
 - **Notifications** for changes in the data received from or sent to a device.
 - **User privileges** to enable team members or collaborators to view or edit prototypes and device details.
@@ -112,5 +114,5 @@ You use **My Devices** to manage the devices you have created or have been given
 
 In this page, you can see the data channel, user privilege, and notification configurations as defined in the device’s prototype. You can modify the notification and user privilege settings for specific devices on this page. You can also see the device Id and device key, in addition to being able to see those details in the Test device tab in a prototype’s details page.
 
-In addition to listing all the devices created for your prototypes, this page also shows any devices from other developer’s projects that you have been given access to. The features of the device that you can change will vary depending on the privileges granted to you.
+In addition to listing all the devices created for your prototypes, this page also shows devices from other prototypes that you have been given the access to. The actions you can do to the devices vary depending on the privileges granted to you. For example, if you are a viewer of the device, you can only see the data and cannot make any change to the device.
 
