@@ -22,9 +22,9 @@ Currently, the time-zone is bind to your user profile timezone. Youcan change yo
 
 **6. Where can I download the mobile app? **
 
-Please click [here](http://cdn.mediatek.com/iot.v2.0.9.apk) or scan the QR code below to download the APK:
+Please click [here](http://mcs.mediatek.com/iot/mobile/android) or scan the QR code below to download the APK:
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/qrcode.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/mobileapp_android.png)
 
 The mobile app currently offers for Android only.
 
