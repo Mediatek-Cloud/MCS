@@ -42,7 +42,7 @@ Unfortunately this feature is still under developement. When you first sign-on w
 
 **9. What browser does the MCS support?**
 
-We strongly recommand you to use the Chrome to browse the MCS site.
+We strongly recommand you to use the Chrome, Safari, and Firefox to browse the MCS site.
 
 
 
