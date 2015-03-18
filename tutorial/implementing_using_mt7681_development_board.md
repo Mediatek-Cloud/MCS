@@ -14,7 +14,7 @@ To complete this setup tutorial, you’ll need:
 2. A Wi-Fi connection available to the development board
 3. MCS mobile app. It’s currently available for Android. Please scan the QR code below to download the APK:
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/apkQrCode.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/mobileapp_android.png)
 
 No additional components need to be connected to the development board.
 
