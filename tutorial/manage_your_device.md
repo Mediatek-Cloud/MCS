@@ -4,7 +4,7 @@
 
 ## How to manage deplyed test devices
 
-The developer can manage the test devices in the Prototype detail page, or in the device detail page under My device. In the future, whrn the device is released, the end user can view and configure his devices in the My Device console.
+The developer can manage the test devices in the Prototype detail page, or in the device detail page under My device. In the future, when the device is released, the end user can view and configure his devices in the My Device console.
 
 ### From Developer's view point
 
