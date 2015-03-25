@@ -91,15 +91,15 @@ Step 2.1 Open the MCS mobile app, sign in with your account and select the proto
 
 Step 2.2 After signing in, on the bottom right of the screen tap the add icon.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.png)
 
 Step 2.3 At the bottom of the screen, click **Smart Connection**. This provides an implementation of MediaTek Smart Connection, for more details see the MediaTek LinkIt Connect 7681 Developer’s Guide.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_2.png)
 
 Step 2.4 Enter the SSID and password of the Wi-Fi AP and click **Start**. The SSID should be automatically populated with the Wi-Fi access points the smartphone is connected to.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/smartConnection.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_3.png)
 
 Step 2.5 Wait for a few seconds, if Smart Connection was successfully, you should see your device on the list.
 
@@ -112,25 +112,25 @@ Now you can choose to register the device using the MCS mobile app (Step 3A) or 
 
 Step 3A.1 Open the MCS mobile app and sign in. After signing in, on the bottom right of the screen, tap the add icon.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.png)
 
 
 Step 3A.2 If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. You can see the device you'd like to rgister, tap the plus icon to add.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice2.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_4.png)
 
 Step 3A.3 A list of prototypes will be shown on the screen after you add the device. Select the prototype you'd like to link with the device you just connected and tap **Next** button.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice3.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_5.png)
 
 Step 3A.4 Enter the device name and description and tap **Save**.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/editDevice.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_6.png)
 
 
 After the device has registered, the device list will refresh and your device should now be on the list and the data channel you've created.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/6.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_7.png)
 
 ### Step 3B. Create a test device using the web console
 Step 3B.1 In the MCS web console, in the navigation bar on the top, click **Development** and then click on the **Detail** button of the prototype (the one you created in Step 1) that you'd like to register a device for.
@@ -172,12 +172,12 @@ Your device should now be automatically connected to MCS.
 
 Step 4A.1 Open the MCS mobile app and sign in. Tap on the device you'd like to control.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/5.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_7.png)
 
 
 Step4A.2 You’ll see a list of controllers that were added in step 1. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/6.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_8.png)
 
 ### Step 4B Control your device from the MCS web console
 
