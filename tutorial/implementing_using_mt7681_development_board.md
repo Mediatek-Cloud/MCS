@@ -65,7 +65,7 @@ Step 1.6 To add a controller, in the **Add Data Channel** popup under the **Cont
 
 Step 1.7 For MT7681 products, the Data Channel Ids follow a defined format — GPIO_nn, where nn is the pin number starting from 00. Create the channel for the first pin, using "GPIO_00". Enter the data channel name ("GPIO_00"), Id ("GPIO_00") and add a description, then select **GPIO** as the data type. Click **Save** to create the Data Channel.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-24.jpg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_9.jpg)
 
 
 
@@ -73,7 +73,7 @@ Step 1.8 To add more GPIO pin controllers, repeat Step 1.5 to 1.7 using the appr
 
 Step 1.9 Now add the PWM controllers. Repeat Step 1.5 and 1.6 to open the **Add Data Channel** popup. Enter "PWM_00" as the data channel Id and in **Data Channel Type** select **PWM**. Click **Save** to create the Data Channel.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-25.jpg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_10.jpg)
 
 
 Step 1.10 To add more PWM controllers, repeat Step 1.9 using the appropriate data channel Id for each pin (PMW_01 to PMW_04).
@@ -91,7 +91,7 @@ Step 2.1 Open the MCS mobile app, sign in with your account and select the proto
 
 Step 2.2 After signing in, on the bottom right of the screen tap the add icon.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.jpeg)
 
 Step 2.3 At the bottom of the screen, click **Smart Connection**. This provides an implementation of MediaTek Smart Connection, for more details see the MediaTek LinkIt Connect 7681 Developer’s Guide.
 
@@ -112,7 +112,7 @@ Now you can choose to register the device using the MCS mobile app (Step 3A) or 
 
 Step 3A.1 Open the MCS mobile app and sign in. After signing in, on the bottom right of the screen, tap the add icon.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.jpeg)
 
 
 Step 3A.2 If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. You can see the device you'd like to rgister, tap the plus icon to add.
