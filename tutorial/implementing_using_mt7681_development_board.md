@@ -78,7 +78,7 @@ Step 1.9 Now add the PWM controllers. Repeat Step 1.5 and 1.6 to open the **Add 
 
 Step 1.10 To add more PWM controllers, repeat Step 1.9 using the appropriate data channel Id for each pin (PMW_01 to PMW_04).
 
-Step 1.11 Another data channel type that MT7681 Products support is UART. To add a UART data channel, open the **Add Data Channel** popup as described in Step 1.4 and 1.5 and create a new Controller as described in step 1.6. Enter the Data Channel Id as "UART" and in the **Data Channel type** select **String** or **Hex** depending on your needs. Click **Save** to create the Data Channel.
+Step 1.11 Another data channel type that MT7681 Products support is UART. To add a UART data channel, open the **Add Data Channel** popup as described in Step 1.5 and create a new Controller as described in step 1.6. Enter the Data Channel Id as "UART" and in the **Data Channel type** select **String** or **Hex** depending on your needs. Click **Save** to create the Data Channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-26.jpg)
 
@@ -87,7 +87,7 @@ You’ve created all the controller Data Channel types that LinkIt Connect 7681 
 
 
 ### Step 2. Connect your development board to Wi-Fi
-Step 2.1 Open the MCS mobile app, sign in with your account and select the prototype you created in step 1.. Please make sure that you’ve completed step 3.
+Step 2.1 Open the MCS mobile app, sign in with your account and select the prototype you created in step 1.
 
 Step 2.2 After signing in, on the bottom right of the screen tap the add icon.
 
@@ -115,11 +115,11 @@ Step 3A.1 Open the MCS mobile app and sign in. After signing in, on the bottom r
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/deviceList.png)
 
 
-Step 3A.2 If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. To the right of the device you'd like to register, tap the add icon.
+Step 3A.2 If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. You can see the device you'd like to rgister, tap the plus icon to add.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice2.png)
 
-Step 3A.3 A list of prototypes will be shown on the screen. Tap on the prototype you'd like to create to mark it and tap **Save** to go to the next step.
+Step 3A.3 A list of prototypes will be shown on the screen after you add the device. Select the prototype you'd like to link with the device you just connected and tap **Next** button.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/addDevice3.png)
 
@@ -128,12 +128,12 @@ Step 3A.4 Enter the device name and description and tap **Save**.
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/MT7681-tutorial/editDevice.png)
 
 
-After the device has activated, the device list is redisplayed. Your device should now be on the list.
+After the device has registered, the device list will refresh and your device should now be on the list and the data channel you've created.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/4.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/6.png)
 
 ### Step 3B. Create a test device using the web console
-Step 3B.1 In the MCS web console, in the navigation bar on the left, click **Development** and then under the prototype (the one you created in Step 1) that you'd like to register a device for click **Details**.
+Step 3B.1 In the MCS web console, in the navigation bar on the top, click **Development** and then click on the **Detail** button of the prototype (the one you created in Step 1) that you'd like to register a device for.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-02.jpg)
 
@@ -142,20 +142,17 @@ Step 3B.2 To the top right of the page, click **Create Test Device**.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-27.jpg)
 
-Step 3B.3 A pop-up will display after your test device has been successfully created. Click **No Thanks** to exit the pop-up.
+Step 3B.3 Enter the **device name** and **description** you like and click **OK** button. A pop-up will display after your test device has been successfully created. Click **Go to detail** button.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-18.jpg)
 
-Step 3B.4 On the navigation bar click **My Devices** then under the device that has just been created click **Details**. The device should have the same name as the prototype.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-29.jpg)
-
-Step 3B.5 You should be able to find the deviceId and deviceKey of the test device you just created.
+Step 3B.4 You should be able to find the deviceId and deviceKey of the test device you just created.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-28.jpg)
 
 
-Step 3B.6 Now you have to manually flash the id and key into MT7681. Open a terminal that is connected to the development board and enter the following command:
+Step 3B.5 Now you have to manually flash the id and key into MT7681. Open a terminal that is connected to the development board and enter the following command:
 
 ```
 AT#FLASH -s0x180e9 -c[deviceId]
@@ -171,24 +168,24 @@ AT#FLASH -s0x18102 –v0
 ```
 Your device should now be automatically connected to MCS.
 
-### Step 6A Control your device from the mobile app
+### Step 4A Control your device from the mobile app
 
-Step 6A1 Open the MCS mobile app and sign in. Tap on the device you'd like to control.
+Step 4A.1 Open the MCS mobile app and sign in. Tap on the device you'd like to control.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/4.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/5.png)
 
 
-Step6A.2 You’ll see a list of controllers that were added in step 1. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
+Step4A.2 You’ll see a list of controllers that were added in step 1. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/3.png)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/6.png)
 
-### Step 6B Control your device from the MCS web console
+### Step 4B Control your device from the MCS web console
 
-Step BB.1 On the navigation bar click **My Devices**, then below the device that has just been created and registered click **Details**.
+Step 4B.1 On the navigation bar click **My Devices**, then below the device that has just been created and registered click **Details**.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-29.jpg)
 
-Step 6B.2 Now you can see the device’s data channels and control their states using the MCS platform. To change the state for a particular data channel, drag that channel’s control bar. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
+Step 4B.2 Now you can see the device’s data channels and control their states using the MCS platform. To change the state for a particular data channel, drag that channel’s control bar. Switch a GPIO controller from high to low: the LED on development board should turn on. **Please note that when GPIO is set to high, the LED is turned off; when the GPIO is set to low, the LED is turned on**.
 
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-30.jpg)
