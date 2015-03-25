@@ -91,7 +91,7 @@ Step 2.1 Open the MCS mobile app, sign in with your account and select the proto
 
 Step 2.2 After signing in, on the bottom right of the screen tap the add icon.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.jpeg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.jpg)
 
 Step 2.3 At the bottom of the screen, click **Smart Connection**. This provides an implementation of MediaTek Smart Connection, for more details see the MediaTek LinkIt Connect 7681 Developer’s Guide.
 
@@ -112,7 +112,7 @@ Now you can choose to register the device using the MCS mobile app (Step 3A) or 
 
 Step 3A.1 Open the MCS mobile app and sign in. After signing in, on the bottom right of the screen, tap the add icon.
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.jpeg)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_1.jpg)
 
 
 Step 3A.2 If your device’s Wi-Fi settings were provisioned by Smart Connection successfully, it should be shown on the list. You can see the device you'd like to rgister, tap the plus icon to add.
