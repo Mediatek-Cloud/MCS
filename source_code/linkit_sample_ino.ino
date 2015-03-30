@@ -149,9 +149,9 @@ void uploadstatus(){
   }
   delay(100);
   if(digitalRead(13)==1)
-  upload_led = "LED,,on";
+  upload_led = "LED,,1";
   else
-  upload_led = "LED,,off";
+  upload_led = "LED,,0";
   int thislength = upload_led.length();
   HttpClient http(c2);
   c2.print("POST /mcs/v2/devices/");
