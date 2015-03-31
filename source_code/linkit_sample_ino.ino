@@ -25,6 +25,9 @@ int portnum;
 int val = 0;
 String tcpdata = String(DEVICEID) + "," + String(DEVICEKEY) + ",0";
 String upload_led;
+String tcpcmd_led_on = "fan_control,1";
+String tcpcmd_led_off = "fan_control,0";
+
 LWiFiClient c2;
 HttpClient http(c2);
 
@@ -146,9 +149,9 @@ void uploadstatus(){
   }
   delay(100);
   if(digitalRead(13)==1)
-  upload_led = "LED,,on";
+  upload_led = "LED,,1";
   else
-  upload_led = "LED,,off";
+  upload_led = "LED,,0";
   int thislength = upload_led.length();
   HttpClient http(c2);
   c2.print("POST /mcs/v2/devices/");
@@ -239,11 +242,11 @@ void loop()
       {
         Serial.print((char)v);
         tcpcmd += (char)v;
-        if (tcpcmd.substring(52).equals("1")){
+        if (tcpcmd.substring(40).equals(tcpcmd_led_on)){
           digitalWrite(13, HIGH);
           Serial.print("Switch LED ON ");
           tcpcmd="";
-        }else if(tcpcmd.substring(52).equals("0")){  
+        }else if(tcpcmd.substring(40).equals(tcpcmd_led_off)){  
           digitalWrite(13, LOW);
           Serial.print("Switch LED OFF");
           tcpcmd="";
