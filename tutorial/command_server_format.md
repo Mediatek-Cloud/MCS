@@ -9,14 +9,14 @@ The command server format of each data type is defined here. It is the format th
 ## Switch
 
 ```
-deviceId,deviceKey,timestamp,dataChannelId,{0/1}
+deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
 
 ```
 0 stands for OFF, and 1 stands for ON.
 
 For example:
 
-switch01,, ON
+switch01,, 1
 
 To turn the switch01 to on state, and do not give the timestamp.
 
