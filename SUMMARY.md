@@ -13,6 +13,7 @@
    * [Using Notification](tutorial/setting_notification.md)
    * [Managing Firmware](tutorial/managing_firmware.md)
    * [Data Channel Format](tutorial/291.md)
+   * [Command server format](tutorial/command_server_format.md)
 * [Setting User Privilege](tutorial/28_using_notification.md)
 * [API References](api_references/README.md)
    * [DataPoints](api_references/data_read_write.md)
