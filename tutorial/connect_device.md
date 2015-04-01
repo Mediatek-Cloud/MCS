@@ -5,6 +5,9 @@ Connect the development board to Wi-Fi first, and then download the MCS mobile a
 To connect the device:
 1.	Make sure Wireless Access Point is made available to the device and the device is connected
 2.	Then enter the following commands to set the status to activated:
-AT#FLASH –s0x18101 –v1
-AT#FLAST –s0x18102 –v0
-Download the Mobile app and use the smart connection to get the connected device, and you are able to get the data from and control the device.
+
+    AT#FLASH –s0x18101 –v1
+
+    AT#FLAST –s0x18102 –v0
+
+3. Download the Mobile app and use the smart connection to get the connected device, and you are able to get the data from and control the device.
