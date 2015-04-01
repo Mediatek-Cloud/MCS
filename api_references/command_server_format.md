@@ -1,5 +1,4 @@
 # Command server format
-
 The command server format of each data type is defined here. It is the format that the command server sent to the device to process.
 
 **The timestamp is using the UNIX timestamp format.
