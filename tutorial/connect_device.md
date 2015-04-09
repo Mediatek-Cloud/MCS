@@ -1,13 +1,32 @@
 # Connect device
 
-Connect the development board to Wi-Fi first, and then download the MCS mobile app and log in as an authorized user to access the device. Use the smart connection function build in to the mobile app to connect to the device and register the device to be active.
 
 To connect the device:
-1.	Make sure Wireless Access Point is made available to the device and the device is connected
-2.	Then enter the following commands to set the status to activated:
 
-    AT#FLASH –s0x18101 –v1
+Call the RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to obtain the response value for Socket Server IP and Port.
+Command server respond format:
 
-    AT#FLAST –s0x18102 –v0
+```
+{
+    "ip": "ServerIp",
+    "port": "serverPort"
+}
 
-3. Download the Mobile app and use the smart connection to get the connected device, and you are able to get the data from and control the device.
+```
+Open a tcp connection to the given ip and port and send a heartbeat message.
+
+Heartbeat format:
+
+```
+    deviceId, deviceKey, timestamp
+
+```
+After the TCP long connecion is built, the user can give command to the device via the MSC platform.
+
+The command Format:
+```
+    deviceId, deviceKey, timestamp, dataChnId, commandValue
+
+```
+
+You can refer to the command server format in the API reference page to find more detail for the formats for each kind of data channel types.

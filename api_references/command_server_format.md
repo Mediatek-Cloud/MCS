@@ -10,8 +10,40 @@ Here is an example of how to parse and extract the datachannelId, value, and per
 https://gist.github.com/iamblue/29705021bd77c9be6004
 
 
+## Prerequsite
+Before the device can get the command from command server, you need to first connect the device to MCS.
 
-## Switch
+Call the RESTful API: GET https://api.mediatek.com/mcs/v2/devices/{deviceId}/connections to obtain the response value for Socket Server IP and Port.
+Command server respond format:
+
+```
+{
+    "ip": "ServerIp",
+    "port": "serverPort"
+}
+
+```
+Open a tcp connection to the given ip and port and send a heartbeat message.
+
+Heartbeat format:
+
+```
+    deviceId, deviceKey, timestamp
+
+```
+After the TCP long connecion is built, the user can give command to the device via the MSC platform.
+
+The command Format:
+```
+    deviceId, deviceKey, timestamp, dataChnId, commandValue
+
+```
+
+
+## Command formats for each data channel type
+
+
+### Switch
 
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{0 or 1}
@@ -25,34 +57,34 @@ switch01,, 1
 
 To turn the switch01 to on state, and do not give the timestamp.
 
-## Category
+### Category
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Key Value}
 ```
 The Key value will correspond to the Key name that you’ve set.
 
-## Integer
+### Integer
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Integer}
 ```
 
-## Float
+### Float
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Float}
 ```
 
-## Hex
+### Hex
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{Hex value}
 ```
 Hex is referred to hexadecimal value which only takes value from A-D and 0-9.
 
-## String
+### String
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{string}
 ```
 
-## GPS
+### GPS
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{latitude},{longitude},{altitude}
 ```
@@ -63,13 +95,13 @@ The range of longitude is from -180 to 180. 0 to 180 stands for East and 0 to -1
 
 The range of altitude is from 0 to 20000 in meter.
 
-## GPIO
+### GPIO
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{0 ot 1}
 ```
 0 stands for Low, and 1 stands for High.
 
-## PWM
+### PWM
 ```
 deviceId,deviceKey,timestamp,dataChannelId,{value},{period}
 
