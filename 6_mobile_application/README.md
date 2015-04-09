@@ -15,6 +15,8 @@ The mobile app currently offers for Android only.
 
 To install the app, you must have android v4.0 or above version, and open the above download link in your mobile browser
 
+**Please note: Android 5.x is currently not supported, we will have a refresh shortly. **
+
 Once installed at first launch you will see the screen below:
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/01.png)
