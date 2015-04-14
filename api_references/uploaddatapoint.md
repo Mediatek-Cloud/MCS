@@ -140,10 +140,10 @@ Response Body
 
 ```
 {
-    "apiVersion": "0.0.1",
-    "code": 200,
-    "message": "Request has succeeded",
-    "results": "Success."
+  "apiVersion": "0.0.1",
+  "code": 200,
+  "message": "Request has succeeded",
+  "results": "Success."
 }
 ```
 
@@ -161,12 +161,12 @@ When error is incurred, the response code will be non-200 and the response body 
 
 ```
 {
-    "apiVersion": "0.0.1",
-    "code": 200,
-    "message": "Request has succeeded",
-    "results": "Partial success.",
-    "descriptions": [
-        "The uploaded data point for data channel gps exceeds the bound of longitude in GPS"
-    ]
+  "apiVersion": "0.0.1",
+  "code": 200,
+  "message": "Request has succeeded",
+  "results": "Partial success.",
+  "descriptions": [
+    "The uploaded data point for data channel gps exceeds the bound of longitude in GPS"
+  ]
 }
 ```
