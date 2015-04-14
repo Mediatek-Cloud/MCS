@@ -140,7 +140,10 @@ Response Body
 
 ```
 {
-    "results": "success"
+    "apiVersion": "0.0.1",
+    "code": 200,
+    "message": "Request has succeeded",
+    "results": "Success."
 }
 ```
 
@@ -158,9 +161,12 @@ When error is incurred, the response code will be non-200 and the response body 
 
 ```
 {
-    "results": "None of the data points is valid.",
+    "apiVersion": "0.0.1",
+    "code": 200,
+    "message": "Request has succeeded",
+    "results": "Partial success.",
     "descriptions": [
-        "The type of uploaded data point for data channel test01 is not matched to Switch"
+        "The uploaded data point for data channel gps exceeds the bound of longitude in GPS"
     ]
 }
 ```
