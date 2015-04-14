@@ -198,7 +198,18 @@ When error is incurred, the response code will be non-200 and the response body 
 
 ```
 {
-    "results": "you dont have permission!"
+  apiVersion: "0.0.1",
+  code: 401,
+  message: "401 Unauthorized",
+  errors: [
+    {
+      code: 401,
+      message: "401 Unauthorized"
+    }
+  ],
+  results: "You don't have permission!",
+  statusCode: 401,
+  options: { }
 }
 ```
 
