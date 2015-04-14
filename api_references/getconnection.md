@@ -111,9 +111,11 @@ Response Body
 
 ```
 {
-   "ip": xxx.xxx.xxx.xxx,
-   "port":443
-
+  "apiVersion": "0.0.1",
+  "code": 200,
+  "message": "Request has succeeded",
+  "ip": xxx.xxx.xxx.xxx,
+  "port":443
 }
 ```
 
@@ -131,9 +133,20 @@ When error is incurred, the response code will be non-200 and the response body 
 
 ```
 {
+  apiVersion: "0.0.1",
+  code: 401,
+  message: "401 Unauthorized",
+  errors: [
+    {
+      code: 401,
+      message: "401 Unauthorized"
+    }
+  ],
   "results": {
     "code": 1002,
     "description": "You dont have permission"
-  }
+  },
+  statusCode: 401,
+  options: { }
 }
 ```
