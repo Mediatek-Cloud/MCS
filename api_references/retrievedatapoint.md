@@ -158,21 +158,36 @@ Response Body in json
 
 ```
 {
-    "deviceId": "DXLQwmnN",
-    "dataChannels": [
+  "apiVersion": "0.0.1",
+  "code": 200,
+  "message": "Request has succeeded",
+  "deviceId": "DTRL0Knx",
+  "dataChannels": [
+    {
+      "dataChnId": "aa",
+      "isOverflow": false,
+      "dataPoints": [
         {
-            "dataChnId": "test01",
-            "isOverflow": false,
-            "dataPoints": [
-                {
-                    "recordedAt": 1426457820600,
-                    "values": {
-                        "value": "HI"
-                    }
-                }
-            ]
+          "recordedAt": 1427888656483,
+          "values": {
+            "value": "11"
+          }
+        },
+        {
+          "recordedAt": 1427887997181,
+          "values": {
+            "value": "123123123"
+          }
+        },
+        {
+          "recordedAt": 1427887988835,
+          "values": {
+            "value": "123123"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 
