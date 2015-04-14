@@ -127,255 +127,119 @@ Response Body
 
 ```
 {
-   "results":[
-      {
-         "deviceId":"d1234567890",
-         "deviceKey":"1234567890d",
-         "deviceName":"My 1st device",
-         "deviceDescription":"Livingroom Smart Plug 1",
-         "product":{
-            "prodId":"a1234567890",
-            "prodVersion":"1",
-            "name":"MediaTek Smart Plug",
-            "description":"Monitors Power Usag",
-            "displayConfigs":[
-               {
-                  "displayType":2,
-                  "displayOrder":1,
-                  "dataChnIds":[
-                     100004,
-                     100006
-                  ]
-               },
-               {
-                  "displayType":1,
-                  "displayOrder":2,
-                  "dataChnIds":[
-                     100009
-                  ]
-               }
+  "apiVersion": "0.0.1",
+  "code": 200,
+  "message": "Request has succeeded",
+ "results": [
+    {
+      "deviceId": "DTRL0Knx",
+      "deviceKey": "Xcwe9T82ehPSN6dv",
+      "deviceName": "aa",
+      "deviceDescription": "aaa",
+      "trustIpRange": null,
+      "lastIp": "127.0.0.1",
+      "deviceImageURL": null,
+      "isVerified": true,
+      "isActive": true,
+      "isTest": true,
+      "activatedAt": "2015-03-02T18:43:17.587Z",
+      "deactivatedAt": null,
+      "privilege": "owner",
+      "product": {
+        "prodId": "PydFXsArwtru",
+        "name": "11",
+        "description": "",
+        "displayConfigs": [
+          {
+            "format": {
+              "lowerbound": "1",
+              "upperbound": "5",
+              "unitTypes": 20
+            },
+            "displayType": 14,
+            "displayOrder": 1,
+            "streamTypeId": 1,
+            "dataChnIds": [
+              "aa"
             ],
-            "chip":"MT7688"
-         },
-         "dataChannels":[
-            {
-               "dataChnId":10001,
-               "isAvailable":true,
-               "name":"My 1st Data Channel",
-               "channelType":{
-                  "dataChnTypeId":1,
-                  "name":"float"
-               },
-               "isHidden":false,
-               "isControllable":false,
-               "description":"My first data channel on MCS 2.0",
-               "unitType":{
-                  "unitTypeId":2,
-                  "name":"°C"
-               },
-               "format":{
-                  "lowerbound":0.0,
-                  "upperbound":100.0,
-                  "interval":0.5,
-                  "defaultValue":5.0
-               },
-               "comps":[
-                  {
-                     "compId":1,
-                     "name":"MTK Camera"
-                  },
-                  {
-                     "compId":2,
-                     "name":"MTK Thermometer"
-                  }
-               ]
+            "showHistory": false,
+            "configs": {
+              "format": {
+                "lowerbound": "integer",
+                "upperbound": "integer",
+                "unitTypes": "category-units"
+              }
+            }
+          },
+          {
+            "format": {
+              "lowerbound": "1",
+              "upperbound": "20",
+              "unitTypes": 17
             },
-            {
-               "dataChnId":10002,
-               "isAvailable":true,
-               "name":"My 2nd Data Channel",
-               "channelType":{
-                  "dataChnTypeId":2,
-                  "name":"swtich"
-               },
-               "isHidden":false,
-               "isControllable":true,
-               "description":"My second data channel on MCS 2.0",
-               "format":{
-                  "options":[
-                     {
-                        "name":"low",
-                        "value":"1"
-                     },
-                     {
-                        "name":"medium",
-                        "value":"2"
-                     },
-                     {
-                        "name":"high",
-                        "value":"3"
-                     }
-                  ]
-               }
-            }
-         ],
-         "fw":{
-            "fwId":"f1234567890",
-            "name":"Appliance Firmware 2.0",
-            "description":"",
-            "version":0.5
-         },
-         "trustIpRange":[
-            "*.*.*.*"
-         ],
-         "lastIp":"140.112.106.1",
-         "deviceImageURL":"http://img.mediatek.com/img003.jpg",
-         "isHeartbeating":true,
-         "isVerified":true,
-         "isActive":true,
-         "isTest":false,
-         "activatedAt":946684800,
-         "deactivatedAt":0,
-         "tags":[
-            {
-               "tagId":20,
-               "name":"Smart Home"
-            },
-            {
-               "tagId":59,
-               "name":"Energy"
-            }
-         ],
-         "deviceNtCritGrps":[
-            {
-               "ntfCritGrpId":1,
-               "name":"Continuous Operating Time"
-               "ntfMthTypeId":1,
-               "ntfMthTypeName":"email"
-            }
-         ],
-         "privilege":"Owner"
+            "displayType": 14,
+            "displayOrder": 2,
+            "streamTypeId": 1,
+            "dataChnIds": [
+              "11"
+            ],
+            "showHistory": false
+          }
+        ],
+        "chip": "LinkIt One (MT2502)",
+        "version": "111",
+        "privilege": "owner"
       },
-      {
-         "deviceId":"d1234567891",
-         "deviceKey":"1987654321d",
-         "name":"My 2nd device",
-         "description":"Livningroom Smart Plug 2",
-         "product":{
-            "prodId":"a1234567890",
-            "name":"MediaTek Smart Plug",
-            "description":"Monitors Power Usage",
-            "displayConfigs":[
-               {
-                  "displayType":2,
-                  "displayOrder":1,
-                  "dataChnIds":[
-                     100004,
-                     100006
-                  ]
-               },
-               {
-                  "displayType":1,
-                  "displayOrder":2,
-                  "dataChnIds":[
-                     100009
-                  ]
-               }
-            ],
-            "chip":"MT7688"
-         },
-         "dataChannels":[
-            {
-               "dataChnId":10001,
-               "isAvailable":true,
-               "name":"My 1st Data Channel",
-               "channelType":{
-                  "dataChnTypeId":1,
-                  "name":"float"
-               },
-               "isHidden":false,
-               "isControllable":false,
-               "description":"My first data channel on MCS 2.0",
-               "unitType":{
-                  "unitTypeId":2,
-                  "name":"°C"
-               },
-               "format":{
-                  "lowerbound":0.0,
-                  "upperbound":100.0,
-                  "interval":0.5,
-                  "defaultValue":5.0
-               },
-               "comps":[
-                  {
-                     "compId":1,
-                     "name":"MTK Camera"
-                  },
-                  {
-                     "compId":2,
-                     "name":"MTK Thermometer"
-                  }
-               ]
-            },
-            {
-               "dataChnId":10002,
-               "isAvailable":true,
-               "name":"My 2nd Data Channel",
-               "channelType":{
-                  "dataChnTypeId":2,
-                  "name":"swtich"
-               },
-               "isHidden":false,
-               "isControllable":true,
-               "description":"My second data channel on MCS 2.0",
-               "format":{
-                  "options":[
-                     {
-                        "name":"low",
-                        "value":"1"
-                     },
-                     {
-                        "name":"medium",
-                        "value":"2"
-                     },
-                     {
-                        "name":"high",
-                        "value":"3"
-                     }
-                  ]
-               }
-            }
-         ],
-         "fw":{
-            "fwId":"f1234567890",
-            "name":"Appliance Firmware 2.0",
-            "description":"",
-            "version":0.3
-         },
-         "trustIpRange":[
-            "*.*.*.*"
-         ],
-         "lastIp":"140.112.106.2",
-         "deviceImageURL":"http://img.mediatek.com/img003.jpg",
-         "isHeartbeating":false,
-         "isVerified":true,
-         "isActive":true,
-         "isTest":false,
-         "activatedAt":946684800,
-         "deactivatedAt":0,
-         "tags":[
-            {
-               "tagId":20,
-               "name":"Smart Home"
-            },
-            {
-               "tagId":59,
-               "name":"Energy"
-            }
-         ],
-         "privilege":"Viewer"
-      }
-   ]
+      "fw": {
+        "fwId": "FvMNKIXNKbox",
+        "name": "Default Firmware",
+        "description": "Default Firmware",
+        "version": "0.0"
+      },
+      "dataChannels": [
+        {
+          "dataChnId": "aa",
+          "name": "aa",
+          "description": "aa",
+          "channelType": {
+            "dataChnTypeId": 1,
+            "name": "Integer"
+          },
+          "format": {
+            "lowerbound": "1",
+            "upperbound": "5",
+            "unitTypes": 20
+          },
+          "isHidden": false,
+          "isControllable": true,
+          "unitType": {
+            "unitTypeId": null,
+            "name": null
+          }
+        },
+        {
+          "dataChnId": "11",
+          "name": "11111",
+          "description": "111",
+          "channelType": {
+            "dataChnTypeId": 1,
+            "name": "Integer"
+          },
+          "format": {
+            "lowerbound": "1",
+            "upperbound": "20",
+            "unitTypes": 17
+          },
+          "isHidden": false,
+          "isControllable": true,
+          "unitType": {
+            "unitTypeId": null,
+            "name": null
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -393,10 +257,21 @@ When error is incurred, the response code will be non-200 and the response body 
 
 ```
 {
+  apiVersion: "0.0.1",
+  code: 401,
+  message: "401 Unauthorized",
+  errors: [
+    {
+      code: 401,
+      message: "401 Unauthorized"
+    }
+  ],
   "results": {
     "code": 1002,
     "url": "http://mcs.mediatek.com/api_errorcode?code=1002",
     "description": "You do not have access right to this API"
-  }
+  },
+  statusCode: 401,
+  options: { }
 }
 ```
