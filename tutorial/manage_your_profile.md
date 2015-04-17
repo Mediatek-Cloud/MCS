@@ -5,7 +5,7 @@ The user can always change the setting of the user profile by clicking on his ow
 The user can also change your password and the time zone here.
 
 
-![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Profile.JPG)
+![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Profile1.JPG)
 
 Your device data channel time-series chart will be based on your time-zone setting.
 
