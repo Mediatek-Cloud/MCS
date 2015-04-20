@@ -13,7 +13,7 @@ The mobile app currently offers for Android only.
 
 
 
-To install the app, you must have android v5.0 or above version, and open the above download link in your mobile browser.
+To install the app, you must have android v4.0 or above version, and open the above download link in your mobile browser.
 
 
 
