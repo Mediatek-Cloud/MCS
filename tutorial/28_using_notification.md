@@ -24,4 +24,4 @@ Enter the user email and select the rols as administrator or viewer, and click S
 
 
 
-Please be noted that the test device will not inherit the user privilege setting from its parent prototype. The user who creates the test device will be the owner of the test device.  The owner can then modified the user privilege of the test device separately from the parent prototype.
+Please be noted that the test device will not inherit the user privilege setting from its parent prototype. The user who creates the test device will be the owner of the test device.  The owner can then modify the user privilege of the test device separately from the parent prototype.
