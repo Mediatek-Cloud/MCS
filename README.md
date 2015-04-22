@@ -26,7 +26,6 @@ To support the use of these features, MediaTek Cloud Sandbox provides an API san
 
 
 
-MediaTek Cloud Sandbox is currently in closed-beta.
 
 
 
