@@ -7,7 +7,7 @@ The device will get the data as the following format from the command server, an
 
 Here is an example of how to parse and extract the datachannelId, value, and period of a PWM.
 
-https://gist.github.com/iamblue/29705021bd77c9be6004
+https://gist.github.com/MTK-mcs/e8ee0ad19d5f5755b232
 
 
 ## Prerequsite
