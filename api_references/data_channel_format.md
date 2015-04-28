@@ -209,7 +209,7 @@ For json:
       {
          "dataChnId":"dataChanId",
          "values":{
-            "value":"{string value}",
+            "value":"{value}",
             "period":"{period value}"
          }
       }
