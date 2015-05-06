@@ -59,7 +59,7 @@ This data channel enables a Display and Controller data channel to be combined, 
 
 
 
-Each Data Channel can hold one of seven types of data:
+Each Data Channel can hold one of nine types of data:
 
 - **ON/OFF** — this data type represents a switch and enables the user to activate or deactivate a component of the device, such as turning a light on or off.
 
