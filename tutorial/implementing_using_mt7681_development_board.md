@@ -32,7 +32,7 @@ The MT7681 chipset provides 5 GPIO pins that can implement PWM and 1 UART port. 
 
 ## Step-by-step
 
-### Step 1. Create a LinkIt Connect 7681 Product with GPIO, PWM and UART data channels
+### Step 1. Create a LinkIt Connect 7681 Prototype with GPIO, PWM and UART data channels
 
 Step 1.1 On the left hand navigator, click **Development**.
 
@@ -63,7 +63,7 @@ Step 1.6 To add a controller, in the **Add Data Channel** popup under the **Cont
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-13.jpg)
 
 
-Step 1.7 For MT7681 products, the Data Channel Ids follow a defined format — GPIO_nn, where nn is the pin number starting from 00. Create the channel for the first pin, using "GPIO_00". Enter the data channel name ("GPIO_00"), Id ("GPIO_00") and add a description, then select **GPIO** as the data type. Click **Save** to create the Data Channel.
+Step 1.7 For MT7681 prototypes, the Data Channel Ids follow a defined format — GPIO_nn, where nn is the pin number starting from 00. Create the channel for the first pin, using "GPIO_00". Enter the data channel name ("GPIO_00"), Id ("GPIO_00") and add a description, then select **GPIO** as the data type. Click **Save** to create the Data Channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/Mobile/connect_9.jpg)
 
@@ -78,12 +78,12 @@ Step 1.9 Now add the PWM controllers. Repeat Step 1.5 and 1.6 to open the **Add 
 
 Step 1.10 To add more PWM controllers, repeat Step 1.9 using the appropriate data channel Id for each pin (PMW_01 to PMW_04).
 
-Step 1.11 Another data channel type that MT7681 Products support is UART. To add a UART data channel, open the **Add Data Channel** popup as described in Step 1.5 and create a new Controller as described in step 1.6. Enter the Data Channel Id as "UART" and in the **Data Channel type** select **String** or **Hex** depending on your needs. Click **Save** to create the Data Channel.
+Step 1.11 Another data channel type that MT7681 Prototypes support is UART. To add a UART data channel, open the **Add Data Channel** popup as described in Step 1.5 and create a new Controller as described in step 1.6. Enter the Data Channel Id as "UART" and in the **Data Channel type** select **String** or **Hex** depending on your needs. Click **Save** to create the Data Channel.
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-26.jpg)
 
 
-You’ve created all the controller Data Channel types that LinkIt Connect 7681 products support. Please continue to Step 2 to obtain your prototype Id and Key from MCS.
+You’ve created all the controller Data Channel types that LinkIt Connect 7681 prototypes support. Please continue to Step 2 to obtain your prototype Id and Key from MCS.
 
 
 ### Step 2. Connect your development board to Wi-Fi

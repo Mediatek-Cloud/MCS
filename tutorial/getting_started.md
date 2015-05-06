@@ -1,6 +1,6 @@
 # Getting Started
 
-Here are the four steps to connect MediaTek Cloud Sandbox to your development and product lifecycle:
+Here are the four steps to connect MediaTek Cloud Sandbox to your development and prototype lifecycle:
 
 1. Develop Prototype
 2. Create Test Device

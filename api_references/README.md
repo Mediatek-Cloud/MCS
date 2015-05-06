@@ -66,9 +66,9 @@ All request sent to the API need to be authenticated. A Bearer token for `Authen
 
 ## API Keys
 
-Each time a product is created, a data channel is created or a device is added, there will be an unique key assigned to each product, data channel or device. This unique key is not editable, but they can be used to access data which they are associated. They cannot access data from any other resource.
+Each time a prototype is created, a data channel is created or a device is added, there will be an unique key assigned to each prototype, data channel or device. This unique key is not editable, but they can be used to access data which they are associated. They cannot access data from any other resource.
 
-The developer can define which HTTP methods(GET, POST, PUT, DELETE) can be used with each API key. For example, in the Sandnox API, if you need to GET data from a specific data channel or product, you will need to use the Key for the data channel and the product.
+The developer can define which HTTP methods(GET, POST, PUT, DELETE) can be used with each API key. For example, in the Sandnox API, if you need to GET data from a specific data channel or prototype, you will need to use the Key for the data channel and the prototype.
 
 
 ## Resources
@@ -84,13 +84,13 @@ MCS provides several Sandbox API for the user to easily create data channel,  re
 
 ### Devices
 
-We will have two types of devices in the MCS, the first kind is the test device. The test device is for the developer to use to test the functionality of the product before release.
-The second kind of device is the batch create devices created after a product is released and is used for the end user.
+We will have two types of devices in the MCS, the first kind is the test device. The test device is for the developer to use to test the functionality of the prototype before release.
+The second kind of device is the batch create devices created after a prototype is released and is used for the end user.
 
 MCS also provides APIs for both develoer and the user. For example, to create device, retrieve data from device and remote contol using the device.
 
-### Product
+### Prototype
 
-A product is the service that you are going to deliver as a deliverable in the end. The MSC also provides several APIs for the developers to make use of regarding the product. The developer will add data channels in a product and test the product by creating the test device before release.
+A prototype is the service that you are going to deliver as a deliverable in the end. The MSC also provides several APIs for the developers to make use of regarding the prototype. The developer will add data channels in a prototype and test the prototype by creating the test device before release.
 
 

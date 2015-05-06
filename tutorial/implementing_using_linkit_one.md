@@ -18,21 +18,21 @@ To complete this test setup, you will need:
 There is no additional electrical component required to connect to the development board.
 
 
-### Step 1. Create a new Product with Switch-Type data channel
+### Step 1. Create a new Prototype with Switch-Type data channel
 
-a. After login, select "Development" at the navigation bar, click "Create" to create a new product
+a. After login, select "Development" at the navigation bar, click "Create" to create a new prototype
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-01.jpg)
 
-b. Fill in the detail information as per screen to give a basic profile of this product:
+b. Fill in the detail information as per screen to give a basic profile of this prototype:
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-08.jpg)
 
-c. Click "Detail" for the Product created
+c. Click "Detail" for the Prototype created
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-09.jpg)
 
-d. In the Product Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
+d. In the Prototype Detail Page, select "Data Channel" TAB and click "Add" to create new Data Channel:
 
 ![](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/graphics/screenshot/screen_shot-10.jpg)
 
