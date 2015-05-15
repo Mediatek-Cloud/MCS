@@ -25,8 +25,8 @@ int portnum;
 int val = 0;
 String tcpdata = String(DEVICEID) + "," + String(DEVICEKEY) + ",0";
 String upload_led;
-String tcpcmd_led_on = "fan_control,1";
-String tcpcmd_led_off = "fan_control,0";
+String tcpcmd_led_on = "LED_Control,1";
+String tcpcmd_led_off = "LED_Control,0";
 
 LWiFiClient c2;
 HttpClient http(c2);
