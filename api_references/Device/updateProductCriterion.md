@@ -40,6 +40,14 @@ Authorization: Bearer '{token}'
 
 ### Response
 
+```
+{
+  apiVersion: '0.0.1',
+  code: 200,
+  message: 'Request has succeeded'
+}
+```
+
 #### Response Code
 
 200
