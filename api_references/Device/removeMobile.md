@@ -1,11 +1,12 @@
-# deregister Mobile
+# Create Mobile
 
-Use **HTTPs DELETE** to deregister mobile device
+Use **HTTPs DELETE** to create mobile device
 
 ### Request URL
 
 ```
-https://api.mediatek.com/mcs/v2/mobiles/:mobileId
+https://api.mediatek.com/mcs/v2/mobiles/:deviceId/mobiles/:mobileId
+
 ```
 
 ### Action
@@ -14,6 +15,7 @@ HTTPs DELETE
 
 ### Parameters
 
+:deviceId
 :mobileId
 
 #### Header
@@ -22,7 +24,7 @@ Authorization: Bearer '{token}'
 
 #### Body
 
-json example:
+NULL
 
 ### Response
 
@@ -41,8 +43,9 @@ Content-Type:`application/json`
 **Example:**
 
 Request URL
+
 ```
-https://api.mediatek.com/mcs/v2/mobiles/MTG2FTZyG6Ap
+https://api.mediatek.com/mcs/v2/devices/DYlPUvjQ/mobiles/MAPJMomc2w62
 ```
 
 Request Body
@@ -55,8 +58,7 @@ Response Body
 {
   apiVersion: '0.0.1',
   code: 200,
-  message: 'Request has succeeded',
-  affectedRows: 1
+  message: 'Request has succeeded'
 }
 ```
 
@@ -72,13 +74,19 @@ token is incorrect:
 }
 ```
 
-missing mobile required property:
+403 forbidden:
 
 ```
-{
-  errors: [ { code: 400, message: '400 Bad Request' } ],
+{ errors: [ { code: 403, message: '403 Forbidden' } ],
+  statusCode: 403,
+  options: {} }
+```
+
+input request is invaild:
+
+```
+{ errors: [ { code: 400, message: '400 Bad Request' } ],
   message: 'missing required property ids',
   statusCode: 400,
-  options: {}
-}
+  options: {} }
 ```

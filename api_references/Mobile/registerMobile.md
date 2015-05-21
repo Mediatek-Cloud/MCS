@@ -55,17 +55,17 @@ Content-Type:`application/json`
 
 #### Response Body
 
-*** Data Format: JSON ***
+***Data Format: JSON***
 
 The response body will construct in JSON format with the following fields:
 
 | Field Name | Type |Description|
 | --- | --- | --- |
-| createdAt | boolean | create or update |
+| created | boolean | create or update |
 | mobileId | string | mobile unique id |
 
 
-**Example: **
+**Example:**
 
 Request URL
 ```
