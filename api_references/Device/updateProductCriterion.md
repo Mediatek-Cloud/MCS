@@ -20,20 +20,21 @@ HTTPs PUT
 
 #### Header
 
-Authorization: Bearer '{token}'
+Authorization: Bearer `{token}`
 
 #### Body
 
 ```
 {
   "isActivated": true,
-  "ntfCritId":[{
+  "ntfcrits":[{
     "ntfCritId": 1,
     "streamId": 2,
     "thresholdValue": 1234
   }, {
+    "ntfCritId": 2,
     "streamId": 2,
-    "thresholdValue": 1234
+    "thresholdValue": 5678
   }]
 }
 ```
