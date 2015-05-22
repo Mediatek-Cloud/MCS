@@ -68,8 +68,9 @@ The response body will construct in JSON format with the following fields:
 **Example:**
 
 Request URL
+
 ```
-https://api.mediatek.com/mcs/v2/devices
+https://api.mediatek.com/mcs/v2/mobiles
 ```
 
 Request Body

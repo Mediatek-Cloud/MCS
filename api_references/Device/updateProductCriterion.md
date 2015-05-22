@@ -15,8 +15,8 @@ HTTPs PUT
 
 ### Parameters
 
-:deviceId
-:criterionId
+`:deviceId`: Device unique ID.
+`:criterionId`: Criterion unique ID.
 
 #### Header
 

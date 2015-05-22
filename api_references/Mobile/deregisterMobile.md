@@ -14,7 +14,7 @@ HTTPs DELETE
 
 ### Parameters
 
-:mobileId
+`:deviceId`: Device unique ID.
 
 #### Header
 

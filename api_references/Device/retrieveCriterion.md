@@ -15,7 +15,7 @@ HTTPs GET
 
 ### Parameters
 
-:deviceId
+`:deviceId`: Device unique ID.
 
 #### Header
 
