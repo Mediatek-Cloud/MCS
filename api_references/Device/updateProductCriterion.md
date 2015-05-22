@@ -59,7 +59,7 @@ Content-Type:`application/json`
 
 #### Response Body
 
-*** Data Format: JSON ***
+***Data Format: JSON***
 
 **Example:**
 
