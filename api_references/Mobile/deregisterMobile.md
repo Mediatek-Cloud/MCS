@@ -53,10 +53,8 @@ Response Body
 
 ```
 {
-  apiVersion: '0.0.1',
   code: 200,
-  message: 'Request has succeeded',
-  affectedRows: 1
+  message: 'Request has succeeded'
 }
 ```
 
