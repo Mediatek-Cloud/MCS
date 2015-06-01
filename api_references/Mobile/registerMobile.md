@@ -1,4 +1,4 @@
-# register Mobile
+# Register Mobile
 
 Use **HTTPs POST** to register mobile device
 
